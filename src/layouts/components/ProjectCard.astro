@@ -7,13 +7,13 @@ const { title, social } = data.data;
 ---
 
 <div
-  class="rounded bg-theme-light p-8 text-center dark:bg-darkmode-theme-light"
+  class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light"
 >
   <h4 class="mb-3">
-    <a href={`/projects/${data.slug}`}>{title}</a>
+    {title}
   </h4>
   <p class="mb-4">
-    {plainify(data.body?.slice(0, 100))}
+    {plainify(data.body)}
   </p>
   <Social source={social} className="social-icons" />
 </div>

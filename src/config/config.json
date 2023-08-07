@@ -23,12 +23,6 @@
     "drink_folder": "drinks"
   },
 
-  "navigation_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "https://github.com/reednel/pages"
-  },
-
   "metadata": {
     "meta_author": "reednel",
     "meta_image": "/images/og-image.png",
