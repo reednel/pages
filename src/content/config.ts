@@ -15,6 +15,21 @@ const blogCollection = defineCollection({
   }),
 });
 
+// Drinks collection schema
+const drinkCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    date: z.date().optional(),
+    image: z.string().optional(),
+    author: z.string().default("Admin"),
+    categories: z.array(z.string()).default(["others"]),
+    tags: z.array(z.string()).default(["others"]),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Author collection schema
 const authorsCollection = defineCollection({
   schema: z.object({
@@ -52,6 +67,7 @@ const pagesCollection = defineCollection({
 // Export collections
 export const collections = {
   blog: blogCollection,
+  drinks: drinkCollection,
   authors: authorsCollection,
   pages: pagesCollection,
 };
