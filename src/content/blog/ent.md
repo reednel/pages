@@ -21,10 +21,10 @@ draft: true
 Prove that a positive integer $n$ is prime if and only if $n$ is not divisible
 by any prime $p$ with $1 < p \leq \sqrt{n}$.
 
-Proving $\implies$.
+Proving $\implies$
 This follows directly from the definition of prime.
 
-Proving $\impliedby$.
+Proving $\impliedby$
 Clearly if there were such a prime $p$ in range $(1, \sqrt{n}]$, n would not be prime. So then it suffices to show why the range $(\sqrt{n}, n)$ need not be checked.
 The largest value that can be produced by a pair in range $(1, \sqrt{n}]$ is $\sqrt{n} \cdot \sqrt{n} = n$.
 That means in order for a value greater than $\sqrt{n}$ to be a divisor, so too must there be a value less than $\sqrt{n}$.
@@ -119,8 +119,25 @@ Therefore, for all primes greater than 3, $3 | p^2 + 2$, and $p^2 + 2$ is compos
 
 ## Hard
 
-### Goldbach Conjecture?
+### Fermat's Last Theorem
+
+Prove that no triple $a, b, c, \in \mathbb{N}$ satisfy the equation $a^n + b^n = c^n$, where $n \in \mathbb{N}$ is greater than $2$.
 
 ### Collatz Conjecture
 
-### Fermat's Last Theorem
+Consider the following operation on an arbitrary positive integer:
+
+$
+f(n) = \left\{
+    \begin{array}{lr}
+        n / 2, & \text{if } n \equiv 0 \pmod{2}\\
+        3n + 1, & \text{if }n \equiv 1 \pmod{2}
+    \end{array}
+\right\}
+$
+
+Prove that for all $n$, this function will eventually return 1.
+
+### Goldbach's Conjecture
+
+Prove that every even $n \in \mathbb{n}$ greater than 2 is the sum of two primes.

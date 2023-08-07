@@ -1,4 +1,4 @@
----
+<!-- ---
 import BlogCard from "@/components/BlogCard.astro";
 import Social from "@/components/Social.astro";
 import config from "@/config/config.json";
@@ -72,4 +72,4 @@ const postFilterByAuthor = posts.filter(
       </div>
     </div>
   </section>
-</Base>
+</Base> -->
