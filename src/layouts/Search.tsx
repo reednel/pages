@@ -147,7 +147,7 @@ const Search = ({ searchList }: Props) => {
                       {item.data.categories.map(
                         (category: string, index: number) => (
                           <a
-                            href={`/categories/${slugify(category)}`}
+                            href={`/blog/categories/${slugify(category)}`}
                             key={category}
                           >
                             {humanize(category)}
