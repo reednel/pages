@@ -5,9 +5,9 @@ import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 
-const { blog_folder }: { blog_folder: string } = config.settings;
-const tags = await getTaxonomy(blog_folder, "tags");
-const allTags = await getAllTaxonomy(blog_folder, "tags");
+const { drink_folder }: { drink_folder: string } = config.settings;
+const tags = await getTaxonomy(drink_folder, "tags");
+const allTags = await getAllTaxonomy(drink_folder, "tags");
 ---
 
 <Base title={"Tags"}>
@@ -21,7 +21,7 @@ const allTags = await getAllTaxonomy(blog_folder, "tags");
             return (
               <li class="m-3 inline-block">
                 <a
-                  href={`/tags/${tag}`}
+                  href={`/blog/tags/${tag}`}
                   class="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark"
                 >
                   {humanize(tag)}{" "}

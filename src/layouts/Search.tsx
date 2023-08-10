@@ -90,24 +90,9 @@ const Search = ({ searchList }: Props) => {
             </div>
           </div>
         </div>
-
-        {/* {inputVal.length > 1 && (
-          <div className="mt-8">
-            Found {searchResults?.length}
-            {searchResults?.length && searchResults?.length === 1
-              ? " result"
-              : " results"}{" "}
-            for '{inputVal}'
-          </div>
-        )} */}
         <div className="row">
           {searchResults?.length < 1 ? (
             <div className="mx-auto pt-5 text-center">
-              <img
-                className="mx-auto mb-6"
-                src="/images/no-search-found.png"
-                alt="no-search-found"
-              />
               <h1 className="h2 mb-4">
                 {inputVal.length < 1 ? "Search Post Here" : "No Search Found!"}
               </h1>
@@ -147,7 +132,7 @@ const Search = ({ searchList }: Props) => {
                       {item.data.categories.map(
                         (category: string, index: number) => (
                           <a
-                            href={`/categories/${slugify(category)}`}
+                            href={`/blog/categories/${slugify(category)}`}
                             key={category}
                           >
                             {humanize(category)}
@@ -171,6 +156,15 @@ const Search = ({ searchList }: Props) => {
             ))
           )}
         </div>
+        {/* {inputVal.length > 1 && (
+          <div className="mt-4 mx-auto text-center">
+            Found {searchResults?.length}
+            {searchResults?.length && searchResults?.length === 1
+              ? " result"
+              : " results"}{" "}
+            for '{inputVal}'
+          </div>
+        )} */}
       </div>
     </section>
   );

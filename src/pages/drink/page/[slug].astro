@@ -7,18 +7,37 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import PageHeader from "@/partials/PageHeader.astro";
-import PostSidebar from "@/partials/PostSidebar.astro";
+import DrinkSidebar from "@/partials/DrinkSidebar.astro";
 import { getEntryBySlug } from "astro:content";
 
 const { drink_folder } = config.settings;
+const { slug } = Astro.params;
 const postIndex = await getEntryBySlug<any, string>(drink_folder, "-index");
 const posts = await getSinglePage(drink_folder);
 const allCategories = await getAllTaxonomy(drink_folder, "categories");
 const categories = await getTaxonomy(drink_folder, "categories");
 const tags = await getTaxonomy(drink_folder, "tags");
 const sortedPosts = sortByDate(posts);
-const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+const totalPages = Math.ceil(posts.length / config.settings.pagination);
+const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+const indexOfLastPost = currentPage * config.settings.pagination;
+const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
+const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+export async function getStaticPaths() {
+  const posts = await getSinglePage(config.settings.drink_folder);
+  const totalPages = Math.ceil(posts.length / config.settings.pagination);
+  const paths = [];
+
+  for (let i = 1; i < totalPages; i++) {
+    paths.push({
+      params: {
+        slug: (i + 1).toString(),
+      },
+    });
+  }
+  return paths;
+}
 ---
 
 <Base
@@ -31,7 +50,7 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
   <section class="section">
     <div class="container">
       <div class="row gx-5">
-        <!-- drink posts -->
+        <!-- blog posts -->
         <div class="lg:col-8">
           <div class="row">
             {
@@ -44,13 +63,13 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
           </div>
           <Pagination
             section={drink_folder}
-            currentPage={1}
+            currentPage={currentPage}
             totalPages={totalPages}
           />
         </div>
 
         <!-- sidebar -->
-        <PostSidebar
+        <DrinkSidebar
           categories={categories}
           tags={tags}
           allCategories={allCategories}

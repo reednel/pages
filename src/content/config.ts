@@ -15,7 +15,7 @@ const blogCollection = defineCollection({
   }),
 });
 
-// Drinks collection schema
+// Drink collection schema
 const drinkCollection = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -67,7 +67,7 @@ const pagesCollection = defineCollection({
 // Export collections
 export const collections = {
   blog: blogCollection,
-  drinks: drinkCollection,
+  drink: drinkCollection,
   projects: projectCollection,
   pages: pagesCollection,
 };
