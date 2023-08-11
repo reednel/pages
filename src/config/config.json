@@ -17,7 +17,7 @@
     "sticky_header": false,
     "theme_switcher": true,
     "default_theme": "system",
-    "pagination": 2,
+    "pagination": 4,
     "summary_length": 200,
     "blog_folder": "blog",
     "drink_folder": "drink"
@@ -26,6 +26,6 @@
   "metadata": {
     "meta_author": "reednel",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Reed Nelson's perosnal website"
+    "meta_description": "A place with things."
   }
 }

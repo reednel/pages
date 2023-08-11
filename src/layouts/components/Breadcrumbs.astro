@@ -6,7 +6,7 @@ const { className }: { className?: string } = Astro.props;
 const paths = Astro.url.pathname.split("/").filter((x) => x);
 let parts = [
   {
-    label: "Home",
+    label: "home",
     href: "/",
     "aria-label": Astro.url.pathname === "/" ? "page" : undefined,
   },
@@ -16,7 +16,7 @@ paths.forEach((label: string, i: number) => {
   const href = `/${paths.slice(0, i + 1).join("/")}`;
   label !== "page" &&
     parts.push({
-      label: humanize(label.replace(/[-_]/g, " ")) || "",
+      label: label.replace(/[-_]/g, " ") || "",
       href,
       "aria-label": Astro.url.pathname === href ? "page" : undefined,
     });
@@ -27,7 +27,7 @@ paths.forEach((label: string, i: number) => {
   <ol class="inline-flex" role="list">
     {
       parts.map(({ label, ...attrs }, index) => (
-        <li class="mx-1 capitalize" role="listitem">
+        <li class="mx-1" role="listitem">
           {index > 0 && <span class="inlin-block mr-1">/</span>}
           {index !== parts.length - 1 ? (
             <a class="text-primary dark:text-darkmode-primary" {...attrs}>
