@@ -55,7 +55,7 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply block py-1 font-semibold text-dark transition hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary;
 }
 
-//theme-switcher
+// theme-switcher
 .theme-switcher {
   @apply inline-flex;
 

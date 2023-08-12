@@ -75,7 +75,7 @@ const Search = ({ searchList }: Props) => {
             <div className="flex flex-nowrap">
               <input
                 className="form-input rounded-r-none"
-                placeholder="Search posts"
+                placeholder="search posts"
                 type="search"
                 name="search"
                 value={inputVal}
@@ -94,7 +94,7 @@ const Search = ({ searchList }: Props) => {
           {searchResults?.length < 1 ? (
             <div className="mx-auto pt-5 text-center">
               <h1 className="h2 mb-4">
-                {inputVal.length < 1 ? "Search Post Here" : "No Search Found!"}
+                {inputVal.length < 1 ? "Search Blog Here" : "No Search Found!"}
               </h1>
               <p>
                 {inputVal.length < 1
