@@ -3,9 +3,9 @@ import Base from "@/layouts/Base.astro";
 import PageHeader from "@/partials/PageHeader.astro";
 import { getEntryBySlug } from "astro:content";
 
-const terms = await getEntryBySlug("terms", "-index");
-const { Content } = await terms.render();
-const { title, meta_title } = terms.data;
+const riddles = await getEntryBySlug("riddles", "-index");
+const { Content } = await riddles.render();
+const { title, meta_title } = riddles.data;
 ---
 
 <Base
