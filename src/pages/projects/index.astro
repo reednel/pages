@@ -16,7 +16,7 @@ const projects = await getSinglePage("projects");
       <div class="row justify-center">
         {
           projects.map((project) => (
-            <div class="mb-14 md:col-12 lg:col-12">
+            <div class="mb-8 md:col-12 lg:col-12">
               <ProjectCard data={project} />
             </div>
           ))
