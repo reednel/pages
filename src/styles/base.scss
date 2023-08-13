@@ -1,19 +1,37 @@
-/* eb-garamond-500 */
+/* Open Sans 400 */
 @font-face {
   font-display: block; 
-  font-family: 'EB Garamond';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
-  src: url('/fonts/eb-garamond/eb-garamond-700.woff2') format('woff2');
+  font-weight: 400;
+  src: url('/fonts/open-sans/open-sans-400.woff2') format('woff2');
 }
 
-/* eb-garamond-700 */
+/* Open Sans 600 */
 @font-face {
   font-display: block; 
-  font-family: 'EB Garamond';
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/open-sans/open-sans-600.woff2') format('woff2');
+}
+
+/* Cormorant 500 */
+@font-face {
+  font-display: block; 
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/cormorant/cormorant-500.woff2') format('woff2');
+}
+
+/* Cormorant 700 */
+@font-face {
+  font-display: block; 
+  font-family: 'Cormorant';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/eb-garamond/eb-garamond-700.woff2') format('woff2');
+  src: url('/fonts/cormorant/cormorant-700.woff2') format('woff2');
 }
 
 html {

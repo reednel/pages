@@ -7,6 +7,7 @@ image: ""
 categories: ["Cryptography"]
 author: "Reed Nelson"
 tags: ["crypto"]
+complexity: 1
 draft: true
 ---
 

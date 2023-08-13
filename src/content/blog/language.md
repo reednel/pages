@@ -7,6 +7,7 @@ image: ""
 categories: ["Philosophy"]
 author: "Reed Nelson"
 tags: ["language"]
+complexity: 1.2
 draft: false
 ---
 
