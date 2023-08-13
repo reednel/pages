@@ -7,6 +7,7 @@ image: ""
 categories: ["Philosophy"]
 author: "Reed Nelson"
 tags: ["purpose", "power", "nietzsche"]
+complexity: 1.1
 draft: false
 ---
 

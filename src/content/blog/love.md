@@ -7,6 +7,7 @@ image: ""
 categories: ["Psychology"]
 author: "Reed Nelson"
 tags: ["psychology", "philosophy", "love"]
+complexity: 1.1
 draft: false
 ---
 

@@ -7,6 +7,7 @@ image: ""
 categories: ["Mathematics"]
 author: "Reed Nelson"
 tags: ["math", "puzzles"]
+complexity: 0
 draft: true
 ---
 

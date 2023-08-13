@@ -7,6 +7,7 @@ image: ""
 categories: ["Philosophy"]
 author: "Reed Nelson"
 tags: ["dharma", "purpose"]
+complexity: 1
 draft: false
 ---
 

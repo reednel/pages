@@ -7,6 +7,7 @@ image: ""
 categories: ["Cryptography"]
 author: "Reed Nelson"
 tags: ["math", "crypto", "information-theory"]
+complexity: 1.7
 draft: false
 ---
 

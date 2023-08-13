@@ -8,9 +8,10 @@ const blogCollection = defineCollection({
     description: z.string().optional(),
     date: z.date().optional(),
     image: z.string().optional(),
-    author: z.string().default("Admin"),
+    author: z.string().default("Reed Nelson"),
     categories: z.array(z.string()).default(["others"]),
     tags: z.array(z.string()).default(["others"]),
+    complexity: z.number().default(1),
     draft: z.boolean().optional(),
   }),
 });

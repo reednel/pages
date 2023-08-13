@@ -7,6 +7,7 @@ image: ""
 categories: ["Mathematics"]
 author: "Reed Nelson"
 tags: ["math", "biology", "graph"]
+complexity: 1
 draft: true
 ---
 

@@ -7,6 +7,7 @@ image: ""
 categories: ["Philosophy"]
 author: "Reed Nelson"
 tags: ["ai"]
+complexity: 1.2
 draft: false
 ---
 
