@@ -1,3 +1,21 @@
+/* eb-garamond-500 */
+@font-face {
+  font-display: block; 
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/eb-garamond/eb-garamond-700.woff2') format('woff2');
+}
+
+/* eb-garamond-700 */
+@font-face {
+  font-display: block; 
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/eb-garamond/eb-garamond-700.woff2') format('woff2');
+}
+
 html {
   @apply text-base h-screen;
 }
