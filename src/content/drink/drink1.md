@@ -1,13 +1,28 @@
 ---
-title: "Drink 1"
-meta_title: ""
+title: "Drink"
+meta_title: "Drink"
 description: "none"
-date: 2022-08-30T05:00:00Z
 image: ""
-categories: ["Drink"]
 author: "Reed Nelson"
+categories: ["Drink"]
 tags: ["drink"]
 draft: false
+
+# Ingredients
+ingredients:
+    title: "Title"
+    content: "content"
+    list:
+        - "a"
+        - "b"
+
+# Recipe
+recipe:
+    title: "Title"
+    content: "content"
+    list:
+        - "a"
+        - "b"
 ---
 
 This is a recipe.

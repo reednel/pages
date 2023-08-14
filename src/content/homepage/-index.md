@@ -11,5 +11,4 @@ features:
     bulletpoints:
       - "a"
       - "b"
-
 ---
