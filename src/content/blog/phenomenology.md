@@ -61,7 +61,7 @@ This is a whole book. I can’t say whether it’s all worth reading, but there 
 
 Fjelland’s goal in this paper is to show that Dreyfus’s argument still holds, despite the extensive development of artificial neural networks. He argues that modern methods (e.g. ML) are merely correlative, they know nothing of causation. A higher level of reasoning, with a deeper understanding of the events in question and the context they occurred in is necessary to determine causation. Thus, a machine that is not in-the-world cannot reason about causal relationships.
 
-> “We are bodily and social beings, living in a material and social world. To understand another person is not to look into the chemistry of that person’s brain, not even into that person’s soul, but is rather to be in that person’s ‘shoes’. It is to understand that person’s lifeworld.”
+> We are bodily and social beings, living in a material and social world. To understand another person is not to look into the chemistry of that person’s brain, not even into that person’s soul, but is rather to be in that person’s ‘shoes’. It is to understand that person’s lifeworld.
 
 [^1]: And you’d be in the company of [some experts](https://www.researchgate.net/publication/280838978_Future_Progress_in_Artificial_Intelligence_A_Survey_of_Expert_Opinion)!
 [^2]: I've always wanted to say this.

@@ -1,29 +1,50 @@
 ---
 import { humanize } from "@/lib/utils/textConverter";
 
-const { tags, categories, allCategories } = Astro.props;
+const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
 ---
 
 <div class="lg:col-4">
-  <!-- categories -->
+  <!-- spirits -->
   <div class="mb-8">
     <h4 class="mb-2 text-center">
-      <a href="/drink/categories">Categories</a>
+      <a href="/drink/spirits">Spirits</a>
     </h4>
     <div class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light">
-      <ul class="space-y-4">
+      <ul>
         {
-          categories.map((category: any) => {
-            const count = allCategories.filter(
-              (c: any) => c === category
-            ).length;
+          spirits.map((spirit: any) => {
             return (
-              <li>
+              <li class="inline-block">
                 <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href={`/drink/categories/${category}`}
+                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                  href={`/drink/spirits/${spirit}`}
                 >
-                  {humanize(category)} <span>({count})</span>
+                  {spirit}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </div>
+  <!-- bottles -->
+  <div class="mb-8">
+    <h4 class="mb-2 text-center">
+      <a href="/drink/bottles">Bottles</a>
+    </h4>
+    <div class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light">
+      <ul>
+        {
+          bottles.map((bottle: any) => {
+            return (
+              <li class="inline-block">
+                <a
+                  class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                  href={`/drink/bottles/${bottle}`}
+                >
+                  {bottle}
                 </a>
               </li>
             );

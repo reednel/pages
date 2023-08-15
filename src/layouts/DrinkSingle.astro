@@ -1,24 +1,32 @@
 ---
-import BlogCard from "@/components/BlogCard.astro";
+import DrinkCard from "@/components/DrinkCard.astro";
 import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import dateFormat from "@/lib/utils/dateFormat";
 import similerItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 import {
-  FaRegCalendarAlt,
   FaRegFolder,
   FaRegUserCircle,
 } from "react-icons/fa/index.js";
 
-const { blog_folder } = config.settings;
-const posts = await getSinglePage(blog_folder);
+interface Recipe {
+  ingredients: {
+    list: string[];
+    qty: string[];
+  };
+  instructions: string[];
+}
+
+const { drink_folder } = config.settings;
+const posts = await getSinglePage(drink_folder);
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await post.render();
-const { title, description, author, categories, image, date, tags } = post.data;
+const { title, description, author, image, spirits, bottles, tags } = post.data;
+
+const { ingredients, instructions }: Recipe = post.data;
 ---
 
 <section class="section pt-7">
@@ -46,24 +54,54 @@ const { title, description, author, categories, image, date, tags } = post.data;
             {humanize(author)}
           </li>
           <li class="mr-4 inline-block">
-            <FaRegCalendarAlt className={"mr-2 -mt-1 inline-block"} />
-            {dateFormat(date)}
-          </li>
-          <li class="mr-4 inline-block">
             <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
             {
-              categories.map((category: string, index: number) => (
-                <a href={`/blog/categories/${slugify(category)}`}>
-                  {humanize(category)}
-                  {index !== categories.length - 1 && ","}
+              spirits.map((spirit: string, index: number) => (
+                <a href={`/drink/spirits/${slugify(spirit)}`}>
+                  {spirit}
+                  {index !== spirits.length - 1 && ","}
                 </a>
               ))
             }
           </li>
         </ul>
-        <div class="content mb-10">
+        <!-- <div class="content mb-10">
           <Content />
-        </div>
+        </div> -->
+        <!-- Ingredients -->
+        <section class={`section-sm bg-gradient rounded-lg`}>
+          <div class="container">
+            <div class="row items-center justify-between">
+              <div class={`md:col-7 lg:col-6 md:order-1`}>
+                <h2 set:html="Ingredients" class="mb-4" />
+                <ul>
+                  {ingredients.list.map((bullet: string) => (
+                    <li class="relative mb-4 pl-6">
+                      <span set:html={markdownify(bullet)} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Instructions -->
+        <section class={`section-sm bg-gradient rounded-lg`}>
+          <div class="container">
+            <div class="row items-center justify-between">
+              <div class={`md:col-7 lg:col-6 md:order-1`}>
+                <h2 set:html="Instructions" class="mb-4" />
+                <ul>
+                  {instructions.map((bullet: string) => (
+                    <li class="relative mb-4 pl-6">
+                      <span set:html={markdownify(bullet)} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
         <div class="row items-start justify-between">
           <div class="mb-10 flex items-center lg:col-5 lg:mb-0">
             <h5 class="mr-3">Tags :</h5>
@@ -73,7 +111,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
                   <li class="inline-block">
                     <a
                       class="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                      href={`blog/tags/${slugify(tag)}`}
+                      href={`drink/tags/${slugify(tag)}`}
                     >
                       {tag}
                     </a>
@@ -88,8 +126,8 @@ const { title, description, author, categories, image, date, tags } = post.data;
               className="social-icons"
               title={title}
               description={description}
+              folder={drink_folder}
               slug={post.slug}
-              folder={blog_folder}
             />
           </div>
         </div>
@@ -100,12 +138,12 @@ const { title, description, author, categories, image, date, tags } = post.data;
       similarPosts.length > 0 && (
         <!-- Related posts -->
         <div class="section pb-0">
-          <h2 class="h3 mb-12 text-center">Related Posts</h2>
+          <h2 class="h3 mb-12 text-center">Similar Drinks</h2>
           <div class="row justify-center">
             {
               similarPosts.slice(0, 3).map((post) => (
                 <div class="lg:col-4">
-                  <BlogCard data={post} />
+                  <DrinkCard data={post} />
                 </div>
               ))
             }

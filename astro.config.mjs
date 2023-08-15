@@ -7,6 +7,8 @@ import AutoImport from "astro-auto-import";
 import { defineConfig } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import config from "./src/config/config.json";
 
 // https://astro.build/config
@@ -47,10 +49,10 @@ export default defineConfig({
           test: "Table of contents",
         },
       ],
-      'remark-math',
+      remarkMath,
     ],
     rehypePlugins: [
-      ['rehype-katex', {
+      [rehypeKatex, {
       // Katex plugin options
       }]
     ],

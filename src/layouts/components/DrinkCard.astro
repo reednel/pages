@@ -2,14 +2,14 @@
 import config from "@/config/config.json";
 import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
-import { FaRegFolder, FaRegUserCircle } from "react-icons/fa/index.js";
+import { FaRegFolder } from "react-icons/fa/index.js";
 
 const {
   summary_length,
   drink_folder,
 }: { summary_length: number; drink_folder: string } = config.settings;
 const { data } = Astro.props;
-const { title, image, date, author, categories } = data.data;
+const { title, image, spirits } = data.data;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
@@ -26,20 +26,18 @@ const { title, image, date, author, categories } = data.data;
     )
   }
   <h4 class="mb-3">
-    {title}
+    <a href={`/${drink_folder}/${data.slug}`}>
+      {title}
+    </a>
   </h4>
   <ul class="mb-4">
     <li class="mr-4 inline-block">
-      <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-      {humanize(author)}
-    </li>
-    <li class="mr-4 inline-block">
       <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
       {
-        categories.map((category: string, index: number) => (
-          <a href={`/drink/categories/${slugify(category)}`}>
+        spirits.map((category: string, index: number) => (
+          <a href={`/drink/spirits/${slugify(category)}`}>
             {humanize(category)}
-            {index !== categories.length - 1 && ","}
+            {index !== spirits.length - 1 && ","}
           </a>
         ))
       }

@@ -11,16 +11,33 @@ import DrinkSidebar from "@/partials/DrinkSidebar.astro";
 import { getEntryBySlug } from "astro:content";
 
 const { drink_folder } = config.settings;
+const { slug } = Astro.params;
 const postIndex = await getEntryBySlug<any, string>(drink_folder, "-index");
 const posts = await getSinglePage(drink_folder);
-const allSpirits = await getAllTaxonomy(drink_folder, "spirits");
-const spirits = await getTaxonomy(drink_folder, "spirits");
-const allBottles = await getAllTaxonomy(drink_folder, "bottles");
-const bottles = await getTaxonomy(drink_folder, "bottles");
+const allCategories = await getAllTaxonomy(drink_folder, "categories");
+const categories = await getTaxonomy(drink_folder, "categories");
 const tags = await getTaxonomy(drink_folder, "tags");
 const sortedPosts = sortByDate(posts);
-const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+const totalPages = Math.ceil(posts.length / config.settings.pagination);
+const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+const indexOfLastPost = currentPage * config.settings.pagination;
+const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
+const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+export async function getStaticPaths() {
+  const posts = await getSinglePage(config.settings.drink_folder);
+  const totalPages = Math.ceil(posts.length / config.settings.pagination);
+  const paths = [];
+
+  for (let i = 1; i < totalPages; i++) {
+    paths.push({
+      params: {
+        slug: (i + 1).toString(),
+      },
+    });
+  }
+  return paths;
+}
 ---
 
 <Base
@@ -46,18 +63,16 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
           </div>
           <Pagination
             section={drink_folder}
-            currentPage={1}
+            currentPage={currentPage}
             totalPages={totalPages}
           />
         </div>
 
         <!-- sidebar -->
         <DrinkSidebar
-          spirits={spirits}
-          bottles={bottles}
+          categories={categories}
           tags={tags}
-          allSpirits={allSpirits}
-          allBottles={allBottles}
+          allCategories={allCategories}
         />
       </div>
     </div>
