@@ -37,7 +37,7 @@ Furthermore, your dharma requires all of you. You might have to cut out lesser h
 
 ## Walking the Path
 
-> “How we spend our days is, of course, how we spend our lives”
+> How we spend our days is, of course, how we spend our lives
 
 Committing yourself to your dharma involves rejecting that which would pull you out of it. On the day to day scale, these are small bouts of laziness, and distractions like Netflix, TikTok, etc. But there's a larger scale element too: now and again you’ll come upon opportunities that might, in one way or another, hinder your ability to execute on your dharma. A teacher offered a job as dean, an engineer offered the job of project manager. Finding and sticking to the path of your dharma may require extreme action, sacrifice, or leaps of faith. Sometimes it may require you to fully cut yourself off from other paths of interest.
 

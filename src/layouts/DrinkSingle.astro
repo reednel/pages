@@ -3,12 +3,10 @@ import DrinkCard from "@/components/DrinkCard.astro";
 import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import dateFormat from "@/lib/utils/dateFormat";
 import similerItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 import {
-  FaRegCalendarAlt,
   FaRegFolder,
   FaRegUserCircle,
 } from "react-icons/fa/index.js";
@@ -128,6 +126,7 @@ const { ingredients, instructions }: Recipe = post.data;
               className="social-icons"
               title={title}
               description={description}
+              folder={drink_folder}
               slug={post.slug}
             />
           </div>
@@ -139,7 +138,7 @@ const { ingredients, instructions }: Recipe = post.data;
       similarPosts.length > 0 && (
         <!-- Related posts -->
         <div class="section pb-0">
-          <h2 class="h3 mb-12 text-center">Related Posts</h2>
+          <h2 class="h3 mb-12 text-center">Similar Drinks</h2>
           <div class="row justify-center">
             {
               similarPosts.slice(0, 3).map((post) => (

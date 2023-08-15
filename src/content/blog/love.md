@@ -33,7 +33,7 @@ According to Lewis, Amini, and Lannon, love isn’t just a feeling, but a connec
 
 **Limbic Resonance** is a process by which one can tune into another’s emotional state, and physiologically empathize. It affects us with varying degrees of subtlety. Consider **Mood Contagion**, for example. When you see some stranger laughing, it might brighten you up a bit. But when your best friend or significant other is laughing, it can be hard not to laugh with them. The authors argue that this is part of what gives concerts and movie theaters a special feel. It’s not just the big screen and the sound system, it’s everyone in the same room sharing in an emotion together.
 
-> "A symphony of mutual exchange and internal adaptation whereby two mammals become attuned to each other’s inner states. It is limbic resonance that makes looking into the face of another emotionally responsive creature a multi-layered experience. Instead of seeing a pair of eyes as two bespeckled buttons, when we look into the ocular portals to a limbic brain our vision goes deep: the sensations multiply...When we meet the gaze of another, two nervous systems achieve a palpable and intimate apposition."
+> A symphony of mutual exchange and internal adaptation whereby two mammals become attuned to each other’s inner states. It is limbic resonance that makes looking into the face of another emotionally responsive creature a multi-layered experience. Instead of seeing a pair of eyes as two bespeckled buttons, when we look into the ocular portals to a limbic brain our vision goes deep: the sensations multiply...When we meet the gaze of another, two nervous systems achieve a palpable and intimate apposition.
 
 **Limbic Regulation** is the process of changing another’s physiology and vice versa. There are thousands of physiological parameters, (i.e. blood pressure, immune function, oxygen, sugar, hormone levels). And contrary to prevailing belief, there's evidence that many of these systems are on open loops.
 
@@ -41,11 +41,11 @@ In the 40s, research was conducted on sterile nurseries--institutions for orphan
 
 At birth, the limbic brain is totally unregulated. Emotional responses are socialized, learned by watching and interacting with a parent. Though we're most emotionally plastic in infancy and early childhood, we need stability and healthy connections throughout our lives. Positive limbic regulation is not emotional weakness or immaturity, it's physiological necessity.
 
-> “Because loving is reciprocal physiologic influence, it entails a deeper and more literal connection than most realize. Limbic regulation affords lovers the ability to modulate each other’s emotions, neurophysiology, hormonal status, immune function, sleep rhythms, and stability. If one leaves on a trip, the other may suffer insomnia, a delayed menstrual cycle, a cold that would have been fought off in the fortified state of togetherness.”
+> Because loving is reciprocal physiologic influence, it entails a deeper and more literal connection than most realize. Limbic regulation affords lovers the ability to modulate each other’s emotions, neurophysiology, hormonal status, immune function, sleep rhythms, and stability. If one leaves on a trip, the other may suffer insomnia, a delayed menstrual cycle, a cold that would have been fought off in the fortified state of togetherness.
 
 **Limbic Revision** is the process of changing the structure of the limbic brain. This is the basis for psychotherapy. Significant changes can take years to set in.
 
-> “In a relationship, one mind revises another; one heart changes its partner. This astounding legacy of our combined status as mammals and neural beings is limbic revision: the power to remodel the emotional parts of the people we love, as our Attractors activate certain limbic pathways, and the brain’s inexorable memory mechanism reinforces them. Who we are and who we become depends, in part, on whom we love.”
+> In a relationship, one mind revises another; one heart changes its partner. This astounding legacy of our combined status as mammals and neural beings is limbic revision: the power to remodel the emotional parts of the people we love, as our Attractors activate certain limbic pathways, and the brain’s inexorable memory mechanism reinforces them. Who we are and who we become depends, in part, on whom we love.
 
 ## Loving and Being in Love
 
