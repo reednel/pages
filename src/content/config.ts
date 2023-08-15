@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { array } from "prop-types";
 
 // Post collection schema
 const blogCollection = defineCollection({
@@ -25,9 +26,15 @@ const drinkCollection = defineCollection({
     date: z.date().optional(),
     image: z.string().optional(),
     author: z.string().default("Admin"),
-    categories: z.array(z.string()).default(["others"]),
-    tags: z.array(z.string()).default(["others"]),
+    spirits: z.array(z.string()).default(["none"]),
+    bottles: z.array(z.string()).default(["none"]),
+    tags: z.array(z.string()).default(["none"]),
     draft: z.boolean().optional(),
+    ingredients: z.object({
+      list: z.array(z.string()).optional(),
+      qty: z.array(z.string()).optional(),
+    }).optional(),
+    instructions: z.array(z.string()).optional(),
   }),
 });
 

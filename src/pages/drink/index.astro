@@ -13,8 +13,10 @@ import { getEntryBySlug } from "astro:content";
 const { drink_folder } = config.settings;
 const postIndex = await getEntryBySlug<any, string>(drink_folder, "-index");
 const posts = await getSinglePage(drink_folder);
-const allCategories = await getAllTaxonomy(drink_folder, "categories");
-const categories = await getTaxonomy(drink_folder, "categories");
+const allSpirits = await getAllTaxonomy(drink_folder, "spirits");
+const spirits = await getTaxonomy(drink_folder, "spirits");
+const allBottles = await getAllTaxonomy(drink_folder, "bottles");
+const bottles = await getTaxonomy(drink_folder, "bottles");
 const tags = await getTaxonomy(drink_folder, "tags");
 const sortedPosts = sortByDate(posts);
 const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
@@ -51,9 +53,11 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 
         <!-- sidebar -->
         <DrinkSidebar
-          categories={categories}
+          spirits={spirits}
+          bottles={bottles}
           tags={tags}
-          allCategories={allCategories}
+          allSpirits={allSpirits}
+          allBottles={allBottles}
         />
       </div>
     </div>

@@ -9,7 +9,7 @@ const {
   drink_folder,
 }: { summary_length: number; drink_folder: string } = config.settings;
 const { data } = Astro.props;
-const { title, image, categories } = data.data;
+const { title, image, spirits } = data.data;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
@@ -34,10 +34,10 @@ const { title, image, categories } = data.data;
     <li class="mr-4 inline-block">
       <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
       {
-        categories.map((category: string, index: number) => (
-          <a href={`/drink/categories/${slugify(category)}`}>
+        spirits.map((category: string, index: number) => (
+          <a href={`/drink/spirits/${slugify(category)}`}>
             {humanize(category)}
-            {index !== categories.length - 1 && ","}
+            {index !== spirits.length - 1 && ","}
           </a>
         ))
       }

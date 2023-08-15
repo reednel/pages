@@ -6,25 +6,25 @@ import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 
 const { drink_folder }: { drink_folder: string } = config.settings;
-const categories = await getTaxonomy(drink_folder, "categories");
-const allCategories = await getAllTaxonomy(drink_folder, "categories");
+const spirits = await getTaxonomy(drink_folder, "spirits");
+const allSpirits = await getAllTaxonomy(drink_folder, "spirits");
 ---
 
-<Base title={"Categories"}>
-  <PageHeader title={"Categories"} />
+<Base title={"Spirits"}>
+  <PageHeader title={"Spirits"} />
   <section class="section">
     <div class="container text-center">
       <ul>
         {
-          categories.map((category: string) => {
-            const count = allCategories.filter((c) => c === category).length;
+          spirits.map((spirit: string) => {
+            const count = allSpirits.filter((c) => c === spirit).length;
             return (
               <li class="m-3 inline-block">
                 <a
-                  href={`/drink/categories/${category}`}
+                  href={`/drink/spirits/${spirit}`}
                   class="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark"
                 >
-                  {humanize(category)}{" "}
+                  {humanize(spirit)}{" "}
                   <span class="ml-2 rounded bg-body px-2 dark:bg-darkmode-body">
                     {count}
                   </span>
