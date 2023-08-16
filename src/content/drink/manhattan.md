@@ -2,7 +2,7 @@
 title: "Manhattan"
 meta_title: "Manhattan"
 description: "none"
-image: ""
+image: "/assets/drink/manhattan.jpg"
 author: "Reed Nelson"
 draft: false
 
