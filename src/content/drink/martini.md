@@ -1,30 +1,30 @@
 ---
-title: Old Fashioned
-meta_title: Old Fashioned
+title: Martini
+meta_title: Martini
 author: Reed Nelson
 draft: false
 description: description
-image: /assets/drink/old-fashioned.jpg
+image: /assets/drink/martini.jpg
 
-spirits: [whiskey]
-bottles: [ango]
+spirits: [gin]
+bottles: [dry-vermouth, orange-bitters]
 tags: [classic, spirit-forward]
 
 ingredients:
   list:
-    - Whiskey
-    - Angostura bitters
-    - Agave Syrup
-    - Orange
+    - Gin
+    - Dry Vermouth
+    - Orange bitters
+    - Lemon
   qty:
     - 2 oz
-    - 4 dashes 
-    - 1/4 oz
+    - 1/2 oz
+    - 1 dash
     - swath
 
 instructions:
   - Combine all ingredients in a mixing glass with ice.
   - Stir until well chilled.
   - Serve neat or on a rock.
-  - Express the orange swath over the drink.
+  - Express the lemon swath over the drink.
 ---

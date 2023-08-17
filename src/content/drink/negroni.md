@@ -1,14 +1,14 @@
 ---
-title: Drink
-meta_title: Drink
+title: Negroni
+meta_title: Negroni
 author: Reed Nelson
-draft: true
+draft: false
 description: description
-image: /assets/drink/.jpg
+image: /assets/drink/negroni.jpg
 
-spirits: [spirit]
-bottles: [bottle1, bottle2]
-tags: [tag1, tag2]
+spirits: [gin]
+bottles: [campari, sweet-vermouth]
+tags: [classic, spirit-forward]
 
 ingredients:
   list:

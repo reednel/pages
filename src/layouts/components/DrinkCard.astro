@@ -1,47 +1,56 @@
 ---
 import config from "@/config/config.json";
-import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
-import { FaRegFolder } from "react-icons/fa/index.js";
 
 const {
-  summary_length,
   drink_folder,
-}: { summary_length: number; drink_folder: string } = config.settings;
+}: { drink_folder: string } = config.settings;
 const { data } = Astro.props;
-const { title, image, spirits } = data.data;
+const { title, image } = data.data;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
-  {
-    image && (
-      <Image
-        class="mb-6 w-full rounded"
-        src={image}
-        alt={title}
-        width={1920}
-        height={1080}
-        format="webp"
-      />
-    )
-  }
-  <h4 class="mb-3">
-    <a href={`/${drink_folder}/${data.slug}`}>
-      {title}
-    </a>
-  </h4>
-  <ul class="mb-4">
-    <li class="mr-4 inline-block">
-      <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
+  <a href={`/${drink_folder}/${data.slug}`}>
+    <div>
       {
-        spirits.map((category: string, index: number) => (
-          <a href={`/drink/spirits/${slugify(category)}`}>
-            {humanize(category)}
-            {index !== spirits.length - 1 && ","}
-          </a>
-        ))
-      }
-    </li>
-  </ul>
-  <p class="mb-6">{plainify(data.body?.slice(0, Number(summary_length)))}</p>
+      image && (
+        <Image
+          class="mb-2 w-full rounded"
+          src={image}
+          alt={title}
+          width={1280}
+          height={720}
+          format="webp"
+        />
+      )
+    }
+    <h4 class="mb-3">
+      {title}
+    </h4>
+    </div>
+  </a>
 </div>
+
+<!-- 
+  <div class=" bg-theme-light dark:bg-darkmode-theme-light rounded">
+  <a href={`/${drink_folder}/${data.slug}`}>
+    <div>
+      {
+        image && (
+          <Image
+            class="mb-2 w-full rounded"
+            src={image}
+            alt={title}
+            width={1920}
+            height={1080}
+            format="webp"
+          />
+        )
+      }
+      <h4 class="mb-3 pl-3 pb-2">
+        {title}
+      </h4>
+    </div>
+  </a>
+</div>
+ -->

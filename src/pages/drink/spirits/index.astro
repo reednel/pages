@@ -2,7 +2,6 @@
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
-import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 
 const { drink_folder }: { drink_folder: string } = config.settings;
@@ -24,7 +23,7 @@ const allSpirits = await getAllTaxonomy(drink_folder, "spirits");
                   href={`/drink/spirits/${spirit}`}
                   class="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark"
                 >
-                  {humanize(spirit)}{" "}
+                  {spirit}{" "}
                   <span class="ml-2 rounded bg-body px-2 dark:bg-darkmode-body">
                     {count}
                   </span>

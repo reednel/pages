@@ -1,14 +1,14 @@
 ---
-title: Drink
-meta_title: Drink
+title: Whiskey Sour
+meta_title: Whiskey Sour
 author: Reed Nelson
-draft: true
+draft: false
 description: description
-image: /assets/drink/.jpg
+image: /assets/drink/whiskey-sour.jpg
 
-spirits: [spirit]
-bottles: [bottle1, bottle2]
-tags: [tag1, tag2]
+spirits: [Whiskey]
+bottles: []
+tags: [classic, sour]
 
 ingredients:
   list:

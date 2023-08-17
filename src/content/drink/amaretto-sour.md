@@ -1,10 +1,10 @@
 ---
-title: Drink
-meta_title: Drink
+title: Amaretto Sour
+meta_title: Amaretto Sour
 author: Reed Nelson
-draft: true
+draft: false
 description: description
-image: /assets/drink/.jpg
+image: /assets/drink/amaretto-sour.jpg
 
 spirits: [spirit]
 bottles: [bottle1, bottle2]

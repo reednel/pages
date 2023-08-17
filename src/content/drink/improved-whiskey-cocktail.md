@@ -1,12 +1,12 @@
 ---
-title: Drink
-meta_title: Drink
+title: Improved Whiskey Cocktail
+meta_title: Improved Whiskey Cocktail
 author: Reed Nelson
-draft: true
+draft: false
 description: description
-image: /assets/drink/.jpg
+image: /assets/drink/improved-whiskey-cocktail.jpg
 
-spirits: [spirit]
+spirits: [whiskey]
 bottles: [bottle1, bottle2]
 tags: [tag1, tag2]
 

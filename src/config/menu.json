@@ -15,6 +15,10 @@
     {
       "name": "Blog",
       "url": "/blog"
+    },
+    {
+      "name": "Drinks",
+      "url": "/drink"
     }
   ],
   "footer": [
