@@ -1,13 +1,13 @@
 ---
-title: Drink
-meta_title: Drink
+title: New York Sour
+meta_title: New York Sour
 author: Reed Nelson
-draft: true
+draft: false
 description: description
-image: /assets/drink/.jpg
+image: /assets/drink/new-york-sour.jpg
 
-spirits: [spirit]
-bottles: [bottle1, bottle2]
+spirits: [whiskey]
+bottles: [red-wine, bottle2]
 tags: [tag1, tag2]
 
 ingredients:

@@ -1,14 +1,14 @@
 ---
-title: Drink
-meta_title: Drink
+title: Rosemary Sour
+meta_title: Rosemary Sour
 author: Reed Nelson
-draft: true
+draft: false
 description: description
-image: /assets/drink/.jpg
+image: /assets/drink/rosemary-sour.jpg
 
-spirits: [spirit]
-bottles: [bottle1, bottle2]
-tags: [tag1, tag2]
+spirits: [whiskey]
+bottles: []
+tags: [sour]
 
 ingredients:
   list:

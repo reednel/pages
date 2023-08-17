@@ -4,11 +4,12 @@ import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import similerItems from "@/lib/utils/similarItems";
-import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
+import { markdownify, slugify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 import {
-  FaRegFolder,
-  FaRegUserCircle,
+  FaWineBottle,
+  FaVial,
+  FaNewspaper,
 } from "react-icons/fa/index.js";
 
 interface Recipe {
@@ -33,112 +34,141 @@ const { ingredients, instructions }: Recipe = post.data;
   <div class="container">
     <div class="row justify-center">
       <article class="lg:col-10">
-        {
-          image && (
-            <div class="mb-10">
-              <Image
-                src={image}
-                height={500}
-                width={1200}
-                alt={title}
-                class="w-full rounded"
-                format="webp"
-              />
-            </div>
-          )
-        }
         <h1 set:html={markdownify(title)} class="mb-4" />
-        <ul class="mb-4">
-          <li class="mr-4 inline-block">
-            <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-            {humanize(author)}
-          </li>
-          <li class="mr-4 inline-block">
-            <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
+
+        <div class="row">
+          <div class="lg:col-8 mb-8">
             {
-              spirits.map((spirit: string, index: number) => (
-                <a href={`/drink/spirits/${slugify(spirit)}`}>
-                  {spirit}
-                  {index !== spirits.length - 1 && ","}
-                </a>
-              ))
+              image && (
+                <Image
+                  src={image}
+                  width={1920}
+                  height={1080}
+                  alt={title}
+                  class="w-full rounded-lg"
+                  format="webp"
+                />
+              )
             }
-          </li>
-        </ul>
-        <!-- <div class="content mb-10">
-          <Content />
-        </div> -->
+          </div>
+          <div class="lg:col-4 mb-8">
+            <section class={`section-sm h-full bg-theme-light dark:bg-darkmode-theme-light rounded-lg mb-4`}>
+              <div class="container -my-10">
+                <h2 set:html="Tags" class="mb-4" />
+                <ul class="mb-4">
+                  <!-- Spirits -->
+                  <li class="mr-4">
+                    <FaWineBottle className={"mr-2 -mt-1 inline-block"} />
+                    {
+                      spirits.map((spirit: string, index: number) => (
+                        <a
+                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                          href={`/drink/spirits/${spirit}`}
+                        >
+                          {spirit}
+                        </a>
+                      ))
+                    }
+                  </li>
+                  <!-- Bottles -->
+                  <li class="mr-4">
+                    <FaVial className={"mr-2 -mt-1 inline-block"} />
+                    {
+                      bottles.map((bottle: string, index: number) => (
+                        <a
+                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                          href={`/drink/bottles/${bottle}`}
+                        >
+                          {bottle}
+                        </a>
+                      ))
+                    }
+                  </li>
+                  <!-- Tags -->
+                  <li class="mr-4">
+                    <FaNewspaper className={"mr-2 -mt-1 inline-block"} />
+                    {
+                      tags.map((tag: string, index: number) => (
+                        <a
+                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                          href={`/drink/tags/${tag}`}
+                        >
+                          {tag}
+                        </a>
+                      ))
+                    }
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        
         <!-- Ingredients -->
-        <section class={`section-sm bg-gradient rounded-lg`}>
-          <div class="container">
+        <section class={`section-sm bg-theme-light dark:bg-darkmode-theme-light rounded-lg mb-4`}>
+          <div class="container -my-10">
             <div class="row items-center justify-between">
               <div class={`md:col-7 lg:col-6 md:order-1`}>
                 <h2 set:html="Ingredients" class="mb-4" />
-                <ul>
-                  {ingredients.list.map((bullet: string) => (
-                    <li class="relative mb-4 pl-6">
-                      <span set:html={markdownify(bullet)} />
-                    </li>
-                  ))}
-                </ul>
+                <div class="grid grid-cols-2 gap-4">
+                  <ul class="list-disc list-inside">
+                    {ingredients.list.map((bullet: string) => (
+                      <li class="relative mb-2 pl-6">
+                        <span set:html={markdownify(bullet)} />
+                      </li>
+                    ))}
+                  </ul>
+                  <ul>
+                    {ingredients.qty.map((qty: string) => (
+                      <li class="relative mb-2 pl-6">
+                        <span set:html={markdownify(qty)} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
         <!-- Instructions -->
-        <section class={`section-sm bg-gradient rounded-lg`}>
-          <div class="container">
+        <section class={`section-sm bg-theme-light dark:bg-darkmode-theme-light rounded-lg mb-4`}>
+          <div class="container -my-10">
             <div class="row items-center justify-between">
               <div class={`md:col-7 lg:col-6 md:order-1`}>
                 <h2 set:html="Instructions" class="mb-4" />
-                <ul>
+                <ol class="list-decimal">
                   {instructions.map((bullet: string) => (
-                    <li class="relative mb-4 pl-6">
+                    <li class="relative mb-2 pl-6 list-inside">
                       <span set:html={markdownify(bullet)} />
                     </li>
                   ))}
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
         </section>
-        <div class="row items-start justify-between">
-          <div class="mb-10 flex items-center lg:col-5 lg:mb-0">
-            <h5 class="mr-3">Tags :</h5>
-            <ul>
-              {
-                tags.map((tag: string) => (
-                  <li class="inline-block">
-                    <a
-                      class="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                      href={`drink/tags/${slugify(tag)}`}
-                    >
-                      {tag}
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-          <div class="flex items-center lg:col-4">
-            <h5 class="mr-3">Share :</h5>
-            <Share
-              className="social-icons"
-              title={title}
-              description={description}
-              folder={drink_folder}
-              slug={post.slug}
-            />
-          </div>
+
+        <!-- Share -->
+        <div class="flex items-center justify-end">
+          <h5 class="mr-3">Share:</h5>
+          <Share
+            className="social-icons"
+            title={title}
+            description={description}
+            folder={drink_folder}
+            slug={post.slug}
+          />
         </div>
       </article>
     </div>
 
+    <!-- Similar Drinks -->
     {
       similarPosts.length > 0 && (
         <!-- Related posts -->
         <div class="section pb-0">
-          <h2 class="h3 mb-12 text-center">Similar Drinks</h2>
+          <h2 class="h3 mb-8 text-center">Similar Drinks</h2>
           <div class="row justify-center">
             {
               similarPosts.slice(0, 3).map((post) => (
@@ -151,4 +181,5 @@ const { ingredients, instructions }: Recipe = post.data;
         </div>
       )
     }
+  </div>
 </section>

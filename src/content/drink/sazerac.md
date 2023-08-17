@@ -1,0 +1,35 @@
+---
+title: Sazerac
+meta_title: Sazerac
+author: Reed Nelson
+draft: false
+description: description
+image: /assets/drink/sazerac.jpg
+
+spirits: [whiskey, cognac]
+bottles: [peychauds, absinthe]
+tags: [classic, spirit-forward]
+
+ingredients:
+  list:
+    - Rye
+    - Cognac
+    - Peychaud's bitters
+    - Absinthe
+    - Simple syrup
+    - Lemon
+  qty:
+    - 1 oz
+    - 1 oz
+    - 4 dashes
+    - rinse
+    - 1/4 oz
+    - 1 swath
+
+instructions:
+  - Wash the serving glass with Absinthe.
+  - Combine all ingredients in a mixing glass with ice.
+  - Stir until well chilled.
+  - Serve neat.
+  - Express the lemon swath over the drink.
+---
