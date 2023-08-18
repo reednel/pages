@@ -27,7 +27,7 @@ ingredients:
     - 1 swath
 
 instructions:
-  - Wash the serving glass with Absinthe.
+  - Rinse the serving glass with Absinthe.
   - Combine all other ingredients in a mixing glass with ice.
   - Stir until well chilled.
   - Serve neat.

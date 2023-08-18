@@ -1,0 +1,33 @@
+---
+title: Vieux Carré
+meta_title: Vieux Carré
+author: Reed Nelson
+draft: true
+description: Carré recipe.
+image: /assets/drink/vieux-carre.jpg
+
+spirits: [whiskey, cognac]
+bottles: [ango, peychauds, sweet-vermouth, benedictine]
+tags: [classic]
+
+ingredients:
+  list:
+    - Rye
+    - Cognac
+    - Sweet vermouth
+    - Benedictine
+    - Angostura bitters
+    - Peychaud's bitters
+  qty:
+    - 3/4 oz
+    - 3/4 oz
+    - 3/4 oz
+    - 1/3 oz
+    - 1 dash
+    - 2 dashes
+
+instructions:
+  - Combine all ingredients in a mixing glass with ice.
+  - Stir until well chilled.
+  - Serve neat or on a rock.
+---

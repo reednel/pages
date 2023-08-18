@@ -1,0 +1,27 @@
+---
+title: Boulevardier
+meta_title: Boulevardier
+author: Reed Nelson
+draft: true
+description: Boulevardier recipe.
+image: /assets/drink/boulevardier.jpg
+
+spirits: [whiskey]
+bottles: [sweet-vermouth, campari]
+tags: [classic, spirit-forward, bitter]
+
+ingredients:
+  list:
+    - Bourbon
+    - Sweet vermouth
+    - Campari
+  qty:
+    - 1 1/2 oz
+    - 3/4 oz
+    - 3/4 oz
+
+instructions:
+  - Combine all ingredients in a mixing glass with ice.
+  - Stir until well chilled.
+  - Serve neat or on a rock.
+---

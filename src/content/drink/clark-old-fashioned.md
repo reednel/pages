@@ -1,0 +1,30 @@
+---
+title: Clark Old Fashioned
+meta_title: Clark Old Fashioned
+author: Reed Nelson
+draft: true
+description: Clark Old Fashioned recipe.
+image: /assets/drink/clark-old-fashioned.jpg
+
+spirits: [brandy]
+bottles: [ango]
+tags: []
+
+ingredients:
+  list:
+    - Brandy
+    - Angostura bitters
+    - Grenadine
+    - Sprite
+  qty:
+    - 2 oz
+    - 4 dashes
+    - some
+    - wash
+
+instructions:
+  - Combine all ingredients in a mixing glass with ice.
+  - Stir until well chilled.
+  - Serve neat or on a rock.
+  - Wash with Sprite.
+---

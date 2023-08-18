@@ -19,7 +19,7 @@ ingredients:
   qty:
     - 2 oz
     - 1 oz
-    - 0.75+ oz
+    - 1 oz
     - "1"
 
 instructions:

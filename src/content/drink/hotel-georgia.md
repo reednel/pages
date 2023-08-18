@@ -1,28 +1,28 @@
 ---
-title: Amaretto Sour
-meta_title: Amaretto Sour
+title: Hotel Georgia
+meta_title: Hotel Georgia
 author: Reed Nelson
-draft: false
-description: Amaretto Sour recipe.
-image: /assets/drink/amaretto-sour.jpg
+draft: true
+description: Hotel Georgia recipe.
+image: /assets/drink/hotel-georgia.jpg
 
-spirits: [whiskey]
-bottles: [amaretto]
-tags: [sour]
+spirits: [gin]
+bottles: []
+tags: []
 
 ingredients:
   list:
-    - Bourbon 
-    - Amaretto
+    - Gin
     - Lemon juice
     - Orgeat
     - Egg white
+    - Orange flower water
   qty:
-    - 1 oz
-    - 1 1/2 oz
-    - 1 oz
+    - 2 oz
+    - 1/2 oz
     - 1/2 oz
     - "1"
+    - 10 drops
 
 instructions:
   - Combine all ingredients in a shaking tin.

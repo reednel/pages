@@ -4,7 +4,7 @@ import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import similerItems from "@/lib/utils/similarItems";
-import { markdownify, slugify } from "@/lib/utils/textConverter";
+import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 import {
   FaWineBottle,
@@ -24,8 +24,7 @@ const { drink_folder } = config.settings;
 const posts = await getSinglePage(drink_folder);
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
-const { Content } = await post.render();
-const { title, description, author, image, spirits, bottles, tags } = post.data;
+const { title, description, image, spirits, bottles, tags } = post.data;
 
 const { ingredients, instructions }: Recipe = post.data;
 ---
@@ -36,6 +35,7 @@ const { ingredients, instructions }: Recipe = post.data;
       <article class="lg:col-10">
         <h1 set:html={markdownify(title)} class="mb-4" />
 
+        <!-- Categories -->
         <div class="row">
           <div class="lg:col-8 mb-8">
             {
@@ -57,47 +57,59 @@ const { ingredients, instructions }: Recipe = post.data;
                 <h2 set:html="Tags" class="mb-4" />
                 <ul class="mb-4">
                   <!-- Spirits -->
-                  <li class="mr-4">
-                    <FaWineBottle className={"mr-2 -mt-1 inline-block"} />
-                    {
-                      spirits.map((spirit: string, index: number) => (
-                        <a
-                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/drink/spirits/${spirit}`}
-                        >
-                          {spirit}
-                        </a>
-                      ))
-                    }
-                  </li>
+                  {
+                    spirits.length > 0 && (
+                      <li class="mr-4">
+                        <FaWineBottle className={"mr-2 -mt-1 inline-block"} />
+                        {
+                          spirits.map((spirit: string, index: number) => (
+                            <a
+                              class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                              href={`/drink/spirits/${spirit}`}
+                            >
+                              {spirit}
+                            </a>
+                          ))
+                        }
+                      </li>
+                    )
+                  }
                   <!-- Bottles -->
-                  <li class="mr-4">
-                    <FaVial className={"mr-2 -mt-1 inline-block"} />
-                    {
-                      bottles.map((bottle: string, index: number) => (
-                        <a
-                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/drink/bottles/${bottle}`}
-                        >
-                          {bottle}
-                        </a>
-                      ))
-                    }
-                  </li>
+                  {
+                    bottles.length > 0 && (
+                      <li class="mr-4">
+                        <FaVial className={"mr-2 -mt-1 inline-block"} />
+                        {
+                          bottles.map((bottle: string, index: number) => (
+                            <a
+                              class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                              href={`/drink/bottles/${bottle}`}
+                            >
+                              {bottle}
+                            </a>
+                          ))
+                        }
+                      </li>
+                    )
+                  }
                   <!-- Tags -->
-                  <li class="mr-4">
-                    <FaNewspaper className={"mr-2 -mt-1 inline-block"} />
-                    {
-                      tags.map((tag: string, index: number) => (
-                        <a
-                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/drink/tags/${tag}`}
-                        >
-                          {tag}
-                        </a>
-                      ))
-                    }
-                  </li>
+                  {
+                    tags.length > 0 && (
+                      <li class="mr-4">
+                        <FaNewspaper className={"mr-2 -mt-1 inline-block"} />
+                        {
+                          tags.map((tag: string, index: number) => (
+                            <a
+                              class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                              href={`/drink/tags/${tag}`}
+                            >
+                              {tag}
+                            </a>
+                          ))
+                        }
+                      </li>
+                    )
+                  }
                 </ul>
               </div>
             </section>
@@ -150,7 +162,7 @@ const { ingredients, instructions }: Recipe = post.data;
         </section>
 
         <!-- Share -->
-        <div class="flex items-center justify-end">
+        <div class="flex items-center justify-center lg:justify-end">
           <h5 class="mr-3">Share:</h5>
           <Share
             className="social-icons"
