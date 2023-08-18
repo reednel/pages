@@ -6,19 +6,27 @@ draft: false
 description: description
 image: /assets/drink/amaretto-sour.jpg
 
-spirits: [spirit]
-bottles: [bottle1, bottle2]
-tags: [tag1, tag2]
+spirits: [whiskey]
+bottles: [amaretto]
+tags: [sour]
 
 ingredients:
   list:
-    - ingredient1
-    - ingredient2
+    - Bourbon 
+    - Amaretto
+    - Lemon juice
+    - Orgeat
+    - Egg white
   qty:
-    - qty1
-    - qty2 
+    - 1 oz
+    - 1.5 oz
+    - 1 oz
+    - 0.5 oz
+    - "1"
 
 instructions:
-  - Step1
-  - Step2
+  - Combine all ingredients in a shaking tin.
+  - Dry shake (optional).
+  - Add ice, shake.
+  - Strain into a glass.
 ---

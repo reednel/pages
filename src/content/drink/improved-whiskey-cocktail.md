@@ -7,18 +7,28 @@ description: description
 image: /assets/drink/improved-whiskey-cocktail.jpg
 
 spirits: [whiskey]
-bottles: [bottle1, bottle2]
-tags: [tag1, tag2]
+bottles: [maraschino, absinthe]
+tags: [classic, spirit-forward]
 
 ingredients:
   list:
-    - ingredient1
-    - ingredient2
+    - Rye (or Bourbon)
+    - Maraschino liqueur
+    - Simple syrup
+    - Absinthe
+    - Angostura bitters
+    - Peychaud's bitters
   qty:
-    - qty1
-    - qty2 
+    - 2 oz
+    - 1/4 oz
+    - 1/4 oz
+    - rinse
+    - 2 dashes
+    - 2 dashes
 
 instructions:
-  - Step1
-  - Step2
+  - Wash the serving glass with Absinthe.
+  - Combine all other ingredients in a mixing glass with ice.
+  - Stir until well chilled.
+  - Serve neat.
 ---

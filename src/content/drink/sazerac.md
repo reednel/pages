@@ -28,7 +28,7 @@ ingredients:
 
 instructions:
   - Wash the serving glass with Absinthe.
-  - Combine all ingredients in a mixing glass with ice.
+  - Combine all other ingredients in a mixing glass with ice.
   - Stir until well chilled.
   - Serve neat.
   - Express the lemon swath over the drink.

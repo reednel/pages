@@ -7,18 +7,27 @@ description: description
 image: /assets/drink/new-york-sour.jpg
 
 spirits: [whiskey]
-bottles: [red-wine, bottle2]
-tags: [tag1, tag2]
+bottles: [red-wine]
+tags: [sour]
 
 ingredients:
   list:
-    - ingredient1
-    - ingredient2
+    - Rye 
+    - Red Wine
+    - Lemon juice
+    - Simple syrup
+    - Egg white
   qty:
-    - qty1
-    - qty2 
+    - 2 oz
+    - 0.5 oz
+    - 1 oz
+    - 0.5 oz
+    - "1"
 
 instructions:
-  - Step1
-  - Step2
+  - Combine all ingredients, except the wine, in a shaking tin.
+  - Dry shake (optional).
+  - Add ice, shake.
+  - Strain into a glass.
+  - Using a spoon, float the wine on top as best as possible.
 ---

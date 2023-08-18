@@ -12,13 +12,16 @@ tags: [classic, spirit-forward]
 
 ingredients:
   list:
-    - ingredient1
-    - ingredient2
+    - Gin
+    - Sweet Vermouth
+    - Campari
   qty:
-    - qty1
-    - qty2 
+    - 1 oz
+    - 1 oz
+    - 1 oz 
 
 instructions:
-  - Step1
-  - Step2
+  - Combine all ingredients in a mixing glass with ice.
+  - Stir until well chilled.
+  - Serve neat or on a rock.
 ---
