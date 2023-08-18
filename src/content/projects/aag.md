@@ -1,7 +1,7 @@
 ---
 title: AAG Key Exchange Implementation
 description: this is meta description
-technologies: ["Python", "SageMath"]
+technologies: [Python, SageMath]
 order: 2
 social:
   - name: github

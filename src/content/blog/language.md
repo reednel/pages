@@ -1,12 +1,11 @@
 ---
-title: "Topics in Language and Meaning"
+title: Topics in Language and Meaning
 meta_title: ""
-description: "This post is a crash course on the introductory topics in the Philosophy of Language and Meaning. If you're a natural language speaker, then in a sense, you're already an expert on these topics!"
+description: This post is a crash course on the introductory topics in the Philosophy of Language and Meaning. If you're a natural language speaker, then in a sense, you're already an expert on these topics!
 date: 2021-04-04T05:00:00Z
-image: ""
-categories: ["Philosophy"]
-author: "Reed Nelson"
-tags: ["language"]
+categories: [Philosophy]
+author: Reed Nelson
+tags: [language]
 complexity: 1.2
 draft: false
 ---

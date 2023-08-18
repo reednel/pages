@@ -1,12 +1,11 @@
 ---
-title: "Fun Problems in Number Theory"
+title: Fun Problems in Number Theory
 meta_title: ""
-description: "none"
+description: none
 date: 2023-08-07T05:00:00Z
-image: ""
-categories: ["Mathematics"]
-author: "Reed Nelson"
-tags: ["math", "puzzles"]
+categories: [Mathematics]
+author: Reed Nelson
+tags: [math, puzzles]
 complexity: 0
 draft: true
 ---

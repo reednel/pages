@@ -1,7 +1,7 @@
 ---
 title: De Bruijn Tools
 description: this is meta description
-technologies: ["Java"]
+technologies: [Java]
 order: 3
 social:
   - name: github

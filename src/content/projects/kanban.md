@@ -1,7 +1,7 @@
 ---
 title: Kanban Manager
 description: this is meta description
-technologies: ["C#", "WinForms", "SQL"]
+technologies: [C#, WinForms, SQL]
 order: 6
 social:
   - name: github

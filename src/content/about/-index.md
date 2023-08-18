@@ -1,8 +1,8 @@
 ---
-title: "Reed Nelson"
-meta_title: "About"
-description: "this is meta description"
-image: "/assets/about/reed.jpg"
+title: Reed Nelson
+meta_title: About
+description: this is meta description
+image: /assets/about/reed.jpg
 draft: false
 ---
 

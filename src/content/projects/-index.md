@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: Projects
 meta_title: ""
-description: "this is meta description"
+description: this is meta description
 ---

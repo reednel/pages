@@ -1,12 +1,11 @@
 ---
-title: "The Will to Power"
+title: The Will to Power
 meta_title: ""
-description: "Friedrich Nietzsche is one of the most significant philosophers of all time. Here we discuss Nietzsche's invigorating and liberating philosophy for living."
+description: Friedrich Nietzsche is one of the most significant philosophers of all time. Here we discuss Nietzsche's invigorating and liberating philosophy for living.
 date: 2021-09-25T05:00:00Z
-image: ""
-categories: ["Philosophy"]
-author: "Reed Nelson"
-tags: ["purpose", "power", "nietzsche"]
+categories: [Philosophy]
+author: Reed Nelson
+tags: [purpose, power, nietzsche]
 complexity: 1.1
 draft: false
 ---

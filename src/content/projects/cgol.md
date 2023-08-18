@@ -1,7 +1,7 @@
 ---
 title: Conway's Game of Life
 description: this is meta description
-technologies: ["Java", "JavaFX"]
+technologies: [Java, JavaFX]
 order: 8
 social:
   - name: github
