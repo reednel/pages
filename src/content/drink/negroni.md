@@ -3,7 +3,7 @@ title: Negroni
 meta_title: Negroni
 author: Reed Nelson
 draft: false
-description: description
+description: Negroni recipe.
 image: /assets/drink/negroni.jpg
 
 spirits: [gin]

@@ -1,6 +1,5 @@
 ---
 title: "MiNAA: Microbiome Network Alignment Algorithm"
-description: this is meta description
 technologies: [C, C++, R]
 order: 1
 social:

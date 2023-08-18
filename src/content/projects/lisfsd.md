@@ -1,6 +1,5 @@
 ---
 title: LatinxInStat & ForensicStat Databases
-description: this is meta description
 technologies: [Javascript, React, MySQL, OAuth]
 order: 4
 social:

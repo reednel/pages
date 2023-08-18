@@ -1,6 +1,5 @@
 ---
 title: De Bruijn Tools
-description: this is meta description
 technologies: [Java]
 order: 3
 social:

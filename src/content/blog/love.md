@@ -1,6 +1,6 @@
 ---
 title: The Psychology of Love
-meta_title: ""
+meta_title: The Psychology of Love
 description: In this post, we discuss a General Theory of Love, which makes bold and uplifting claims about the power of the emotional mind. Whether or not the theory is completely true, there are valuable ideas to be gleaned.
 date: 2020-02-14T05:00:00Z
 categories: [Psychology]

@@ -3,7 +3,7 @@ title: Improved Whiskey Cocktail
 meta_title: Improved Whiskey Cocktail
 author: Reed Nelson
 draft: false
-description: description
+description: Improved Whiskey Cocktail recipe.
 image: /assets/drink/improved-whiskey-cocktail.jpg
 
 spirits: [whiskey]

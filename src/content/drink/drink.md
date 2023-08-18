@@ -3,7 +3,7 @@ title: Drink
 meta_title: Drink
 author: Reed Nelson
 draft: true
-description: description
+description: recipe.
 image: /assets/drink/.jpg
 
 spirits: [spirit]

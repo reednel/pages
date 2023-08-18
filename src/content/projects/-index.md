@@ -1,5 +1,5 @@
 ---
 title: Projects
-meta_title: ""
-description: this is meta description
+meta_title: Projects
+description: Reed Nelson's projects.
 ---

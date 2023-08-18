@@ -3,7 +3,7 @@ title: Martini
 meta_title: Martini
 author: Reed Nelson
 draft: false
-description: description
+description: Martini recipe.
 image: /assets/drink/martini.jpg
 
 spirits: [gin]

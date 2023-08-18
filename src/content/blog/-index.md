@@ -1,5 +1,5 @@
 ---
 title: Blog Posts
-meta_title: ""
-description: this is meta description
+meta_title: Blog
+description: Reed Nelson's blog.
 ---

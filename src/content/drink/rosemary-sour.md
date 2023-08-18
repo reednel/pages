@@ -3,7 +3,7 @@ title: Rosemary Sour
 meta_title: Rosemary Sour
 author: Reed Nelson
 draft: false
-description: description
+description: Rosemary Sour recipe.
 image: /assets/drink/rosemary-sour.jpg
 
 spirits: [whiskey]

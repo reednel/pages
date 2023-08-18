@@ -3,7 +3,7 @@ title: New York Sour
 meta_title: New York Sour
 author: Reed Nelson
 draft: false
-description: description
+description: New York Sour recipe.
 image: /assets/drink/new-york-sour.jpg
 
 spirits: [whiskey]
