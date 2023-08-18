@@ -12,13 +12,19 @@ tags: [sour]
 
 ingredients:
   list:
-    - ingredient1
-    - ingredient2
+    - Rye 
+    - Lemon juice
+    - Rosemary syrup
+    - Egg white
   qty:
-    - qty1
-    - qty2 
+    - 2 oz
+    - 1 oz
+    - 0.75+ oz
+    - "1"
 
 instructions:
-  - Step1
-  - Step2
+  - Combine all ingredients in a shaking tin.
+  - Dry shake (optional).
+  - Add ice, shake.
+  - Strain into a glass.
 ---
