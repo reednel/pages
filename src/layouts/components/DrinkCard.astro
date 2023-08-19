@@ -11,6 +11,31 @@ const { title, image } = data.data;
 
 <div class="bg-body dark:bg-darkmode-body">
   <a href={`/${drink_folder}/${data.slug}`}>
+    <div class="relative">
+      {
+        image && (
+          <Image
+            class="mb-2 w-full rounded"
+            src={image}
+            alt={title}
+            width={1280}
+            height={720}
+            format="webp"
+          />
+        )
+      }
+      <div class="bg-theme-light bg-opacity-60 dark:bg-darkmode-theme-light dark:bg-opacity-60 rounded absolute bottom-0 px-2 py-1">
+        <h4 class="opacity-60 dark:opacity-60 font-normal">
+          {title}
+        </h4>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+  <!-- <div class="bg-body dark:bg-darkmode-body">
+  <a href={`/${drink_folder}/${data.slug}`}>
     <div>
       {
       image && (
@@ -29,28 +54,4 @@ const { title, image } = data.data;
     </h4>
     </div>
   </a>
-</div>
-
-<!-- 
-  <div class=" bg-theme-light dark:bg-darkmode-theme-light rounded">
-  <a href={`/${drink_folder}/${data.slug}`}>
-    <div>
-      {
-        image && (
-          <Image
-            class="mb-2 w-full rounded"
-            src={image}
-            alt={title}
-            width={1920}
-            height={1080}
-            format="webp"
-          />
-        )
-      }
-      <h4 class="mb-3 pl-3 pb-2">
-        {title}
-      </h4>
-    </div>
-  </a>
-</div>
- -->
+</div> -->

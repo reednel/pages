@@ -6,11 +6,6 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import similerItems from "@/lib/utils/similarItems";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
-import {
-  FaWineBottle,
-  FaVial,
-  FaNewspaper,
-} from "react-icons/fa/index.js";
 
 interface Recipe {
   ingredients: {
@@ -35,7 +30,6 @@ const { ingredients, instructions }: Recipe = post.data;
       <article class="lg:col-10">
         <h1 set:html={markdownify(title)} class="mb-4" />
 
-        <!-- Categories -->
         <div class="row">
           <div class="lg:col-8 mb-8">
             {
@@ -51,16 +45,16 @@ const { ingredients, instructions }: Recipe = post.data;
               )
             }
           </div>
+          <!-- Categories -->
           <div class="lg:col-4 mb-8">
-            <section class={`section-sm h-full bg-theme-light dark:bg-darkmode-theme-light rounded-lg mb-4`}>
-              <div class="container -my-10">
-                <h2 set:html="Tags" class="mb-4" />
-                <ul class="mb-4">
-                  <!-- Spirits -->
+            <section class={`section-sm h-full bg-theme-light dark:bg-darkmode-theme-light rounded-lg`}>
+              <div class="container -my-14">
+                <h3 set:html="Tags" class="mb-4" />
+                <!-- Spirits -->
+                <ul>
                   {
                     spirits.length > 0 && (
                       <li class="mr-4">
-                        <FaWineBottle className={"mr-2 -mt-1 inline-block"} />
                         {
                           spirits.map((spirit: string, index: number) => (
                             <a
@@ -72,13 +66,15 @@ const { ingredients, instructions }: Recipe = post.data;
                           ))
                         }
                       </li>
+                      <hr class="my-2">
                     )
                   }
-                  <!-- Bottles -->
+                </ul>
+                <!-- Bottles -->
+                <ul>
                   {
                     bottles.length > 0 && (
                       <li class="mr-4">
-                        <FaVial className={"mr-2 -mt-1 inline-block"} />
                         {
                           bottles.map((bottle: string, index: number) => (
                             <a
@@ -90,13 +86,15 @@ const { ingredients, instructions }: Recipe = post.data;
                           ))
                         }
                       </li>
+                      <hr class="my-2">
                     )
                   }
-                  <!-- Tags -->
+                </ul>
+                <!-- Tags -->
+                <ul>
                   {
                     tags.length > 0 && (
                       <li class="mr-4">
-                        <FaNewspaper className={"mr-2 -mt-1 inline-block"} />
                         {
                           tags.map((tag: string, index: number) => (
                             <a
