@@ -2,7 +2,7 @@
 title: Trinidad Sour
 meta_title: Trinidad Sour
 author: Reed Nelson
-draft: true
+draft: false
 description: Trinidad Sour recipe.
 image: /assets/drink/trinidad-sour.jpg
 

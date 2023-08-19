@@ -2,13 +2,13 @@
 title: Improved Japanese Cocktail
 meta_title: Improved Japanese Cocktail
 author: Reed Nelson
-draft: true
+draft: false
 description: Improved Japanese Cocktail recipe.
 image: /assets/drink/improved-japanese-cocktail.jpg
 
 spirits: [brandy]
 bottles: [peychauds]
-tags: [tag]
+tags: []
 
 ingredients:
   list:

@@ -2,7 +2,7 @@
 title: Clark Old Fashioned
 meta_title: Clark Old Fashioned
 author: Reed Nelson
-draft: true
+draft: false
 description: Clark Old Fashioned recipe.
 image: /assets/drink/clark-old-fashioned.jpg
 

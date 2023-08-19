@@ -1,10 +1,10 @@
 ---
-title: De La Louisiane
-meta_title: De La Louisiane
+title: La Louisiane
+meta_title: La Louisiane
 author: Reed Nelson
-draft: true
-description: De La Louisiane recipe.
-image: /assets/drink/de-la-louisiane.jpg
+draft: false
+description: La Louisiane recipe.
+image: /assets/drink/la-louisiane.jpg
 
 spirits: [whiskey]
 bottles: [peychauds, sweet-vermouth, benedictine, absinthe]

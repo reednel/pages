@@ -2,7 +2,7 @@
 title: Martinez
 meta_title: Martinez
 author: Reed Nelson
-draft: true
+draft: false
 description: Martinez recipe.
 image: /assets/drink/martinez.jpg
 

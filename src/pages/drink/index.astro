@@ -19,8 +19,8 @@ const allBottles = await getAllTaxonomy(drink_folder, "bottles");
 const bottles = await getTaxonomy(drink_folder, "bottles");
 const tags = await getTaxonomy(drink_folder, "tags");
 const sortedPosts = sortByDate(posts);
-const totalPages: number = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+const totalPages: number = Math.ceil(posts.length / config.settings.drink_pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.drink_pagination);
 ---
 
 <Base

@@ -18,15 +18,15 @@ const allCategories = await getAllTaxonomy(blog_folder, "categories");
 const categories = await getTaxonomy(blog_folder, "categories");
 const tags = await getTaxonomy(blog_folder, "tags");
 const sortedPosts = sortByDate(posts);
-const totalPages = Math.ceil(posts.length / config.settings.pagination);
+const totalPages = Math.ceil(posts.length / config.settings.blog_pagination);
 const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
-const indexOfLastPost = currentPage * config.settings.pagination;
-const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
+const indexOfLastPost = currentPage * config.settings.blog_pagination;
+const indexOfFirstPost = indexOfLastPost - config.settings.blog_pagination;
 const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
 
 export async function getStaticPaths() {
   const posts = await getSinglePage(config.settings.blog_folder);
-  const totalPages = Math.ceil(posts.length / config.settings.pagination);
+  const totalPages = Math.ceil(posts.length / config.settings.blog_pagination);
   const paths = [];
 
   for (let i = 1; i < totalPages; i++) {
