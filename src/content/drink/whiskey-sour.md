@@ -3,7 +3,7 @@ title: Whiskey Sour
 meta_title: Whiskey Sour
 author: Reed Nelson
 draft: false
-description: description
+description: Whiskey Sour recipe.
 image: /assets/drink/whiskey-sour.jpg
 
 spirits: [Whiskey]
@@ -19,7 +19,7 @@ ingredients:
   qty:
     - 2 oz
     - 1 oz
-    - 0.5 oz
+    - 1/2 oz
     - "1"
 
 instructions:

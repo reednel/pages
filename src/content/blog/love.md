@@ -1,12 +1,11 @@
 ---
-title: "The Psychology of Love"
-meta_title: ""
-description: "In this post, we discuss a General Theory of Love, which makes bold and uplifting claims about the power of the emotional mind. Whether or not the theory is completely true, there are valuable ideas to be gleaned."
+title: The Psychology of Love
+meta_title: The Psychology of Love
+description: In this post, we discuss a General Theory of Love, which makes bold and uplifting claims about the power of the emotional mind. Whether or not the theory is completely true, there are valuable ideas to be gleaned.
 date: 2020-02-14T05:00:00Z
-image: ""
-categories: ["Psychology"]
-author: "Reed Nelson"
-tags: ["psychology", "philosophy", "love"]
+categories: [Psychology]
+author: Reed Nelson
+tags: [psychology, philosophy, love]
 complexity: 1.1
 draft: false
 ---

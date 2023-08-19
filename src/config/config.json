@@ -12,7 +12,8 @@
     "sticky_header": false,
     "theme_switcher": true,
     "default_theme": "system",
-    "pagination": 4,
+    "blog_pagination": 4,
+    "drink_pagination": 6,
     "summary_length": 200,
     "blog_folder": "blog",
     "drink_folder": "drink"

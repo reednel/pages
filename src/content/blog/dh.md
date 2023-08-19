@@ -1,12 +1,11 @@
 ---
-title: "Diffie Hellman"
-meta_title: ""
-description: "none"
+title: Diffie Hellman
+meta_title: Diffie Hellman
+description: none
 date: 2022-07-10T05:00:00Z
-image: ""
-categories: ["Cryptography"]
-author: "Reed Nelson"
-tags: ["math", "crypto"]
+categories: [Cryptography]
+author: Reed Nelson
+tags: [math, crypto]
 complexity: 1
 draft: true
 ---

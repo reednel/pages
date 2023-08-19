@@ -1,5 +1,5 @@
 ---
-title: "Drinks"
-meta_title: ""
-description: "this is meta description"
+title: Drinks
+meta_title: Drinks
+description: A selection of good cocktails.
 ---

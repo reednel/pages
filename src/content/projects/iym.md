@@ -1,7 +1,6 @@
 ---
 title: It's Your Move
-description: this is meta description
-technologies: ["JavaScript", "React"]
+technologies: [JavaScript, React]
 order: 7
 social:
   - name: github

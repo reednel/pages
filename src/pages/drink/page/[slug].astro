@@ -20,15 +20,15 @@ const allBottles = await getAllTaxonomy(drink_folder, "bottles");
 const bottles = await getTaxonomy(drink_folder, "bottles");
 const tags = await getTaxonomy(drink_folder, "tags");
 const sortedPosts = sortByDate(posts);
-const totalPages = Math.ceil(posts.length / config.settings.pagination);
+const totalPages = Math.ceil(posts.length / config.settings.drink_pagination);
 const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
-const indexOfLastPost = currentPage * config.settings.pagination;
-const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
+const indexOfLastPost = currentPage * config.settings.drink_pagination;
+const indexOfFirstPost = indexOfLastPost - config.settings.drink_pagination;
 const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
 
 export async function getStaticPaths() {
   const posts = await getSinglePage(config.settings.drink_folder);
-  const totalPages = Math.ceil(posts.length / config.settings.pagination);
+  const totalPages = Math.ceil(posts.length / config.settings.drink_pagination);
   const paths = [];
 
   for (let i = 1; i < totalPages; i++) {

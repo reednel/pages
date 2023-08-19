@@ -1,12 +1,11 @@
 ---
-title: "Huffman Compression"
-meta_title: ""
-description: "Data compression is a process of modifying the representation of some information so that it can be stored using less data. We discuss how information is quantified (entropy), and a simple, speedy, and greedy compression algorithm (the Huffman Coding)."
+title: Huffman Compression
+meta_title: Huffman Compression
+description: Data compression is a process of modifying the representation of some information so that it can be stored using less data. We discuss how information is quantified (entropy), and a simple, speedy, and greedy compression algorithm (the Huffman Coding).
 date: 2022-06-30T05:00:00Z
-image: ""
-categories: ["Cryptography"]
-author: "Reed Nelson"
-tags: ["math", "crypto", "information-theory"]
+categories: [Cryptography]
+author: Reed Nelson
+tags: [math, crypto, information-theory]
 complexity: 1.7
 draft: false
 ---

@@ -3,12 +3,12 @@ title: Negroni
 meta_title: Negroni
 author: Reed Nelson
 draft: false
-description: description
+description: Negroni recipe.
 image: /assets/drink/negroni.jpg
 
 spirits: [gin]
 bottles: [campari, sweet-vermouth]
-tags: [classic, spirit-forward]
+tags: [classic, spirit-forward, bitter]
 
 ingredients:
   list:

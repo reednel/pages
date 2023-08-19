@@ -1,7 +1,7 @@
 ---
 title: Manhattan
 meta_title: Manhattan
-description: none
+description: Manhattan recipe.
 image: /assets/drink/manhattan.jpg
 author: Reed Nelson
 draft: false

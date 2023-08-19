@@ -1,12 +1,11 @@
 ---
-title: "Cryptography"
-meta_title: ""
-description: "none"
+title: Cryptography
+meta_title: Cryptography
+description: none
 date: 2022-08-30T05:00:00Z
-image: ""
-categories: ["Cryptography"]
-author: "Reed Nelson"
-tags: ["crypto"]
+categories: [Cryptography]
+author: Reed Nelson
+tags: [crypto]
 complexity: 1
 draft: true
 ---
