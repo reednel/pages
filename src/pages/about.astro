@@ -1,5 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 import { getEntryBySlug } from "astro:content";
@@ -15,25 +16,31 @@ const { title, description, meta_title, image } = about.data;
   description={description}
   image={image}
 >
+  <PageHeader title={title} />
   <section class="section-sm">
-    <div class="container">
+    <div class="container flex">
       <div class="row justify-center">
-        <div class="text-center md:col-10 lg:col-7">
-          {
-            image && (
-              <Image
-                class="mx-auto mb-6 rounded-lg w-64"
-                src={image}
-                width={1024}
-                height={1024}
-                alt={title}
-                format="webp"
-              />
-            )
-          }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
-          <div class="content">
-            <Content />
+        <div class="col-10">
+          <div class="row items-center flex-col-reverse lg:flex-row">
+            <div class="text-center lg:col-8 lg:text-left">
+              <div class="content">
+                <Content />
+              </div>
+            </div>
+            <div class="my-8 lg:col-4">
+              {
+                image && (
+                  <Image
+                    class="mx-auto rounded-lg w-64"
+                    src={image}
+                    width={1024}
+                    height={1024}
+                    alt={title}
+                    format="webp"
+                  />
+                )
+              }  
+            </div>
           </div>
         </div>
       </div>
