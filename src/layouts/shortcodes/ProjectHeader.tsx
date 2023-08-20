@@ -12,7 +12,7 @@ const ProjectHeader = ({
 }) => {
   return (
     <div>
-        <div className="mt-8">
+        <div className="mt-12">
             <h3> {title} </h3>
         </div>
         <div className="-mt-4">
