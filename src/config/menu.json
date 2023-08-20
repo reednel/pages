@@ -20,15 +20,5 @@
       "name": "Drinks",
       "url": "/drink"
     }
-  ],
-  "footer": [
-    {
-      "name": "Link1",
-      "url": "/link1"
-    },
-    {
-      "name": "Link 2",
-      "url": "/link2"
-    }
   ]
 }

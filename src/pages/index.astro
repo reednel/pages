@@ -15,10 +15,13 @@ interface Homepage {
 }
 
 const homepage = await getEntryBySlug("homepage", "-index");
-const { banner }: Homepage = homepage.data;
+const { title, meta_title, banner }: Homepage = homepage.data;
 ---
 
-<Base>
+<Base
+  title={title}
+  meta_title={meta_title}
+>
   <!-- Banner -->
   <section class="section pt-14">
     <div class="container">
