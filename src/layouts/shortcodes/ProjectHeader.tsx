@@ -1,27 +1,37 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa/index.js";
+import { FaGithubSquare } from "react-icons/fa/index.js";
 
 const ProjectHeader = ({
     title,
-    tech,
+    technologies,
     github,
 }: {
     title: string;
-    content?: string;
+    technologies?: Array<string>;
     github?: string;
 }) => {
   return (
     <div>
         <div className="mt-8">
-            <h1 className="text-3xl font-bold">{title}</h1>
+            <h3> {title} </h3>
         </div>
-        <div className="">
-            {github ? 
+        <div className="-mt-4">
+            {github &&
                 <a href={github} target="blank">
-                    <FaGithub className={"mr-1 -mt-1 inline-block"} />
-                </a>: ""
+                    <FaGithubSquare className={"text-light -mt-1 mr-0.5 inline-block h-8 w-8"} />
+                </a>
             }
-            {tech}
+            {
+                technologies?.map((element) => {
+                    return (
+                        <li className="inline-block h-8">
+                          <div className="m-1  block border border-light bg-transparent text-light rounded-sm px-2 dark:text-darkmode-light dark:border-darkmode-light">
+                            {element}
+                          </div>
+                        </li>
+                      );
+                })
+            }
         </div>
     </div>
   );
