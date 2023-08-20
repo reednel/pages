@@ -1,19 +1,17 @@
 ---
-import { plainify } from "@/lib/utils/textConverter";
 import Social from "./Social.astro";
 
 const { data } = Astro.props;
+const { Content } = await data.render();
 const { title, social } = data.data;
 ---
 
-<div
-  class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light"
->
+<div class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light">
   <h4 class="mb-3">
     {title}
   </h4>
-  <p class="mb-4">
-    {plainify(data.body)}
-  </p>
+  <div class="base mb-4">
+    <Content />
+  </div>
   <Social source={social} className="social-icons" />
 </div>

@@ -1,14 +1,8 @@
 ---
-# Banner
+title: Home
+meta_title: Home
+
 banner:
   title: Reed Nelson
-  content: Words
-
-# Features
-features:
-  - title: Another Section
-    content: words
-    bulletpoints:
-      - a
-      - b
+  content: This website is under construction.
 ---

@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Pages",
+    "title": "Reed Nelson",
     "base_url": "https://reednel.com",
     "base_path": "/",
     "trailing_slash": false,
@@ -21,7 +21,7 @@
 
   "metadata": {
     "meta_author": "reednel",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/assets/favicon.ico",
     "meta_description": "A place with things."
   }
 }
