@@ -102,3 +102,7 @@ a:hover {
 .a:hover {
   @apply opacity-60;
 }
+
+hr {
+  @apply dark:border-light;
+}
