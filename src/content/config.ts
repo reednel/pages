@@ -38,32 +38,8 @@ const drinkCollection = defineCollection({
   }),
 });
 
-// Project collection schema
-const projectCollection = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    technologies: z.array(z.string()).default(["others"]),
-    order: z.number().default(0),
-    social: z
-      .array(
-        z
-          .object({
-            name: z.string().optional(),
-            icon: z.string().optional(),
-            link: z.string().optional(),
-          })
-          .optional(),
-      )
-      .optional(),
-    draft: z.boolean().optional(),
-  }),
-});
-
 // Export collections
 export const collections = {
   blog: blogCollection,
   drink: drinkCollection,
-  projects: projectCollection,
 };
