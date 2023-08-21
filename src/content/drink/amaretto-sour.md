@@ -8,7 +8,7 @@ image: /assets/drink/amaretto-sour.jpg
 
 spirits: [whiskey]
 bottles: [amaretto]
-tags: [sour]
+tags: [creamy]
 
 ingredients:
   list:

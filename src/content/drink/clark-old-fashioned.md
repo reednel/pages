@@ -8,7 +8,7 @@ image: /assets/drink/clark-old-fashioned.jpg
 
 spirits: [brandy]
 bottles: [ango]
-tags: []
+tags: [sweet]
 
 ingredients:
   list:

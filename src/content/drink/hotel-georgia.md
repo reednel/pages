@@ -8,7 +8,7 @@ image: /assets/drink/hotel-georgia.jpg
 
 spirits: [gin]
 bottles: []
-tags: []
+tags: [citrusy]
 
 ingredients:
   list:

@@ -8,7 +8,7 @@ image: /assets/drink/berlin.jpg
 
 spirits: [whiskey]
 bottles: [sweet-vermouth, benedictine]
-tags: [spirit-forward]
+tags: [spirit-forward, bold]
 
 ingredients:
   list:

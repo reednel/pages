@@ -8,7 +8,7 @@ image: /assets/drink/bourbon-bash.jpg
 
 spirits: [whiskey]
 bottles: []
-tags: []
+tags: [citrusy]
 
 ingredients:
   list:

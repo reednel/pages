@@ -8,7 +8,7 @@ image: /assets/drink/whiskey-sour.jpg
 
 spirits: [Whiskey]
 bottles: []
-tags: [classic, sour]
+tags: [classic, creamy, citrusy]
 
 ingredients:
   list:

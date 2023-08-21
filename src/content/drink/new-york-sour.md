@@ -8,7 +8,7 @@ image: /assets/drink/new-york-sour.jpg
 
 spirits: [whiskey]
 bottles: [red-wine]
-tags: [sour]
+tags: [creamy]
 
 ingredients:
   list:

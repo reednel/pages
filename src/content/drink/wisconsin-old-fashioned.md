@@ -8,7 +8,7 @@ image: /assets/drink/wisconsin-old-fashioned.jpg
 
 spirits: [brandy]
 bottles: [ango]
-tags: [classic]
+tags: [classic, sweet]
 
 ingredients:
   list:

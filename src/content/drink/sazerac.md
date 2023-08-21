@@ -8,7 +8,7 @@ image: /assets/drink/sazerac.jpg
 
 spirits: [whiskey, cognac]
 bottles: [peychauds, absinthe]
-tags: [classic, spirit-forward]
+tags: [classic, bold, spirit-forward]
 
 ingredients:
   list:

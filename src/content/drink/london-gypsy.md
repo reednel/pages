@@ -8,7 +8,7 @@ image: /assets/drink/london-gypsy.jpg
 
 spirits: [gin]
 bottles: [ango, benedictine]
-tags: []
+tags: [bold, herbacious]
 
 ingredients:
   list:

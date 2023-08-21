@@ -8,7 +8,7 @@ image: /assets/drink/negroni.jpg
 
 spirits: [gin]
 bottles: [campari, sweet-vermouth]
-tags: [classic, spirit-forward, bitter]
+tags: [classic, bold, bitter]
 
 ingredients:
   list:

@@ -8,13 +8,13 @@ draft: false
 
 spirits: [whiskey]
 bottles: [sweet-vermouth, ango]
-tags: [classic, spirit-forward]
+tags: [classic, bold]
 
 ingredients:
   list:
-    - rye whiskey
-    - sweet vermouth
-    - angostura bitters
+    - Rye whiskey
+    - Sweet vermouth
+    - Angostura bitters
   qty:
     - 2 oz
     - 1 oz

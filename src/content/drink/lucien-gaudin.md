@@ -8,7 +8,7 @@ image: /assets/drink/lucien-gaudin.jpg
 
 spirits: [gin]
 bottles: [dry-vermouth, campari, cointreau]
-tags: [bitter]
+tags: [bold, bitter]
 
 ingredients:
   list:
