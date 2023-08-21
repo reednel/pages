@@ -8,7 +8,7 @@ image: /assets/drink/old-fashioned.jpg
 
 spirits: [whiskey]
 bottles: [ango]
-tags: [classic, spirit-forward]
+tags: [classic, bold, spirit-forward]
 
 ingredients:
   list:

@@ -8,7 +8,7 @@ image: /assets/drink/whiskey-smash.jpg
 
 spirits: [whiskey]
 bottles: []
-tags: [classic]
+tags: [classic, citrusy]
 
 ingredients:
   list:

@@ -8,7 +8,7 @@ image: /assets/drink/improved-whiskey-cocktail.jpg
 
 spirits: [whiskey]
 bottles: [maraschino, absinthe]
-tags: [classic, spirit-forward]
+tags: [classic, spirit-forward, bold]
 
 ingredients:
   list:

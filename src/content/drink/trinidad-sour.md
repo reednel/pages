@@ -8,7 +8,7 @@ image: /assets/drink/trinidad-sour.jpg
 
 spirits: [whiskey]
 bottles: [ango]
-tags: [classic]
+tags: [classic, bold, bitter]
 
 ingredients:
   list:

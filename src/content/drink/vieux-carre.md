@@ -8,7 +8,7 @@ image: /assets/drink/vieux-carre.jpg
 
 spirits: [whiskey, cognac]
 bottles: [ango, peychauds, sweet-vermouth, benedictine]
-tags: [classic]
+tags: [classic, bold]
 
 ingredients:
   list:

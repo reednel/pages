@@ -8,7 +8,7 @@ image: /assets/drink/la-louisiane.jpg
 
 spirits: [whiskey]
 bottles: [peychauds, sweet-vermouth, benedictine, absinthe]
-tags: []
+tags: [bold]
 
 ingredients:
   list:

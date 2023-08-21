@@ -8,7 +8,7 @@ image: /assets/drink/rosemary-sour.jpg
 
 spirits: [whiskey]
 bottles: []
-tags: [sour]
+tags: [creamy, herbacious]
 
 ingredients:
   list:

@@ -8,7 +8,7 @@ image: /assets/drink/boulevardier.jpg
 
 spirits: [whiskey]
 bottles: [sweet-vermouth, campari]
-tags: [classic, spirit-forward, bitter]
+tags: [classic, bold, bitter]
 
 ingredients:
   list:

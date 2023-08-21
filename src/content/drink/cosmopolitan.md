@@ -8,7 +8,7 @@ image: /assets/drink/cosmopolitan.jpg
 
 spirits: [vodka]
 bottles: [cointreau]
-tags: [classic]
+tags: [classic, sweet, citrusy]
 
 ingredients:
   list:

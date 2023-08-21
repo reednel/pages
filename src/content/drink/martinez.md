@@ -8,7 +8,7 @@ image: /assets/drink/martinez.jpg
 
 spirits: [gin]
 bottles: [ango, sweet-vermouth, maraschino]
-tags: [Classic]
+tags: [Classic, bold]
 
 ingredients:
   list:
