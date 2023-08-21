@@ -2,7 +2,7 @@
 title: Watermelon Martini
 meta_title: Watermelon Martini
 author: Reed Nelson
-draft: true
+draft: false
 description: Watermelon Martini recipe.
 image: /assets/drink/watermelon-martini.jpg
 

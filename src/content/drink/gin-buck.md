@@ -2,7 +2,7 @@
 title: Gin Buck
 meta_title: Gin Buck
 author: Reed Nelson
-draft: true
+draft: false
 description: Gin Buck recipe.
 image: /assets/drink/gin-buck.jpg
 
@@ -23,6 +23,6 @@ ingredients:
 instructions:
   - Combine gin and lime juice in a mixing glass with ice.
   - Stir until well chilled.
-  - Strain into the serving glass (optinally) over ice.
+  - Strain into the serving glass (optionally) over ice.
   - Top with Ginger ale.
 ---

@@ -2,7 +2,7 @@
 title: Gin Gin Mule
 meta_title: Gin Gin Mule
 author: Reed Nelson
-draft: true
+draft: false
 description: Gin Gin Mule recipe.
 image: /assets/drink/gin-gin-mule.jpg
 
@@ -28,6 +28,6 @@ instructions:
   - Muddle the mint leaves in the bottom of the serving glass.
   - Combine gin, lime juice, and simple syrup in a mixing glass with ice.
   - Stir until well chilled.
-  - Strain into the serving glass over the mint, and (optinally) ice.
+  - Strain into the serving glass over the mint, and (optionally) ice.
   - Top with Ginger ale.
 ---

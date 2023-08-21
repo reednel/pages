@@ -2,7 +2,7 @@
 title: Basilica
 meta_title: Basilica
 author: Reed Nelson
-draft: true
+draft: false
 description: Basilica recipe.
 image: /assets/drink/basilica.jpg
 
@@ -15,7 +15,7 @@ ingredients:
     - Gin
     - St. Germain
     - Lemon juice
-    - Basil
+    - Basil leaves
     - Angostura bitters
     - Simple syrup
   qty:

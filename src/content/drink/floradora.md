@@ -2,7 +2,7 @@
 title: Floradora
 meta_title: Floradora
 author: Reed Nelson
-draft: true
+draft: false
 description: Floradora recipe.
 image: /assets/drink/floradora.jpg
 
@@ -25,6 +25,6 @@ ingredients:
 instructions:
   - Combine gin, lime juice, and raspberry syrup in a mixing glass with ice.
   - Stir until well chilled.
-  - Strain into the serving glass (optinally) over ice.
+  - Strain into the serving glass (optionally) over ice.
   - Top with Ginger ale.
 ---
