@@ -21,7 +21,7 @@ ingredients:
   qty:
     - 2 oz
     - 4 dashes
-    - 1/4 oz
+    - 1&frasl;4 oz
     - wash
     - 1/2 wheel
     - "1"

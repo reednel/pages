@@ -19,9 +19,9 @@ ingredients:
     - Angostura bitters
     - Peychaud's bitters
   qty:
-    - 3/4 oz
-    - 3/4 oz
-    - 3/4 oz
+    - 3&frasl;4 oz
+    - 3&frasl;4 oz
+    - 3&frasl;4 oz
     - 1/3 oz
     - 1 dash
     - 2 dashes

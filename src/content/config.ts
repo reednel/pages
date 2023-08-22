@@ -1,14 +1,12 @@
 import { defineCollection, z } from "astro:content";
-import { array } from "prop-types";
 
-// Post collection schema
+// Blog collection schema
 const blogCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     meta_title: z.string().optional(),
     description: z.string().optional(),
     date: z.date().optional(),
-    image: z.string().optional(),
     author: z.string().default("Reed Nelson"),
     categories: z.array(z.string()).default(["others"]),
     tags: z.array(z.string()).default(["others"]),

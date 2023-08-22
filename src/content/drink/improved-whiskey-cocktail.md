@@ -20,8 +20,8 @@ ingredients:
     - Peychaud's bitters
   qty:
     - 2 oz
-    - 1/4 oz
-    - 1/4 oz
+    - 1&frasl;4 oz
+    - 1&frasl;4 oz
     - rinse
     - 2 dashes
     - 2 dashes

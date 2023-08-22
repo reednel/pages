@@ -19,8 +19,8 @@ ingredients:
     - Orange flower water
   qty:
     - 2 oz
-    - 1/2 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 oz
     - "1"
     - 10 drops
 

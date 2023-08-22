@@ -20,7 +20,7 @@ ingredients:
   qty:
     - 1 oz
     - 1 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
     - rinse
     - 2 dashes 
 

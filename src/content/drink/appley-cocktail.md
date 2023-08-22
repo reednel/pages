@@ -21,7 +21,7 @@ ingredients:
     - 2 oz
     - 1/2
     - 3/4
-    - 1/2 oz
+    - 1&frasl;2 oz
     - 1 dash
 
 instructions:

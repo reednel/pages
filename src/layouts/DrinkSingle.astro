@@ -4,7 +4,6 @@ import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import similerItems from "@/lib/utils/similarItems";
-import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "@astrojs/image/components";
 
 interface Recipe {
@@ -22,13 +21,18 @@ const similarPosts = similerItems(post, posts, post.slug);
 const { title, description, image, spirits, bottles, tags } = post.data;
 
 const { ingredients, instructions }: Recipe = post.data;
+
+// alphabetize
+spirits.sort((a: string, b: string) => a.localeCompare(b));
+bottles.sort((a: string, b: string) => a.localeCompare(b));
+tags.sort((a: string, b: string) => a.localeCompare(b));
 ---
 
 <section class="section pt-7">
   <div class="container">
     <div class="row justify-center">
       <article class="lg:col-10">
-        <h1 set:html={markdownify(title)} class="mb-4" />
+        <h1 set:html={title} class="mb-4" />
 
         <div class="row">
           <div class="lg:col-8 mb-8">
@@ -123,12 +127,8 @@ const { ingredients, instructions }: Recipe = post.data;
                 <div class="row mx-4">
                   {ingredients.list.map((it: string, index: number) => (
                     <div class="row my-1">
-                      <div class="col-7">
-                        {markdownify(ingredients.list[index])}
-                      </div>
-                      <div class="col-5 text-right">
-                        {markdownify(ingredients.qty[index])}
-                      </div>
+                        <div class="col-7" set:html={ingredients.list[index]} />
+                        <div class="col-5 text-right" set:html={ingredients.qty[index]} />
                       <hr class="my-1">
                     </div>
                   ))}
@@ -148,7 +148,7 @@ const { ingredients, instructions }: Recipe = post.data;
                   {instructions.map((it: string, index: number) => (
                     <div class="row my-1">
                       <div class="col">
-                        {index + 1}.{" "}{markdownify(it)}
+                        {index + 1}.{" "}{it}
                       </div>
                       <hr class="my-1">
                     </div>
@@ -161,7 +161,6 @@ const { ingredients, instructions }: Recipe = post.data;
 
         <!-- Share -->
         <div class="flex items-center justify-center lg:justify-end">
-          <h5 class="mr-3">Share:</h5>
           <Share
             className="social-icons"
             title={title}
@@ -182,7 +181,7 @@ const { ingredients, instructions }: Recipe = post.data;
           <div class="row justify-center">
             {
               similarPosts.slice(0, 3).map((post) => (
-                <div class="lg:col-4">
+                <div class="lg:col-4 mb-4">
                   <DrinkCard data={post} />
                 </div>
               ))

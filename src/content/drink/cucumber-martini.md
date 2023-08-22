@@ -19,8 +19,8 @@ ingredients:
     - Basil leaves
   qty:
     - 2 oz
-    - 1/2 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 oz
     - 2 in
     - "4"
 

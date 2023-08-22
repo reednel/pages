@@ -16,7 +16,7 @@ ingredients:
     - Benedictine
     - Angostura bitters
   qty:
-    - 1 1/2 oz
+    - 1 1&frasl;2 oz
     - 1 oz
     - 2 dashes
 
