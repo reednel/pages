@@ -6,7 +6,7 @@ import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import similerItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
-import { Image } from "@astrojs/image/components";
+
 import {
   FaRegCalendarAlt,
   FaRegFolder,
@@ -18,27 +18,16 @@ const posts = await getSinglePage(blog_folder);
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await post.render();
-const { title, description, author, categories, image, date, tags } = post.data;
+const { title, description, author, categories, date, tags } = post.data;
+
+categories.sort((a: string, b: string) => a.localeCompare(b));
+tags.sort((a: string, b: string) => a.localeCompare(b));
 ---
 
 <section class="section pt-7">
   <div class="container">
     <div class="row justify-center">
       <article class="lg:col-10">
-        {
-          image && (
-            <div class="mb-10">
-              <Image
-                src={image}
-                height={500}
-                width={1200}
-                alt={title}
-                class="w-full rounded"
-                format="webp"
-              />
-            </div>
-          )
-        }
         <h1 set:html={markdownify(title)} class="mb-4" />
         <ul class="mb-4">
           <li class="mr-4 inline-block">

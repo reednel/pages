@@ -18,9 +18,9 @@ ingredients:
     - Angostura bitters
     - Lemon
   qty:
-    - 1 1/2 oz
-    - 1 1/2 oz
-    - 1/4 oz
+    - 1 1&frasl;2 oz
+    - 1 1&frasl;2 oz
+    - 1&frasl;4 oz
     - 2 dashes
     - swath
 

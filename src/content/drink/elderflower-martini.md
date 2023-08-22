@@ -17,8 +17,8 @@ ingredients:
     - Lemon juice
   qty:
     - 2 oz
-    - 1/2 oz
-    - 1/5 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 tsp
 
 instructions:
   - Combine all ingredients in a mixing glass with ice.

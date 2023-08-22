@@ -16,9 +16,9 @@ ingredients:
     - Sweet vermouth
     - Campari
   qty:
-    - 1 1/2 oz
-    - 3/4 oz
-    - 3/4 oz
+    - 1 1&frasl;2 oz
+    - 3&frasl;4 oz
+    - 3&frasl;4 oz
 
 instructions:
   - Combine all ingredients in a mixing glass with ice.

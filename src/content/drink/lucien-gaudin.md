@@ -18,9 +18,9 @@ ingredients:
     - Cointreau
   qty:
     - 1 oz
-    - 1/2 oz
-    - 1/2 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 oz
 
 instructions:
   - Combine all ingredients in a mixing glass with ice.

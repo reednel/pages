@@ -19,7 +19,7 @@ ingredients:
     - Soda water
   qty:
     - 2 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
     - "10"
     - 1 tbsp
     - wash

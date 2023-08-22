@@ -6,8 +6,8 @@ draft: false
 description: Rosemary Gin Fizz recipe.
 image: /assets/drink/rosemary-gin-fizz.jpg
 
-spirits: [spirit]
-bottles: [bottle]
+spirits: [gin]
+bottles: []
 tags: [bubbly, citrusy, crisp]
 
 ingredients:
@@ -19,7 +19,7 @@ ingredients:
   qty:
     - 2 oz
     - 1 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
     - 3 oz
 
 instructions:

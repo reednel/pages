@@ -18,10 +18,10 @@ ingredients:
     - Lime juice
     - Sprite
   qty:
-    - 1 1/2 oz
-    - 1/2 oz
-    - 1/2 oz
-    - 1/2 oz
+    - 1 1&frasl;2 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 oz
+    - 1&frasl;2 oz
     - wash
 
 instructions:

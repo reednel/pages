@@ -18,7 +18,7 @@ ingredients:
     - Mint
   qty:
     - 2 oz
-    - 3/4 oz
+    - 3&frasl;4 oz
     - 3 wedges
     - 4 leaves
 

@@ -22,7 +22,7 @@ ingredients:
     - 2 oz
     - 1 oz
     - 1 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
     - 1 cup
     - 4 lg
 

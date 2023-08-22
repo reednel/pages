@@ -18,9 +18,9 @@ ingredients:
     - Orange bitters
     - Orange blossom water
   qty:
-    - 1 1/2 oz
-    - 1/2 oz
-    - 3/4 oz
+    - 1 1&frasl;2 oz
+    - 1&frasl;2 oz
+    - 3&frasl;4 oz
     - 4 dashes
     - 15 drops
 

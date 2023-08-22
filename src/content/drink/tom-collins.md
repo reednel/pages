@@ -19,7 +19,7 @@ ingredients:
   qty:
     - 2 oz
     - 1 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
     - wash
 
 instructions:

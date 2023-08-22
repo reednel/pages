@@ -18,7 +18,7 @@ ingredients:
     - Lemon
   qty:
     - 2 oz
-    - 1/2 oz
+    - 1&frasl;2 oz
     - 1 dash
     - swath
 

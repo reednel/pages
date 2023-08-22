@@ -19,12 +19,12 @@ ingredients:
     - Angostura bitters
     - Simple syrup
   qty:
-    - 1 3/4 oz
-    - 3/4 oz
-    - 1/2 oz
+    - 1 3&frasl;4 oz
+    - 3&frasl;4 oz
+    - 1&frasl;2 oz
     - 6 sm
     - 2 dashes
-    - 1/2 oz
+    - 1&frasl;2 oz
 
 instructions:
   - Combine all ingredients in a shaking tin.
