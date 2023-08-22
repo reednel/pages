@@ -54,7 +54,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
           <Content />
         </div>
         <div class="row items-start justify-between">
-          <div class="mb-10 flex items-center lg:col-5 lg:mb-0">
+          <div class="mb-4 flex justify-center items-center lg:justify-start lg:col-5 lg:mb-0">
             <h5 class="mr-3">Tags:</h5>
             <ul>
               {
@@ -62,7 +62,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                   <li class="inline-block">
                     <a
                       class="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                      href={`blog/tags/${slugify(tag)}`}
+                      href={`/blog/tags/${slugify(tag)}`}
                     >
                       {tag}
                     </a>
@@ -71,8 +71,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
               }
             </ul>
           </div>
-          <div class="flex items-center lg:col-4">
-            <h5 class="mr-3">Share :</h5>
+          <div class="flex items-center justify-center lg:justify-end lg:col-4">
             <Share
               className="social-icons"
               title={title}
@@ -93,7 +92,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
           <div class="row justify-center">
             {
               similarPosts.slice(0, 3).map((post) => (
-                <div class="lg:col-4">
+                <div class="lg:col-4 mb-12">
                   <BlogCard data={post} />
                 </div>
               ))

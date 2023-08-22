@@ -161,7 +161,6 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
 
         <!-- Share -->
         <div class="flex items-center justify-center lg:justify-end">
-          <h5 class="mr-3">Share:</h5>
           <Share
             className="social-icons"
             title={title}
@@ -182,7 +181,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
           <div class="row justify-center">
             {
               similarPosts.slice(0, 3).map((post) => (
-                <div class="lg:col-4">
+                <div class="lg:col-4 mb-4">
                   <DrinkCard data={post} />
                 </div>
               ))
