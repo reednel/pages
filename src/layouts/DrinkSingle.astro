@@ -58,19 +58,21 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                 <ul>
                   {
                     spirits.length > 0 && (
-                      <li class="mr-4">
-                        {
-                          spirits.map((spirit: string, index: number) => (
-                            <a
-                              class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                              href={`/drink/spirits/${spirit}`}
-                            >
-                              {spirit}
-                            </a>
-                          ))
-                        }
-                      </li>
-                      <hr class="my-2">
+                      <div>
+                        <li class="mr-4">
+                          {
+                            spirits.map((spirit: string, index: number) => (
+                              <a
+                                class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                                href={`/drink/spirits/${spirit}`}
+                              >
+                                {spirit}
+                              </a>
+                            ))
+                          }
+                        </li>
+                        {bottles.length > 0 || tags.length > 0 ? <hr class="my-2" /> : null}
+                      </div>
                     )
                   }
                 </ul>
@@ -78,19 +80,21 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                 <ul>
                   {
                     bottles.length > 0 && (
-                      <li class="mr-4">
-                        {
-                          bottles.map((bottle: string, index: number) => (
-                            <a
-                              class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                              href={`/drink/bottles/${bottle}`}
-                            >
-                              {bottle}
-                            </a>
-                          ))
-                        }
-                      </li>
-                      <hr class="my-2">
+                      <div>
+                        <li class="mr-4">
+                          {
+                            bottles.map((bottle: string, index: number) => (
+                              <a
+                                class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
+                                href={`/drink/bottles/${bottle}`}
+                              >
+                                {bottle}
+                              </a>
+                            ))
+                          }
+                        </li>
+                        {tags.length > 0 ? <hr class="my-2" /> : null}
+                      </div>
                     )
                   }
                 </ul>
