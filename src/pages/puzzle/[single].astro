@@ -1,0 +1,29 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import PuzzleSingle from "@/layouts/PuzzleSingle.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+
+export async function getStaticPaths() {
+  const posts = await getSinglePage(config.settings.puzzle_folder);
+
+  const paths = posts.map((post) => ({
+    params: {
+      single: post.slug,
+    },
+    props: { post },
+  }));
+  return paths;
+}
+
+const { post } = Astro.props;
+const { title, meta_title, description } = post.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+>
+  <PuzzleSingle post={post} />
+</Base>

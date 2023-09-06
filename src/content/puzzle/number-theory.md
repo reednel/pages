@@ -3,10 +3,7 @@ title: Fun Problems in Number Theory
 meta_title: Fun Problems in Number Theory
 description: Number Theory contains a rich set of interesting problems, some suitable for you or I, some entirely unsolvable. This unconventional post is a selection of my favorite problems, along with my solutions to them. 
 date: 2023-09-01T05:00:00Z
-categories: [Mathematics]
 author: Reed Nelson
-tags: [math, puzzles]
-complexity: 0
 draft: true
 ---
 

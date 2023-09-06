@@ -1,6 +1,10 @@
 ---
 title: Riddles
 meta_title: Riddles
+description: It's Riddles.
+date: 2023-09-01T05:00:00Z
+author: Reed Nelson
+draft: true
 ---
 
 <details>

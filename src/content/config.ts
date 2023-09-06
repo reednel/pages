@@ -15,6 +15,18 @@ const blogCollection = defineCollection({
   }),
 });
 
+// Puzzle collection schema
+const puzzleCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    date: z.date().optional(),
+    author: z.string().default("Reed Nelson"),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Drink collection schema
 const drinkCollection = defineCollection({
   schema: z.object({
@@ -39,5 +51,6 @@ const drinkCollection = defineCollection({
 // Export collections
 export const collections = {
   blog: blogCollection,
+  puzzle: puzzleCollection,
   drink: drinkCollection,
 };
