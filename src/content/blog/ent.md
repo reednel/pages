@@ -2,7 +2,7 @@
 title: Fun Problems in Number Theory
 meta_title: Fun Problems in Number Theory
 description: Number Theory contains a rich set of interesting problems, some suitable for you or I, some entirely unsolvable. This unconventional post is a selection of my favorite problems, along with my solutions to them. 
-date: 2023-08-07T05:00:00Z
+date: 2023-09-01T05:00:00Z
 categories: [Mathematics]
 author: Reed Nelson
 tags: [math, puzzles]
@@ -10,18 +10,26 @@ complexity: 0
 draft: true
 ---
 
+This post is a collection of problems from Number Theory. What they all have in common is that the results involve concepts and operations we're all familiar with, so anyone can go "huh, that's a neat fact about numbers!". Regarding difficulty, the "easy" problems should be solvable for anyone, though they may not be that easy. The "meduium" problems actually all come from homeworks from early in my undergraduate Number Theory course. They're quite solvable, but may require insights and ideas that are not reasonable to expect from the leyperson. The "hard" problems are quite hard.
+
 ## Easy
 
-See https://mathriddles.williams.edu/?cat=694
+### 1.1
 
-### yeah
+Let $n$ be any natural number, and $s$ the sum of the digits of $n$. Prove that $n - s$ is a multiple of $9$.
 
-## Medium
+For example, if $n = 31$, then $s = 3 + 1 = 4$, and $31 - 4 = 27$, which is a multiple of $9$.
 
-### 2.1
+<details>
+<summary>Proof</summary>
 
-Prove that a positive integer $n$ is prime if and only if $n$ is not divisible
-by any prime $p$ with $1 < p \leq \sqrt{n}$.
+Let $n = a + 10b + 100c + \dots$. Then $s = a + b + c + \dots$.
+Then $n - s = a - a + 10b - b + 100c - c + \dots = 0a + 9b + 99c + \dots$, which is clearly a multiple of 9.
+</details>
+
+### 1.2
+
+Prove that a natural number $n$ is prime[^1] if and only if $n$ is not divisible by any prime $p$ with $1 < p \leq \sqrt{n}$.
 
 <details>
 <summary>Proof</summary>
@@ -36,61 +44,9 @@ That means in order for a value greater than $\sqrt{n}$ to be a divisor, so too 
 So if no such value less than $\sqrt{n}$ exists, no such value greater than $\sqrt{n}$ can exist.
 </details>
 
-### 2.2
+## Medium
 
-Prove that if $n > 4$ is composite then $n | (n - 1)!$.
-
-<details>
-<summary>Proof</summary>
-
-An equivalent statement: if $n > 4$ is composite, then $n$ is a factor of $(n-1)!$.
-$n$ is a product of prime factors.
-If all such factors are unique in the product, then trivially they are all present in the product $(n-1)!$.
-If there are duplicates, they can be thought of as multiplying to unique composite numbers less than $n$, due to the fundamental theorem of arithmetic.
-The only time this is not true is for the composite $n = 4$, since $3!$ is divisible by no composite numbers.
-Hence, all prime factors of $n$ can be accounted for in $(n-1)!$ when $n > 4$, so $n$ is a factor of $(n-1)!$
-</details>
-
-### 2.3
-Prove that if a positive integer n is a perfect square, then n
-cannot be written in the form $4k + 3$ for $k$ an integer.
-
-<details>
-<summary>Hint</summary>
-
-Compute the remainder upon division by 4 of each of $(4m)^2$, $(4m + 1)^2$, $(4m + 2)^2$, and $(4m + 3)^2$.
-</details>
-
-<details>
-<summary>Proof</summary>
-
-Any positive integer of the form $4k+3$ is congruent to $3 (mod 4)$.
-If $n$ is even, then $n^2$ is even, and trivially cannot be of the form $4k+3$.
-If $n$ is odd, then $n = 2m + 1$, $m \in \mathbb{N}$.
-Then $(2m+1)^2 = 4m^2 + 4m + 1$, which is congruent to 3 (mod 4), so cannot be of the form $4k+3$.
-</details>
-
-### 2.4
-
-(Follow-up to 2.3)
-
-Prove that no integer in the sequence below is a perfect square.
-
-$11$, $111$, $1111$, $11111$, $\dots$
-
-<details>
-<summary>Hint</summary>
-
-$111 \dots 111 = 111 \dots 108 + 3 = 4k+ 3$.
-</details>
-
-<details>
-<summary>Proof</summary>
-
-Per the hint, all integers in the given sequence are of the form $4k + 3$, and we just showed that no positive integer of that form may be a perfect square, so we are done.
-</details>
-
-### 2.5
+### 2.1
 
 #### 3
 
@@ -143,7 +99,62 @@ From this, the propositon follows.
 *Conjecture*: All palindromes divisible by 11 are such that the product of their digits is a perfect square.
 </details>
 
-### 2.6
+### 2.2
+
+Prove that if $n > 4$ is composite then $n | (n - 1)!$.
+
+<details>
+<summary>Proof</summary>
+
+An equivalent statement: if $n > 4$ is composite, then $n$ is a factor of $(n-1)!$.
+$n$ is a product of prime factors.
+If all such factors are unique in the product, then trivially they are all present in the product $(n-1)!$.
+If there are duplicates, they can be thought of as multiplying to unique composite numbers less than $n$, due to the fundamental theorem of arithmetic.
+The only time this is not true is for the composite $n = 4$, since $3!$ is divisible by no composite numbers.
+Hence, all prime factors of $n$ can be accounted for in $(n-1)!$ when $n > 4$, so $n$ is a factor of $(n-1)!$
+</details>
+
+### 2.3
+
+Prove that if a positive integer n is a perfect square, then n
+cannot be written in the form $4k + 3$ for $k$ an integer.
+
+<details>
+<summary>Hint</summary>
+
+Compute the remainder upon division by 4 of each of $(4m)^2$, $(4m + 1)^2$, $(4m + 2)^2$, and $(4m + 3)^2$.
+</details>
+
+<details>
+<summary>Proof</summary>
+
+Any positive integer of the form $4k+3$ is congruent to $3 (mod 4)$.
+If $n$ is even, then $n^2$ is even, and trivially cannot be of the form $4k+3$.
+If $n$ is odd, then $n = 2m + 1$, $m \in \mathbb{N}$.
+Then $(2m+1)^2 = 4m^2 + 4m + 1$, which is congruent to 3 (mod 4), so cannot be of the form $4k+3$.
+</details>
+
+### 2.4
+
+(Follow-up to 2.3)
+
+Prove that no integer in the sequence below is a perfect square.
+
+$11$, $111$, $1111$, $11111$, $\dots$
+
+<details>
+<summary>Hint</summary>
+
+$111 \dots 111 = 111 \dots 108 + 3 = 4k+ 3$.
+</details>
+
+<details>
+<summary>Proof</summary>
+
+Per the hint, all integers in the given sequence are of the form $4k + 3$, and we just showed that no positive integer of that form may be a perfect square, so we are done.
+</details>
+
+### 2.5
 
 Prove that if $p$ is a positive integer such that both $p$ and $p^2 + 2$ are prime, then $p = 3$.
 
@@ -203,3 +214,5 @@ Prove that every even $n \in \mathbb{n}$ greater than 2 is the sum of two primes
 
 There is no known proof to this conjecture. Read more about it [here](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture).
 </details>
+
+[^1]: In the integers, a prime $p$ is a positive integer with the property that if $p$ divides $ab$ then $p$ divides $a$ or p divides $b$, where $a$ and $b$ are integers *and* the property that $p$ is only divisible by 1 and $p$ (irreducibility). By the *Fundamental Theorem of Arithmetic*, every integer greater than 1 can be represented uniquely as a product of prime numbers, up to the order of the factors. So primes can be thought of as unique, atomic building blocks wihtin the integers, and each integer is composed of a unique collection of these building blocks. Comfort with this fact can take your number theoretic intuition a long way.
