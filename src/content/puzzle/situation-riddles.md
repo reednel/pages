@@ -1,14 +1,13 @@
 ---
-title: Riddles
-meta_title: Riddles
-description: It's Riddles.
-date: 2023-09-01T05:00:00Z
-author: Reed Nelson
-draft: true
+title: Situation Riddles
+meta_title: Situation Riddles
+description: With these riddles, the riddler gives an initial prompt, and the solver(s) ask yes-or-no questions to decuce the full circumstances of the situation.
+draft: false
 ---
 
-<details>
-<summary>Table of Contents</summary>
+With these riddles, the riddler gives an initial prompt, and the solver(s) ask yes-or-no questions to decuce the full circumstances of the situation.
+
+## Contents
 
 - [Albatross](#albatross)
 - [The Dust](#the-dust)
@@ -17,8 +16,6 @@ draft: true
 - [Cactus](#cactus)
 - [Abel and Cain](#abel-and-cain)
 - [A rope breaks. A bell rings. A man dies.](#a-rope-breaks-a-bell-rings-a-man-dies)
-
-</details>
 
 ## Albatross
 

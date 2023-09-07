@@ -1,21 +1,12 @@
 ---
 import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
-import dateFormat from "@/lib/utils/dateFormat";
-import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
-
-import {
-  FaRegCalendarAlt,
-  FaRegUserCircle,
-} from "react-icons/fa/index.js";
+import { markdownify } from "@/lib/utils/textConverter";
 
 const { puzzle_folder } = config.settings;
 const { post } = Astro.props;
 const { Content } = await post.render();
-const { title, description, author, categories, date, tags } = post.data;
-
-categories.sort((a: string, b: string) => a.localeCompare(b));
-tags.sort((a: string, b: string) => a.localeCompare(b));
+const { title, description } = post.data;
 ---
 
 <section class="section pt-7">
@@ -23,29 +14,20 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
     <div class="row justify-center">
       <article class="lg:col-10">
         <h1 set:html={markdownify(title)} class="mb-4" />
-        <ul class="mb-4">
-          <li class="mr-4 inline-block">
-            <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-            {humanize(author)}
-          </li>
-          <li class="mr-4 inline-block">
-            <FaRegCalendarAlt className={"mr-2 -mt-1 inline-block"} />
-            {dateFormat(date)}
-          </li>
-        </ul>
+
         <div class="content mb-10">
           <Content />
         </div>
-        <div class="row items-start justify-between">
-          <div class="flex items-center justify-center lg:justify-end lg:col-4">
-            <Share
-              className="social-icons"
-              title={title}
-              description={description}
-              slug={post.slug}
-              folder={puzzle_folder}
-            />
-          </div>
+        
+        <!-- Share -->
+        <div class="flex items-center justify-center lg:justify-end">
+          <Share
+            className="social-icons"
+            title={title}
+            description={description}
+            folder={puzzle_folder}
+            slug={post.slug}
+          />
         </div>
       </article>
     </div>

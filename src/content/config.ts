@@ -21,8 +21,6 @@ const puzzleCollection = defineCollection({
     title: z.string(),
     meta_title: z.string().optional(),
     description: z.string().optional(),
-    date: z.date().optional(),
-    author: z.string().default("Reed Nelson"),
     draft: z.boolean().optional(),
   }),
 });
