@@ -9,17 +9,11 @@ This is a collection of problems from Number Theory. What they all have in commo
 
 ## Contents
 
-- [Contents](#contents)
 - [Easy Problems](#easy-problems)
   - [1.1](#11)
   - [1.2](#12)
 - [Medium Problems](#medium-problems)
   - [2.1](#21)
-    - [Three](#three)
-    - [Five](#five)
-    - [Nine](#nine)
-    - [Eleven](#eleven)
-      - [Additional Note](#additional-note)
   - [2.2](#22)
   - [2.3](#23)
   - [2.4](#24)
@@ -52,10 +46,10 @@ Prove that a natural number $n$ is prime[^1] if and only if $n$ is not divisible
 <summary>Proof</summary>
 
 Proving $\implies$<br>
-This follows directly from the definition of prime.
+This follows directly from the fact that integer primes are irreducible.
 
 Proving $\impliedby$<br>
-Clearly if there were such a prime $p$ in range $(1, \sqrt{n}]$, n would not be prime. So then it suffices to show why the range $(\sqrt{n}, n)$ need not be checked.<br>
+Clearly if there were such a prime $p$ in range $(1, \sqrt{n}]$, $n$ would not be prime. So then it suffices to show why the range $(\sqrt{n}, n)$ need not be checked.<br>
 The largest value that can be produced by a pair in range $(1, \sqrt{n}]$ is $\sqrt{n} \cdot \sqrt{n} = n$.<br>
 That means in order for a value greater than $\sqrt{n}$ to be a divisor, so too must there be a value less than $\sqrt{n}$.<br>
 So if no such value less than $\sqrt{n}$ exists, no such value greater than $\sqrt{n}$ can exist.
@@ -71,7 +65,7 @@ A number $n \in \mathbb{Z}$ is divisible by 3 if and only if the sum of the digi
 
 Proof:<br>
 Write $n = a + 10b + 100c + \dots$, where the digits of $n$ are $a, b, c, \dots$.<br>
-Since $10 \equiv 1 \pmod{3}$, $n = a + 10b + 100c + \dots \equiv a, b, c, \dots \pmod{3}$.<br>
+Since $10 \equiv 1 \pmod{3}$, $n = a + 10b + 100c + \dots \equiv a + b + c + \dots \pmod{3}$.<br>
 The proposition follows.
 
 #### Five

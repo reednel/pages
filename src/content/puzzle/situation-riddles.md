@@ -9,11 +9,11 @@ With these riddles, the riddler gives an initial prompt, and the solver(s) ask y
 
 ## Contents
 
-- [Contents](#contents)
 - [Albatross](#albatross)
 - [The Dust](#the-dust)
 - [Rainy Elevator](#rainy-elevator)
 - [Scores](#scores)
+- [Work Shoes](#work-shoes)
 - [Cactus](#cactus)
 - [Abel and Cain](#abel-and-cain)
 - [A rope breaks. A bell rings. A man dies.](#a-rope-breaks-a-bell-rings-a-man-dies)
@@ -54,6 +54,15 @@ A man wakes up in the morning, looks outside, and sees scores of people in his y
     The man is a lighthouse keeper. Who lives in a lighthouse. His yard is a rocky shore. He forgot to light the lighthouse one night, a ship got wrecked, bodies washed up. You get worked.
 </details>
 
+## Work Shoes
+
+A woman buys a new pair of shoes, goes to work, and dies.
+
+<details>
+    <summary>Solution</summary>
+    The woman is the assistant to a circus knife-thrower. The new shoes have higher heels than she normally wears, so that the thrower misjudges his aim and one of his knives kills her during the show.
+</details>
+
 ## Cactus
 
 A man lies dead next to a cactus. Stuck to the cactus is a slip of paper.
@@ -79,11 +88,4 @@ A rope breaks. A bell rings. A man dies.
 <details>
     <summary>Solution</summary>
     A blind man enjoys walking near a cliff, and uses the sound of a buoy to gauge his distance from the edge. One day the buoy's anchor rope breaks, allowing the buoy to drift away from the shore, and the man walks over the edge of the cliff.
-</details>
-
-Riddle: A woman buys a new pair of shoes, goes to work, and dies.
-
-<details>
-    <summary>Solution</summary>
-    The woman is the assistant to a circus knife-thrower. The new shoes have higher heels than she normally wears, so that the thrower misjudges his aim and one of his knives kills her during the show.
 </details>
