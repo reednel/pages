@@ -9,18 +9,14 @@ const { data } = Astro.props;
 const { title, description } = data.data;
 ---
 
-<div class="bg-body dark:bg-darkmode-body">
-  <h4 class="mb-3">
-    <a href={`/${puzzle_folder}/${data.slug}`}>
+<div class="m-6">
+  <a href={`/${puzzle_folder}/${data.slug}`}>
+    <h4 class="mb-3">
       {title}
-    </a>
-  </h4>
-  <!-- <p class="mb-6">{plainify(data.body?.slice(0, Number(summary_length)))}</p> -->
-  <p class="mb-6">{description}</p>
-  <a
-    class="btn btn-outline-primary btn-sm"
-    href={`/${puzzle_folder}/${data.slug}`}
-  >
-    read more
+    </h4>
   </a>
+  <p>
+    {description}
+  </p>
 </div>
+

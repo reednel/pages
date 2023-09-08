@@ -1,7 +1,7 @@
 ---
 title: Artificial Consciousness and Phenomenology
 meta_title: Artificial Consciousness and Phenomenology
-description: To identify the requirements for a conscious machine, I believe we ought to look beyond mechanical scientific accounts of what makes a human human. Using a phenomenological approach to this subject, we stand to better express what is necessary for a true, human-level artificial consciousness.
+description: I believe that with a phenomenological examination of human consciousness and experience, we stand to better express what is necessary for a true, human-level artificial consciousness.
 date: 2022-04-07T05:00:00Z
 categories: [Philosophy]
 author: Reed Nelson

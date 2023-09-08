@@ -20,17 +20,17 @@ const posts = await getSinglePage(puzzle_folder);
   <PageHeader title={postIndex.data.title} />
   <section class="section">
     <div class="container">
-      <div class="row gx-5">
-        <!-- puzzles -->
-        <div class="row">
+      <div class="row">
           {
             posts.map((post) => (
-              <div class="mb-14 md:col-6">
-                <PuzzleCard data={post} />
+              // Puzzle Card
+              <div class="mb-8 md:col-6 lg:col-4 ">
+                <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light">
+                  <PuzzleCard data={post} />
+                </div>
               </div>
             ))
           }
-        </div>
       </div>
     </div>
   </section>

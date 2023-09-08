@@ -1,7 +1,7 @@
 ---
 title: Low Grade Riddles
 meta_title: Low Grade Riddles
-description: These riddles are stupid. These riddles give riddles everywhere a bad name. When someone offers you a riddle, and then gives you these, you are disappointed.
+description: These riddles give riddles everywhere a bad name. When someone offers you a riddle, and then gives you these, you are disappointed.
 draft: false
 ---
 
