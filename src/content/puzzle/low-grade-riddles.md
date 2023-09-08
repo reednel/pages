@@ -11,7 +11,6 @@ draft: false
 - [Mary's Shower](#marys-shower)
 - [Barn Roof](#barn-roof)
 - [Hunger in the Arctic](#hunger-in-the-arctic)
-- [Corn](#corn)
 - [The Overtold Funeral Riddle](#the-overtold-funeral-riddle)
 - [Desert Canoe](#desert-canoe)
 
@@ -49,15 +48,6 @@ No matter how terrible things get for the people of the Arctic, they will not ea
 <details>
     <summary>Solution</summary>
     Penguins live in Antarctica.
-</details>
-
-## Corn
-
-The riddle goes something like "you throw away the outside, then eat the inside, then throw away..." I don't know.
-
-<details>
-    <summary>Solution</summary>
-    It's corn.
 </details>
 
 ## The Overtold Funeral Riddle
