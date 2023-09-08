@@ -9,6 +9,7 @@ With these riddles, the riddler gives an initial prompt, and the solver(s) ask y
 
 ## Contents
 
+- [Contents](#contents)
 - [Albatross](#albatross)
 - [The Dust](#the-dust)
 - [Rainy Elevator](#rainy-elevator)

@@ -9,11 +9,17 @@ This is a collection of problems from Number Theory. What they all have in commo
 
 ## Contents
 
+- [Contents](#contents)
 - [Easy Problems](#easy-problems)
   - [1.1](#11)
   - [1.2](#12)
 - [Medium Problems](#medium-problems)
   - [2.1](#21)
+    - [Three](#three)
+    - [Five](#five)
+    - [Nine](#nine)
+    - [Eleven](#eleven)
+      - [Additional Note](#additional-note)
   - [2.2](#22)
   - [2.3](#23)
   - [2.4](#24)
@@ -218,7 +224,7 @@ There is no known proof of this conjecture. Read more about it [here](https://en
 
 ### Goldbach's Conjecture
 
-Prove that every even $n \in \mathbb{n}$ greater than 2 is the sum of two primes.
+Prove that every even $n \in \mathbb{N}$ greater than 2 is the sum of two primes.
 
 <details>
 <summary>Proof</summary>
