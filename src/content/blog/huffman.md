@@ -62,6 +62,8 @@ In the 50's, MIT PhD student David Huffman had to write a paper proving some cod
 
 Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol coding. There are alternate methods of coding which perform better under certain circumstances, but even where suboptimal, Huffman is quite good.
 
+---
+
 [^1]: Claude Shannon is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book *A Mathematical Theory of Communication*, which a professor of mine once described as "one of the most important books in science in the last century".
 [^2]: This statistic is from the Wikipedia page on [Letter Frequency](https://en.wikipedia.org/wiki/Letter_frequency).
 [^3]: David Huffman, *[A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)* (1952).

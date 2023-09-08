@@ -62,6 +62,8 @@ Fjelland’s goal in this paper is to show that Dreyfus’s argument still holds
 
 > We are bodily and social beings, living in a material and social world. To understand another person is not to look into the chemistry of that person’s brain, not even into that person’s soul, but is rather to be in that person’s ‘shoes’. It is to understand that person’s lifeworld.
 
+---
+
 [^1]: And you’d be in the company of [some experts](https://www.researchgate.net/publication/280838978_Future_Progress_in_Artificial_Intelligence_A_Survey_of_Expert_Opinion)!
 [^2]: I've always wanted to say this.
 [^3]: Pronounced däzīn. This is a German word which just means "being there". Our usage comes from Martin Heidegger (phenomenologist and student of Husserl). Dasein is a very important and nuanced concept for Heidegger, we're being a little fast and loose.

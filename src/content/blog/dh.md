@@ -29,6 +29,8 @@ draft: true
 - The US government literally treating cryptographic schemes as "munitions" for decades. Everything cryptography (double check this) was under the purview of the NSA.
 - Once apon a time (until the 90's) a few governments held all the cards to secure communication.
 
+---
+
 [^0] Whitfield Diffie and Martin Hellman: [*New Directions in Cryptography*](https://ee.stanford.edu/~hellman/publications/24.pdf).
 [^2]: [Computerphile](https://www.youtube.com/c/computerphile) has several Diffie-Hellman-related videos.
 [^1]: Understanding asymmetric encryption is critical to the solution to this problem. RSA is one of the most important schemes of this kind, and an explanation of both can be found in [this post](/rsa).
