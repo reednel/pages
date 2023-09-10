@@ -7,13 +7,16 @@ draft: false
 
 These riddles are given by example. The solver has succeeded when discover the trick and can give examples as well as the riddler.
 
-## Contents
+<details>
+<summary>Jump To</summary>
 
 - [Green Glass Door](#green-glass-door)
 - [Good Line/Bad Line](#good-linebad-line)
 - [Magic Moon](#magic-moon)
 - [Egyptian Counting](#egyptian-counting)
 - [Black Magic](#black-magic)
+
+</details>
 
 ## Green Glass Door
 

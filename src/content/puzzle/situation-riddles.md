@@ -7,7 +7,8 @@ draft: false
 
 With these riddles, the riddler gives an initial prompt, and the solver(s) ask yes-or-no questions to decuce the full circumstances of the situation.
 
-## Contents
+<details>
+<summary>Jump To</summary>
 
 - [Albatross](#albatross)
 - [The Dust](#the-dust)
@@ -17,6 +18,8 @@ With these riddles, the riddler gives an initial prompt, and the solver(s) ask y
 - [Cactus](#cactus)
 - [Abel and Cain](#abel-and-cain)
 - [A rope breaks. A bell rings. A man dies.](#a-rope-breaks-a-bell-rings-a-man-dies)
+
+</details>
 
 ## Albatross
 

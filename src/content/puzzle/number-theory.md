@@ -7,13 +7,19 @@ draft: false
 
 This is a collection of problems from Number Theory. What they all have in common is that the results involve concepts and operations we're all familiar with, so anyone can go "huh, that's a neat fact about numbers!". Regarding difficulty, the "easy" problems should be solvable for anyone, though they may not be that easy. The "meduium" problems actually all come from homeworks from early in my undergraduate Number Theory course. They're quite solvable, but may require insights and ideas that are not reasonable to expect from the leyperson. The "hard" problems are quite hard.
 
-## Contents
+<details>
+<summary>Jump To</summary>
 
 - [Easy Problems](#easy-problems)
   - [1.1](#11)
   - [1.2](#12)
 - [Medium Problems](#medium-problems)
   - [2.1](#21)
+    - [Three](#three)
+    - [Five](#five)
+    - [Nine](#nine)
+    - [Eleven](#eleven)
+      - [Additional Note](#additional-note)
   - [2.2](#22)
   - [2.3](#23)
   - [2.4](#24)
@@ -22,6 +28,8 @@ This is a collection of problems from Number Theory. What they all have in commo
   - [Fermat's Last Theorem](#fermats-last-theorem)
   - [Collatz Conjecture](#collatz-conjecture)
   - [Goldbach's Conjecture](#goldbachs-conjecture)
+
+</details>
 
 ## Easy Problems
 

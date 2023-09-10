@@ -4,7 +4,9 @@ meta_title: Conventional Riddles
 description: This is a collection of riddles that don't have a special theme or mode.
 draft: false
 ---
-## Contents
+
+<details>
+<summary>Jump To</summary>
 
 - [Magic Square](#magic-square)
 - [Mutilated Chessboard Problem](#mutilated-chessboard-problem)
@@ -24,6 +26,8 @@ draft: false
 - [Spot the Dog](#spot-the-dog)
 - [The Sum and Product Puzzle](#the-sum-and-product-puzzle)
 - [The Impossible Chessboard Problem](#the-impossible-chessboard-problem)
+
+</details>
 
 ## Magic Square
 
@@ -202,6 +206,117 @@ Who’s the marriage counselor for Spot’s alpha and the referee of a fight bet
     Spot’s Alpha’s Alpha.
 </details>
 
+## The Sum and Product Puzzle
+
+$x$ and $y$ are two different whole numbers greater than $1$.
+Their sum is not greater than $100$, and $y$ is greater than $x$.
+Person $S$ knows the sum $x + y$, and person $P$ knows the product $x \times y$.
+Both $S$ and $P$ know all the information in this paragraph.
+The following conversation occurs:
+
+$S$: “$P$ does not know $x$ and $y$”<br>
+$P$: “Now I know $x$ and $y$”<br>
+$S$: “Now I know $x$ and $y$”<br>
+
+What are $x$ and $y$?
+
+<details>
+<summary>Solution</summary>
+
+Below is the script I wrote to solve this puzzle. It doubles as a detailed description of the reasoning behind the solution. Alternately, read more about the puzzle [here](https://en.wikipedia.org/wiki/Sum_and_Product_Puzzle).
+
+```python
+
+import math
+
+X_MIN   = 2
+X_MAX   = 49
+Y_MIN   = 3
+Y_MAX   = 98
+SUM_MAX = 100
+
+# Return all valid pairs of numbers that sum to n
+def sum_pairs(n):
+    pairs = []
+    for a in range(X_MIN, X_MAX + 1):
+        b = n - a
+        if b <= a:
+            break
+        pairs.append((a, b))
+    return pairs
+
+# Return all valid pairs of factors of n
+def factor_pairs(n):
+    lower_bound = X_MIN
+    upper_bound = math.floor(math.sqrt(n))
+    pairs = []
+    for p in range(lower_bound, upper_bound + 1):
+        if n % p == 0:
+            q = n // p
+            if q > Y_MAX:
+                continue
+            if p + q > SUM_MAX:
+                continue
+            if p == q:
+                continue
+            pairs.append((p, q))
+    return pairs
+
+# S: “P does not know X and Y”
+# This implies that among all of the possible pairs of numbers summing to S's number,
+# none of those pairs multiply to a number with just one valid pair of factors.
+possible_pairs = set()
+for sum in range(SUM_MAX + 1):
+    pairs = sum_pairs(sum)
+    valid = True
+    for (x, y) in pairs:
+        if (len(factor_pairs(x * y)) == 1):
+            valid = False
+            break
+    if valid:
+        possible_pairs.update(pairs)
+
+# P: “Now I know X and Y”
+# This implies that P's number did have multiple valid factor pairs, 
+# but only one pair appeared in the list resulting from S's first statement.
+possible_products = set()
+duplicate_products = set()
+for (x, y) in possible_pairs:
+    if x * y in possible_products:
+        duplicate_products.add(x * y)
+    else:
+        possible_products.add(x * y)
+
+unique_product_pairs = set()
+for (x, y) in possible_pairs:
+    if x * y not in duplicate_products:
+        unique_product_pairs.add((x, y))
+
+# S: “Now I know X and Y”
+# This implies that S's number did have multiple valid sum pairs, 
+# but all of those pairs except for one were ruled out by their presence
+# in the set of duplicate product pairs we obtained from P's statement.
+possible_sums = set()
+duplicate_sums = set()
+for (x, y) in unique_product_pairs:
+    if x + y in possible_sums:
+        duplicate_sums.add(x + y)
+    else:
+        possible_sums.add(x + y)
+
+unique_sum_pairs = set()
+for (x, y) in unique_product_pairs:
+    if x + y not in duplicate_sums:
+        unique_sum_pairs.add((x, y))
+
+# The fact that we are able to find X and Y implies that the set of pairs
+# has been reduced to one. This is the solution.
+print(unique_sum_pairs)
+
+```
+
+</details>
+
 ## The Impossible Chessboard Problem
 
 The jailer will take you into a private cell. In the cell will be a chessboard and a jar containing 64 coins.
@@ -214,22 +329,7 @@ You will then be lead out of the room, and the jailer will bring in your friend,
 The jailer explains all these rules, to both you and your friend, beforehand and then gives you time to confer with each other to devise a strategy for which coin to flip.
 
 <details>
-    <summary>Solution</summary>
-    Actually I haven't solved this yet, but the solution should be [here](https://www.3blue1brown.com/lessons/chessboard-puzzle).
-</details>
+<summary>Solution</summary>
 
-## The Sum and Product Puzzle
-
-X and Y are two different whole numbers greater than 1. Their sum is not greater than 100, and Y is greater than X. S and P are two mathematicians (and perfect logicians); S knows the sum X + Y, and P knows the product X * Y. Both S and P know all the information in this paragraph.
-The following conversation occurs:
-
-S: “P does not know X and Y”<br>
-P: “Now I know X and Y”<br>
-S: “Now I also know X and Y”<br>
-
-What are X and Y?
-
-<details>
-    <summary>Solution</summary>
-    Actually I haven't solved this yet, but the solution should be [here](https://en.wikipedia.org/wiki/Sum_and_Product_Puzzle).
+Actually I haven't solved this yet, but the solution should be [here](https://www.3blue1brown.com/lessons/chessboard-puzzle).
 </details>

@@ -5,7 +5,8 @@ description: These riddles give riddles everywhere a bad name. When someone offe
 draft: false
 ---
 
-## Contents
+<details>
+<summary>Jump To</summary>
 
 - [Stop and Go](#stop-and-go)
 - [Mary's Shower](#marys-shower)
@@ -13,6 +14,8 @@ draft: false
 - [Hunger in the Arctic](#hunger-in-the-arctic)
 - [The Overtold Funeral Riddle](#the-overtold-funeral-riddle)
 - [Desert Canoe](#desert-canoe)
+
+</details>
 
 ## Stop and Go
 
