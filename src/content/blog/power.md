@@ -90,6 +90,8 @@ What if you were forced to live this same life over and over, forever? This is e
 
 This idea is meant to undermine the sense that we’re getting somewhere and achieving something. There is no culmination to give our actions a point. Nietzsche introduces this idea for us to test weather we live in a healthy or unhealthy way. If this thought makes you uncomfortable, you’re living wrong. This is partially a test to see if you’re living well, but also a sort of guide on the day-to-day scale to indicate to you what you could do better.
 
+---
+
 [^1]: Nietzsche's sister, [Elisabeth Förster-Nietzsche](https://en.wikipedia.org/wiki/Elisabeth_F%C3%B6rster-Nietzsche), was a bit of a Nazi. After his death, she took his very unfinished draft of *The Will to Power*, wrote a bunch of nazi-ish things in it, and then had it published in his name. Later she sent it over to Hitler, who appreciated it. This seems to be the main reason for the very mistaken association between Nietzsche and Nazism. To be clear, Nietzsche's idea of the Will to Power did not originate in the book of the same name. It is present to varying degrees in many of his previous works.
 
 [^2]: Nietzsche was a [Kelly Clarkson](https://open.spotify.com/track/6D60klaHqbCl9ySc8VcRss?si=62e36bc9524b4633) fan.

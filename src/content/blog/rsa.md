@@ -75,6 +75,8 @@ By Fermat's Little Theorem, $x^p \equiv x \,(\text{mod } p)$, so $x \cdot (x^p)^
 By symmetry, $(x^e)^d \equiv x \,(\text{mod } q)$.$\\$
 So we have $\forall x \in \mathbb{Z}_n, x^{ed} \equiv x \,(\text{mod } pq)$.
 
+---
+
 [^1]: An equivalent system was developed secretly and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
 [^2]: The existence of one-way functions is actually only a conjecture! To prove OWFs exist is to prove $P \neq NP$. That is to say, RSA's security depends on a very big (but probably safe) assumption.
 [^3]: [Numberphile](https://www.youtube.com/c/numberphile) has several RSA-related videos. [This one](https://youtu.be/cbGB__V8MNk) explains why $2^{16}+1$ is a pretty good choice of $e$.

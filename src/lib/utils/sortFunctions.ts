@@ -8,6 +8,14 @@ export const sortByDate = (array: any[]) => {
   return sortedArray;
 };
 
+// sort by title
+export const sortByTitle = (array: any[]) => {
+  const sortedArray = array.sort((a: any, b: any) =>
+    a.data.title.localeCompare(b.data.title),
+  );
+  return sortedArray;
+};
+
 // sort product by weight
 export const sortByWeight = (array: any[]) => {
   const withWeight = array.filter(

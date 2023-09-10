@@ -5,7 +5,6 @@ import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
-import { sortByDate } from "@/lib/utils/sortFunctions";
 import PageHeader from "@/partials/PageHeader.astro";
 import DrinkSidebar from "@/partials/DrinkSidebar.astro";
 import { getEntryBySlug } from "astro:content";
@@ -18,9 +17,8 @@ const spirits = await getTaxonomy(drink_folder, "spirits");
 const allBottles = await getAllTaxonomy(drink_folder, "bottles");
 const bottles = await getTaxonomy(drink_folder, "bottles");
 const tags = await getTaxonomy(drink_folder, "tags");
-const sortedPosts = sortByDate(posts);
 const totalPages: number = Math.ceil(posts.length / config.settings.drink_pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.drink_pagination);
+const currentPosts = posts.slice(0, config.settings.drink_pagination);
 ---
 
 <Base

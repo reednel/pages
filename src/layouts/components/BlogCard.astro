@@ -1,37 +1,23 @@
 ---
 import config from "@/config/config.json";
 import { humanize, slugify } from "@/lib/utils/textConverter";
-import { Image } from "@astrojs/image/components";
 import { FaRegFolder, FaRegClock } from "react-icons/fa/index.js";
 import readingTime from "@/lib/utils/readingTime";
 
 const {
-  summary_length,
   blog_folder,
 }: { summary_length: number; blog_folder: string } = config.settings;
 const { data } = Astro.props;
-const { title, image, description, categories, complexity } = data.data;
+const { title, description, categories, complexity } = data.data;
 ---
 
-<div class="bg-body dark:bg-darkmode-body">
-  {
-    image && (
-      <Image
-        class="mb-6 w-full rounded"
-        src={image}
-        alt={title}
-        width={445}
-        height={230}
-        format="webp"
-      />
-    )
-  }
-  <h4 class="mb-3">
+<div class="m-6 bg-body dark:bg-darkmode-body">
+  <h4 class="mb-2">
     <a href={`/${blog_folder}/${data.slug}`}>
       {title}
     </a>
   </h4>
-  <ul class="mb-4">
+  <ul class="mb-2">
     <li class="mr-4 inline-block">
       <FaRegFolder className={"mr-1 -mt-1 inline-block"} />
       {
@@ -48,12 +34,5 @@ const { title, image, description, categories, complexity } = data.data;
       {readingTime(data.body, complexity)}
     </li>
   </ul>
-  <!-- <p class="mb-6">{plainify(data.body?.slice(0, Number(summary_length)))}</p> -->
   <p class="mb-6">{description}</p>
-  <a
-    class="btn btn-outline-primary btn-sm"
-    href={`/${blog_folder}/${data.slug}`}
-  >
-    read more
-  </a>
 </div>

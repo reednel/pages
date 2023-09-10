@@ -123,6 +123,8 @@ De Bruijn sequences and graphs have many interesting and simple properties. This
 
 I wrote a Java implementation of the generating algorithm and shuffles described above, along with a suite of other tools pertaining to de Bruijn sequences and graphs. This code and select output files from the generating function can be found [here](https://github.com/reednel/debruijn).
 
+---
+
 [^1]: Nicolaas Govert de Bruijn, *[A combinatorial Problem](https://pure.tue.nl/ws/files/4442708/597473.pdf)* (1946).
 [^2]: A binary alphabet is often implied with de Bruijn sequences, but most of what this paper discusses is applicable to an arbitrary alphabet.
 [^3]: The nominal values of the characters used in the alphabet are unimportant, so for this paper and generally, when $k < 10$, we take $A = \{ 0, 1, \dots, k \}$.

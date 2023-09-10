@@ -17,6 +17,10 @@
       "url": "/blog"
     },
     {
+      "name": "Puzzles",
+      "url": "/puzzle"
+    },
+    {
       "name": "Drinks",
       "url": "/drink"
     }

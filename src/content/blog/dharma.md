@@ -64,6 +64,8 @@ It's important to have detachment from the outcome of your dharma. One should ne
 
 It’s better to fail at one's own dharma than to succeed at another’s. Do not be what you are not[^5].
 
+---
+
 [^1]: [Stephen Cope](https://en.wikipedia.org/wiki/Stephen_Cope), *[The Great Work of Your Life](https://www.stephencope.com/shop/books/the-great-work-of-your-life-a-guide-for-the-journey-to-your-true-calling/)* (2012). The book outlines the teachings of the Bhagavad Gita, which translates to “The Song of God” - It’s the most famous Hindu text. The story is a narrative of a dialogue between Arjuna, a great prince and warrior, (and babe), And Krishna, Arjuna’s charioteer. Though the reader knows Krishna is a Hindu god. The story’s set on a battlefield, and for the duration of the book, Arjuna is pretty much in the middle of an existential crisis over this war he’s fighting, and Arjuna is dropping wisdom on him to help him through it. Krishna’s teachings are the Gita’s teachings.
 [^2]: Venturing dangerously close to Capitalist mythology here.
 [^3]: *The Role of Deliberate Practice in the Acquisition of Expert Performance* (1993); Ericsson, Krampe, Tesch-Roemer; [[Article]](https://www.researchgate.net/publication/224827585_The_Role_of_Deliberate_Practice_in_the_Acquisition_of_Expert_Performance).

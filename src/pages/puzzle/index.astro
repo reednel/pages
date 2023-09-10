@@ -1,0 +1,37 @@
+---
+import PuzzleCard from "@/components/PuzzleCard.astro";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import { getEntryBySlug } from "astro:content";
+
+const { puzzle_folder } = config.settings;
+const postIndex = await getEntryBySlug<any, string>(puzzle_folder, "-index");
+const posts = await getSinglePage(puzzle_folder);
+---
+
+<Base
+  title={postIndex.data.title}
+  meta_title={postIndex.data.meta_title}
+  image={postIndex.data.image}
+  description={postIndex.data.description}
+>
+  <PageHeader title={postIndex.data.title} />
+  <section class="section">
+    <div class="container">
+      <div class="row">
+          {
+            posts.map((post) => (
+              // Puzzle Card
+              <div class="mb-8 md:col-6 lg:col-4 ">
+                <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light">
+                  <PuzzleCard data={post} />
+                </div>
+              </div>
+            ))
+          }
+      </div>
+    </div>
+  </section>
+</Base>
