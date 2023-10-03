@@ -6,8 +6,8 @@ import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
-import PageHeader from "@/partials/PageHeader.astro";
-import DrinkSidebar from "@/partials/DrinkSidebar.astro";
+import PageHeader from "@/components/PageHeader.astro";
+import DrinkSidebar from "@/components/DrinkSidebar.astro";
 import { getEntryBySlug } from "astro:content";
 
 const { drink_folder } = config.settings;
