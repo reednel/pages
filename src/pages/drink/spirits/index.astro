@@ -2,7 +2,7 @@
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
-import PageHeader from "@/partials/PageHeader.astro";
+import PageHeader from "@/components/PageHeader.astro";
 
 const { drink_folder }: { drink_folder: string } = config.settings;
 const spirits = await getTaxonomy(drink_folder, "spirits");
