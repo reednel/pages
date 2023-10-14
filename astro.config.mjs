@@ -1,4 +1,3 @@
-import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
@@ -11,10 +10,9 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import config from "./src/config/config.json";
 
-// https://astro.build/config
 export default defineConfig({
-  site: config.site.base_url ? config.site.base_url : "http://reednel.com",
-  base: config.site.base_path ? config.site.base_path : "/",
+  site: config.site.base_url,
+  base: config.site.base_path,
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   integrations: [
     react(),
@@ -23,9 +21,6 @@ export default defineConfig({
       config: {
         applyBaseStyles: false,
       },
-    }),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
     }),
     AutoImport({
       imports: [

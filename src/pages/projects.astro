@@ -1,11 +1,25 @@
 ---
 import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
 import PageHeader from "@/components/PageHeader.astro";
 import { getEntryBySlug } from "astro:content";
+import { FaGithubSquare } from "react-icons/fa/index.js";
 
-const projects = await getEntryBySlug("projects", "-index");
-const { Content } = await projects.render();
-const { title, meta_title } = projects.data;
+interface Project {
+  title: string;
+  technologies: string[];
+  github: string;
+  content: string[];
+}
+
+interface Projects {
+  title: string;
+  meta_title: string;
+  projects: Project[];
+}
+
+const projects_page = await getEntryBySlug("projects", "-index");
+const { title, meta_title, projects }: Projects = projects_page.data;
 ---
 
 <Base
@@ -13,15 +27,46 @@ const { title, meta_title } = projects.data;
   meta_title={meta_title}
 >
   <PageHeader title={title} />
-  <section class="section-sm">
-    <div class="container"> 
-      <div class="row justify-center">
-        <div class="col-10">
-          <div class="content">
-            <Content /> 
-          </div>
+  <div class="container my-16"> 
+    <div class="row justify-center">
+      <div class="col-10">
+        <div class="content">
+          {
+            projects.map((project) => (
+              <div>
+                <div class="mt-8">
+                    <h3 set:html={markdownify(project.title)}/>
+                </div>
+                <div class="-mt-4">
+                  {
+                    project.github &&
+                    <a href={project.github} target="blank">
+                        <FaGithubSquare className="text-light -mt-1 mr-0.5 inline-block h-8 w-8" />
+                    </a>
+                  }
+                  {
+                    project.technologies?.map((element: string) => 
+                      <li class="inline-block h-8">
+                        <div
+                          class="m-1  block border border-light bg-transparent text-light rounded-sm px-2 dark:text-darkmode-light dark:border-darkmode-light"
+                          set:html={markdownify(element)}
+                        />
+                      </li>
+                    )
+                  }
+                </div>
+              </div>
+              <div>
+                {
+                  project.content?.map((element: string) => 
+                    <p set:html={markdownify(element)} />
+                  )
+                }
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </Base>
