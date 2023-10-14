@@ -10,7 +10,7 @@ Clone: `git clone https://github.com/reednel/pages.git`
 
 Checkout template: `git checkout template`
 
-Use Node 18: `nvm install --lts`
+Use Node 20: `nvm install --lts`
 
 Install Node Modules: `npm install`
 
