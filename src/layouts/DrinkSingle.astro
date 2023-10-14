@@ -4,7 +4,7 @@ import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import similerItems from "@/lib/utils/similarItems";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 interface Recipe {
   ingredients: {
