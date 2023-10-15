@@ -49,6 +49,6 @@ const drinkCollection = defineCollection({
 // Export collections
 export const collections = {
   blog: blogCollection,
-  puzzle: puzzleCollection,
-  drink: drinkCollection,
+  puzzles: puzzleCollection,
+  drinks: drinkCollection,
 };

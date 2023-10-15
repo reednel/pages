@@ -7,7 +7,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
   <div class="mb-8">
     <div class="rounded bg-theme-light p-4 dark:bg-darkmode-theme-light">
       <h4 class="my-2 text-center">
-        <a href="/drink/spirits">Spirits</a>
+        <a href="/drinks/spirits">Spirits</a>
       </h4>
       <ul>
         {
@@ -16,7 +16,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
               <li class="inline-block">
                 <a
                   class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href={`/drink/spirits/${spirit}`}
+                  href={`/drinks/spirits/${spirit}`}
                 >
                   {spirit}
                 </a>
@@ -28,7 +28,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
       <hr class="my-4">
       <!-- bottles -->
       <h4 class="my-2 text-center">
-        <a href="/drink/bottles">Bottles</a>
+        <a href="/drinks/bottles">Bottles</a>
       </h4>
       <ul>
         {
@@ -37,7 +37,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
               <li class="inline-block">
                 <a
                   class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href={`/drink/bottles/${bottle}`}
+                  href={`/drinks/bottles/${bottle}`}
                 >
                   {bottle}
                 </a>
@@ -49,7 +49,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
       <hr class="my-4">
       <!-- tags -->
       <h4 class="my-2 text-center">
-        <a href="/drink/tags">Tags</a>
+        <a href="/drinks/tags">Tags</a>
       </h4>
       <ul>
         {
@@ -58,7 +58,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
               <li class="inline-block">
                 <a
                   class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                  href={`/drink/tags/${tag}`}
+                  href={`/drinks/tags/${tag}`}
                 >
                   {tag}
                 </a>

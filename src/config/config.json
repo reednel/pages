@@ -17,8 +17,8 @@
     "puzzle_pagination": 6,
     "summary_length": 200,
     "blog_folder": "blog",
-    "puzzle_folder": "puzzle",
-    "drink_folder": "drink"
+    "puzzle_folder": "puzzles",
+    "drink_folder": "drinks"
   },
 
   "metadata": {
