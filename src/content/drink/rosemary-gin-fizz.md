@@ -4,7 +4,7 @@ meta_title: Rosemary Gin Fizz
 author: Reed Nelson
 draft: false
 description: Rosemary Gin Fizz recipe.
-image: /assets/drink/rosemary-gin-fizz.jpg
+cover: "@assets/drink/rosemary-gin-fizz.jpg"
 
 spirits: [gin]
 bottles: []

@@ -4,7 +4,7 @@ meta_title: Basilica
 author: Reed Nelson
 draft: false
 description: Basilica recipe.
-image: /assets/drink/basilica.jpg
+cover: "@assets/drink/basilica.jpg"
 
 spirits: [gin]
 bottles: [ango, st-germain]

@@ -4,7 +4,7 @@ meta_title: Mojito
 author: Reed Nelson
 draft: false
 description: Mojito recipe.
-image: /assets/drink/mojito.jpg
+cover: "@assets/drink/mojito.jpg"
 
 spirits: [rum]
 bottles: []

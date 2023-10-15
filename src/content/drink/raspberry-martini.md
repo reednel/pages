@@ -4,7 +4,7 @@ meta_title: Raspberry Martini
 author: Reed Nelson
 draft: false
 description: Raspberry Martini recipe.
-image: /assets/drink/raspberry-martini.jpg
+cover: "@assets/drink/raspberry-martini.jpg"
 
 spirits: [vodka]
 bottles: []

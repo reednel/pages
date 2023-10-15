@@ -4,7 +4,7 @@ meta_title: Lemon Drop Martini
 author: Reed Nelson
 draft: false
 description: Lemon Drop Martini recipe.
-image: /assets/drink/lemon-drop-martini.jpg
+cover: "@assets/drink/lemon-drop-martini.jpg"
 
 spirits: [vodka]
 bottles: [cointreau]

@@ -8,8 +8,8 @@ const blogCollection = defineCollection({
     description: z.string().optional(),
     date: z.date().optional(),
     author: z.string().default("Reed Nelson"),
-    categories: z.array(z.string()).default(["others"]),
-    tags: z.array(z.string()).default(["others"]),
+    categories: z.array(z.string()).default(["none"]),
+    tags: z.array(z.string()).default(["none"]),
     complexity: z.number().default(1),
     draft: z.boolean().optional(),
   }),
@@ -27,13 +27,13 @@ const puzzleCollection = defineCollection({
 
 // Drink collection schema
 const drinkCollection = defineCollection({
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     meta_title: z.string().optional(),
     description: z.string().optional(),
     date: z.date().optional(),
-    image: z.string().optional(),
-    author: z.string().default("Admin"),
+    cover: image().optional(),
+    author: z.string().default("none"),
     spirits: z.array(z.string()).default(["none"]),
     bottles: z.array(z.string()).default(["none"]),
     tags: z.array(z.string()).default(["none"]),

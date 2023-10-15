@@ -4,7 +4,7 @@ meta_title: Bourbon Bash
 author: Reed Nelson
 draft: false
 description: Bourbon Bash recipe.
-image: /assets/drink/bourbon-bash.jpg
+cover: "@assets/drink/bourbon-bash.jpg"
 
 spirits: [whiskey]
 bottles: []

@@ -4,7 +4,7 @@ meta_title: Irish Maid
 author: Reed Nelson
 draft: false
 description: Irish Maid recipe.
-image: /assets/drink/irish-maid.jpg
+cover: "@assets/drink/irish-maid.jpg"
 
 spirits: [whiskey]
 bottles: []

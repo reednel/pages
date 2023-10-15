@@ -4,7 +4,7 @@ meta_title: Old Fashioned
 author: Reed Nelson
 draft: false
 description: Old Fashioned recipe.
-image: /assets/drink/old-fashioned.jpg
+cover: "@assets/drink/old-fashioned.jpg"
 
 spirits: [whiskey]
 bottles: [ango]

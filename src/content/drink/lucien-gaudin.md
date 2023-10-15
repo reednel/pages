@@ -4,7 +4,7 @@ meta_title: Lucien Gaudin
 author: Reed Nelson
 draft: false
 description: Lucien Gaudin recipe.
-image: /assets/drink/lucien-gaudin.jpg
+cover: "@assets/drink/lucien-gaudin.jpg"
 
 spirits: [gin]
 bottles: [dry-vermouth, campari, cointreau]

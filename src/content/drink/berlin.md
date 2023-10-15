@@ -4,7 +4,7 @@ meta_title: Berlin
 author: Reed Nelson
 draft: false
 description: Berlin recipe.
-image: /assets/drink/berlin.jpg
+cover: "@assets/drink/berlin.jpg"
 
 spirits: [whiskey]
 bottles: [sweet-vermouth, benedictine]

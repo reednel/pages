@@ -4,7 +4,7 @@ meta_title: Boulevardier
 author: Reed Nelson
 draft: false
 description: Boulevardier recipe.
-image: /assets/drink/boulevardier.jpg
+cover: "@assets/drink/boulevardier.jpg"
 
 spirits: [whiskey]
 bottles: [sweet-vermouth, campari]

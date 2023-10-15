@@ -4,7 +4,7 @@ meta_title: Appley Cocktail
 author: Reed Nelson
 draft: false
 description: Appley Cocktail recipe.
-image: /assets/drink/appley-cocktail.jpg
+cover: "@assets/drink/appley-cocktail.jpg"
 
 spirits: [whiskey]
 bottles: []

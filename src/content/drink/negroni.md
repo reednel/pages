@@ -4,7 +4,7 @@ meta_title: Negroni
 author: Reed Nelson
 draft: false
 description: Negroni recipe.
-image: /assets/drink/negroni.jpg
+cover: "@assets/drink/negroni.jpg"
 
 spirits: [gin]
 bottles: [campari, sweet-vermouth]

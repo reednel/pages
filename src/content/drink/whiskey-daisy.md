@@ -4,7 +4,7 @@ meta_title: Whiskey Daisy
 author: Reed Nelson
 draft: false
 description: Whiskey Daisy recipe.
-image: /assets/drink/whiskey-daisy.jpg
+cover: "@assets/drink/whiskey-daisy.jpg"
 
 spirits: [whiskey]
 bottles: []

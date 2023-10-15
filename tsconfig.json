@@ -13,11 +13,11 @@
     "allowSyntheticDefaultImports": true,
     "types": ["@astrojs/client"],
     "paths": {
+      "@assets/*": ["./src/assets/*"],
       "@/components/*": ["./src/layouts/components/*"],
       "@/shortcodes/*": ["./src/layouts/shortcodes/*"],
       "@/helpers/*": ["./src/layouts/helpers/*"],
-      "@/partials/*": ["./src/layouts/partials/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],

@@ -4,7 +4,7 @@ meta_title: Hotel Georgia
 author: Reed Nelson
 draft: false
 description: Hotel Georgia recipe.
-image: /assets/drink/hotel-georgia.jpg
+cover: "@assets/drink/hotel-georgia.jpg"
 
 spirits: [gin]
 bottles: []

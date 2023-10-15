@@ -4,7 +4,7 @@ meta_title: Improved Whiskey Cocktail
 author: Reed Nelson
 draft: false
 description: Improved Whiskey Cocktail recipe.
-image: /assets/drink/improved-whiskey-cocktail.jpg
+cover: "@assets/drink/improved-whiskey-cocktail.jpg"
 
 spirits: [whiskey]
 bottles: [maraschino, absinthe]

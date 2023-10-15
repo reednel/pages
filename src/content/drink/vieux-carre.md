@@ -4,7 +4,7 @@ meta_title: Vieux Carré
 author: Reed Nelson
 draft: false
 description: Carré recipe.
-image: /assets/drink/vieux-carre.jpg
+cover: "@assets/drink/vieux-carre.jpg"
 
 spirits: [whiskey, cognac]
 bottles: [ango, peychauds, sweet-vermouth, benedictine]

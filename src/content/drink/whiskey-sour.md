@@ -4,7 +4,7 @@ meta_title: Whiskey Sour
 author: Reed Nelson
 draft: false
 description: Whiskey Sour recipe.
-image: /assets/drink/whiskey-sour.jpg
+cover: "@assets/drink/whiskey-sour.jpg"
 
 spirits: [Whiskey]
 bottles: []

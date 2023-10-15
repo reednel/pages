@@ -4,7 +4,7 @@ meta_title: Gin Buck
 author: Reed Nelson
 draft: false
 description: Gin Buck recipe.
-image: /assets/drink/gin-buck.jpg
+cover: "@assets/drink/gin-buck.jpg"
 
 spirits: [Gin]
 bottles: []

@@ -4,7 +4,7 @@ meta_title: Kentucky Maid
 author: Reed Nelson
 draft: false
 description: Kentucky Maid recipe.
-image: /assets/drink/kentucky-maid.jpg
+cover: "@assets/drink/kentucky-maid.jpg"
 
 spirits: [whiskey]
 bottles: []

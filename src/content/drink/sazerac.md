@@ -4,7 +4,7 @@ meta_title: Sazerac
 author: Reed Nelson
 draft: false
 description: Sazerac recipe.
-image: /assets/drink/sazerac.jpg
+cover: "@assets/drink/sazerac.jpg"
 
 spirits: [whiskey, cognac]
 bottles: [peychauds, absinthe]

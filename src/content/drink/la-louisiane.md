@@ -4,7 +4,7 @@ meta_title: La Louisiane
 author: Reed Nelson
 draft: false
 description: La Louisiane recipe.
-image: /assets/drink/la-louisiane.jpg
+cover: "@assets/drink/la-louisiane.jpg"
 
 spirits: [whiskey]
 bottles: [peychauds, sweet-vermouth, benedictine, absinthe]

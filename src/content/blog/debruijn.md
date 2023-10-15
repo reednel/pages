@@ -28,7 +28,7 @@ Let $A$ be an alphabet of $k$ distinct characters[^2]. A **de Bruijn sequence** 
 
 Each $B(k, n)$ has a corresponding de Bruijn graph. The example in the figure below shows the graph for $B(2, 3)$.
 
-![B(2, 3) Graph](/assets/blog/debruijn/b23_graph.png)
+![B(2, 3) Graph](@assets/blog/debruijn/b23_graph.png)
 
 **De Bruijn graphs** are directed Eulerian graphs, which is to say that there exists a circuit (connected loop) within the graph which visits each *edge* exactly once. These graphs have a number of interrelated properties.
 
@@ -40,7 +40,7 @@ Each $B(k, n)$ has a corresponding de Bruijn graph. The example in the figure be
 
 **Property 6:** Because each vertex has exactly $k$ incoming and outgoing edges, the number of edges of $B(k, n)$ are $k\cdot k^{n-1}$, or $k^n$. Notice that $B(k, n+1)$ has a number of vertices equal to the number of edges of $B(k, n)$. We can draw the graph for $B(k, n+1)$ in the following way: put a vertex where each edge of $B(k, n)$ would be, whose label is the character on that edge, concatenated to the source vertex. In this way, each vertex remains unique with respect to all other vertices in the $B(k, n+1)$ graph. Applying this method to the $B(2, 3)$ graph pictured above yields the $B(2, 4)$ graph pictured in the figure below. This tracks with Property 4.
 
-![B(2, 4) Graph](/assets/blog/debruijn/b24_graph.png)
+![B(2, 4) Graph](@assets/blog/debruijn/b24_graph.png)
 
 **Property 7:** By following an Eulerian circuit through a $B(k, n-1)$ graph, and recording the label of each edge as it is visited, one gets a $B(k, n)$ sequence. Furthermore, the set of sequences constructed by taking all Eulerian circuits in the $B(k,n-1)$ graph is identical to the set of $B(k, n)$ sequences. This fact is key in creating a generating algorithm.
 
@@ -58,7 +58,7 @@ The $B(k, n)$ graph will be represented by an adjacency matrix[^4]. The data str
 
 Each vertex (a value in base-$k$) corresponds to the index of that value in decimal. Then whether one vertex points to another (or the same) depends on if the rightmost $n-1$ characters of the row index are the same as the leftmost $n-1$ characters of the column index (in the spirit of the example described in Property 5). The adjacency matrix corresponding to the $B(2, 3)$ graph is pictured in the figure below, and can be verified by examining the first figure.
 
-![B(2, 3) Adjacency Matrix](/assets/blog/debruijn/b23_adjmatrix.png)
+![B(2, 3) Adjacency Matrix](@assets/blog/debruijn/b23_adjmatrix.png)
 
 ### Traversing the Graph
 
@@ -103,7 +103,7 @@ $\underline{01234}56789 \to \underline{0}5\underline{1}6\underline{2}7\underline
 
 Below are some results from a function which checks each rotation of each sequence provided by the generator, and returns those which out-shuffle.
 
-![Sample out-shuffling de Bruijn sequences](/assets/blog/debruijn/b_outshuffles.png)
+![Sample out-shuffling de Bruijn sequences](@assets/blog/debruijn/b_outshuffles.png)
 
 There would be a number of interesting directions to take this shuffling idea. The naive method for checking if a sequence can shuffle to itself would be $O(n^2)$ with respect to the length of the sequence: for each of $n$ rotations, you compare the character at each index of the original sequence to the character at each index of the transformed sequence. I wonder if it's possible to tell whether some rotation of a sequnce will shuffle, just by examining a single rotation. One might also be able to take this in an algebraic direction: perhaps the right sets of sequences shuffle to each other, forming a [group](https://en.wikipedia.org/wiki/Group_theory) under shuffling operation.
 

@@ -4,7 +4,7 @@ meta_title: Pike Bay Special
 author: Reed Nelson
 draft: false
 description: Pike Bay Special recipe.
-image: /assets/drink/pike-bay-special.jpg
+cover: "@assets/drink/pike-bay-special.jpg"
 
 spirits: [vodka]
 bottles: [irish-cream, schnapps]

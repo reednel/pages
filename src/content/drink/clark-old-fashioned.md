@@ -4,7 +4,7 @@ meta_title: Clark Old Fashioned
 author: Reed Nelson
 draft: false
 description: Clark Old Fashioned recipe.
-image: /assets/drink/clark-old-fashioned.jpg
+cover: "@assets/drink/clark-old-fashioned.jpg"
 
 spirits: [brandy]
 bottles: [ango]

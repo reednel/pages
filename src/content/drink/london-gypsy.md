@@ -4,7 +4,7 @@ meta_title: London Gypsy
 author: Reed Nelson
 draft: false
 description: London Gypsy recipe.
-image: /assets/drink/london-gypsy.jpg
+cover: "@assets/drink/london-gypsy.jpg"
 
 spirits: [gin]
 bottles: [ango, benedictine]

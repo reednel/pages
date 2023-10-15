@@ -18,8 +18,7 @@ const { drink_folder } = config.settings;
 const posts = await getSinglePage(drink_folder);
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
-const { title, description, image, spirits, bottles, tags } = post.data;
-
+const { title, description, cover, spirits, bottles, tags } = post.data;
 const { ingredients, instructions }: Recipe = post.data;
 
 // alphabetize
@@ -37,9 +36,9 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
         <div class="row">
           <div class="lg:col-8 mb-8">
             {
-              image && (
+              cover && (
                 <Image
-                  src={image}
+                  src={cover}
                   width={1920}
                   height={1080}
                   alt={title}

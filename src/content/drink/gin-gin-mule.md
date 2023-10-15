@@ -4,7 +4,7 @@ meta_title: Gin Gin Mule
 author: Reed Nelson
 draft: false
 description: Gin Gin Mule recipe.
-image: /assets/drink/gin-gin-mule.jpg
+cover: "@assets/drink/gin-gin-mule.jpg"
 
 spirits: [Gin]
 bottles: []

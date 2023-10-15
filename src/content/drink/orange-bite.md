@@ -4,7 +4,7 @@ meta_title: Orange Bite
 author: Reed Nelson
 draft: false
 description: Orange Bite recipe.
-image: /assets/drink/orange-bite.jpg
+cover: "@assets/drink/orange-bite.jpg"
 
 spirits: [gin]
 bottles: [cointreau, orange-bitters]

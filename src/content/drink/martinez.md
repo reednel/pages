@@ -4,7 +4,7 @@ meta_title: Martinez
 author: Reed Nelson
 draft: false
 description: Martinez recipe.
-image: /assets/drink/martinez.jpg
+cover: "@assets/drink/martinez.jpg"
 
 spirits: [gin]
 bottles: [ango, sweet-vermouth, maraschino]
