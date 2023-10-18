@@ -6,13 +6,12 @@ import type { Button, Feature } from "@/types";
 import { getEntryBySlug } from "astro:content";
 
 interface Homepage {
+  title: string;
+  meta_title: string;
   banner: {
     title: string;
-    content: string;
-    image: string;
-    button: Button;
+    qotd: string;
   };
-  features: Feature[];
 }
 
 const homepage = await getEntryBySlug("homepage", "-index");
@@ -24,16 +23,17 @@ const { title, meta_title, banner }: Homepage = homepage.data;
   meta_title={meta_title}
 >
   <Background />
-  <!-- Banner -->
   <section class="section pt-14 background-area glob">
     <div class="container">
       <div class="row justify-center">
-        <div class="mb-16 text-center lg:col-7">
+        <div class="my-16 text-center col-10 md:col-6">
           <h1 set:html={markdownify(banner.title)} class="mb-4" />
-          <p set:html={markdownify(banner.content)} class="mb-8" />
+          <div class="mt-20">
+            <h3>QotD:</h3>
+            <p set:html={markdownify(banner.qotd)} class="mt-4 mb-8" />
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- /Banner -->
 </Base>

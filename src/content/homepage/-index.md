@@ -4,5 +4,5 @@ meta_title: Home
 
 banner:
   title: Reed Nelson
-  content: This website is under construction.
+  qotd: "They say you die twice: once when you die, and once when you've scratched and sniffed your last scratch and sniff sticker."
 ---
