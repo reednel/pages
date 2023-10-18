@@ -4,7 +4,7 @@
     "base_url": "https://reednel.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/assets/favicon.ico"
+    "favicon": "/favicon.ico"
   },
 
   "settings": {
@@ -23,7 +23,7 @@
 
   "metadata": {
     "meta_author": "reednel",
-    "meta_image": "/assets/favicon.ico",
+    "meta_image": "/favicon.ico",
     "meta_description": "A place with things."
   }
 }
