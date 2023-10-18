@@ -6,17 +6,17 @@ const {
   drink_folder,
 }: { drink_folder: string } = config.settings;
 const { data } = Astro.props;
-const { title, image } = data.data;
+const { title, cover } = data.data;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
   <a href={`/${drink_folder}/${data.slug}`}>
     <div class="relative">
       {
-        image && (
+        cover && (
           <Image
             class="mb-2 w-full rounded"
-            src={image}
+            src={cover}
             alt={title}
             width={1280}
             height={720}

@@ -18,8 +18,7 @@ const { drink_folder } = config.settings;
 const posts = await getSinglePage(drink_folder);
 const { post } = Astro.props;
 const similarPosts = similerItems(post, posts, post.slug);
-const { title, description, image, spirits, bottles, tags } = post.data;
-
+const { title, description, cover, spirits, bottles, tags } = post.data;
 const { ingredients, instructions }: Recipe = post.data;
 
 // alphabetize
@@ -37,9 +36,9 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
         <div class="row">
           <div class="lg:col-8 mb-8">
             {
-              image && (
+              cover && (
                 <Image
-                  src={image}
+                  src={cover}
                   width={1920}
                   height={1080}
                   alt={title}
@@ -64,7 +63,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                             spirits.map((spirit: string, index: number) => (
                               <a
                                 class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                                href={`/drink/spirits/${spirit}`}
+                                href={`/drinks/spirits/${spirit}`}
                               >
                                 {spirit}
                               </a>
@@ -86,7 +85,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                             bottles.map((bottle: string, index: number) => (
                               <a
                                 class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                                href={`/drink/bottles/${bottle}`}
+                                href={`/drinks/bottles/${bottle}`}
                               >
                                 {bottle}
                               </a>
@@ -107,7 +106,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                           tags.map((tag: string, index: number) => (
                             <a
                               class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                              href={`/drink/tags/${tag}`}
+                              href={`/drinks/tags/${tag}`}
                             >
                               {tag}
                             </a>

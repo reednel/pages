@@ -18,11 +18,11 @@
     },
     {
       "name": "Puzzles",
-      "url": "/puzzle"
+      "url": "/puzzles"
     },
     {
       "name": "Drinks",
-      "url": "/drink"
+      "url": "/drinks"
     }
   ]
 }

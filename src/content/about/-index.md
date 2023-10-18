@@ -2,7 +2,6 @@
 title: About
 meta_title: About
 description: About Reed Nelson.
-image: /assets/about/reed.jpg
 draft: false
 ---
 

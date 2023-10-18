@@ -1,19 +1,19 @@
 ---
 import Base from "@/layouts/Base.astro";
 import PageHeader from "@/components/PageHeader.astro";
-import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
+import { Image } from "astro:assets";
+import reed from "@assets/about/reed.jpg";
 
 const about = await getEntryBySlug("about", "-index");
 const { Content } = await about.render();
-const { title, description, meta_title, image } = about.data;
+const { title, description, meta_title } = about.data;
 ---
 
 <Base
   title={title}
   meta_title={meta_title}
   description={description}
-  image={image}
 >
   <PageHeader title={title} />
   <section class="section-sm">
@@ -28,10 +28,10 @@ const { title, description, meta_title, image } = about.data;
             </div>
             <div class="my-8 lg:col-4">
               {
-                image && (
+                reed && (
                   <Image
                     class="mx-auto rounded-lg w-64"
-                    src={image}
+                    src={reed}
                     width={1024}
                     height={1024}
                     alt={title}
