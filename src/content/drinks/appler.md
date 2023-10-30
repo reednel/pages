@@ -1,10 +1,10 @@
 ---
-title: Appley Cocktail
-meta_title: Appley Cocktail
+title: Appler? I hardly know her!
+meta_title: Appler? I hardly know her!
 author: Reed Nelson
 draft: false
-description: Appley Cocktail recipe.
-cover: "@assets/drinks/appley-cocktail.jpg"
+description: Appler? I hardly know her! recipe.
+cover: "@assets/drinks/appler.jpg"
 
 spirits: [whiskey]
 bottles: []
