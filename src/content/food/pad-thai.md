@@ -6,6 +6,9 @@ draft: false
 description: Pad Thai recipe.
 cover: "@assets/food/pad-thai.jpg"
 
+prep_time: 45
+servings: 4
+
 ingredients:
   list:
     - Wide rice noodles

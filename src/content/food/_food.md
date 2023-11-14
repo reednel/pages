@@ -6,6 +6,9 @@ draft: true
 description:  recipe.
 cover: "@assets/food/.jpg"
 
+prep_time: 0
+servings: 0
+
 ingredients:
   list:
     - Ingredient

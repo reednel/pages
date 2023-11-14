@@ -14,7 +14,7 @@ interface Recipe {
 
 const { food_folder } = config.settings;
 const { post } = Astro.props;
-const { title, description, cover } = post.data;
+const { title, author, description, cover, prep_time, servings } = post.data;
 const { ingredients, instructions, notes }: Recipe = post.data;
 ---
 

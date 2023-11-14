@@ -6,6 +6,9 @@ draft: false
 description: Tofu Burrito recipe.
 cover: "@assets/food/placeholder.jpg"
 
+prep_time: 30
+servings: 4
+
 ingredients:
   list:
     - Tofu

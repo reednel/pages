@@ -46,6 +46,8 @@ const foodCollection = defineCollection({
     cover: image().optional(),
     author: z.string().default("none"),
     draft: z.boolean().optional(),
+    prep_time: z.number().optional(),
+    servings: z.number().optional(),
     ingredients: z.object({
       list: z.array(z.string()).optional(),
       qty: z.array(z.string()).optional(),
