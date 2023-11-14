@@ -15,16 +15,6 @@ const blogCollection = defineCollection({
   }),
 });
 
-// Puzzle collection schema
-const puzzleCollection = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    draft: z.boolean().optional(),
-  }),
-});
-
 // Drink collection schema
 const drinkCollection = defineCollection({
   schema: ({ image }) => z.object({
@@ -46,9 +36,39 @@ const drinkCollection = defineCollection({
   }),
 });
 
+// Food collection schema
+const foodCollection = defineCollection({
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    date: z.date().optional(),
+    cover: image().optional(),
+    author: z.string().default("none"),
+    draft: z.boolean().optional(),
+    ingredients: z.object({
+      list: z.array(z.string()).optional(),
+      qty: z.array(z.string()).optional(),
+    }).optional(),
+    instructions: z.array(z.string()).optional(),
+    notes: z.array(z.string()).optional(),
+  }),
+});
+
+// Puzzle collection schema
+const puzzleCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   blog: blogCollection,
-  puzzles: puzzleCollection,
   drinks: drinkCollection,
+  food: foodCollection,
+  puzzles: puzzleCollection,
 };

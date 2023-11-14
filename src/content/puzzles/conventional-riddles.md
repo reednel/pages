@@ -11,6 +11,7 @@ draft: false
 - [Magic Square](#magic-square)
 - [Mutilated Chessboard Problem](#mutilated-chessboard-problem)
 - [Mutilated Cube Problem](#mutilated-cube-problem)
+- [Some Knights](#some-knights)
 - [Two Ropes](#two-ropes)
 - [Hard Boiled](#hard-boiled)
 - [The Great Divide](#the-great-divide)
@@ -58,6 +59,15 @@ Suppose you have 27 cubes stuck together, forming one larger (3 x 3 x 3) cube. W
 <details>
     <summary>Solution</summary>
     The minimum number of cuts is 6. Proof: Consider the middle cube. There is no way to reveal any two of its faces in a single cut. And then it is trivial to see that it can indeed be done in 6 cuts.
+</details>
+
+## Some Knights
+
+How many knights can you place on a chessboard such that none of them can attack another?
+
+<details>
+    <summary>Solution</summary>
+    A knight's movement pattern necessitates that it lands on a square of the opposite color from the one it starts on. So the optimal placement would be 32 knights, one for each black (white) square on the board.
 </details>
 
 ## Two Ropes
