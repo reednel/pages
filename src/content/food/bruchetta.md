@@ -1,13 +1,13 @@
 ---
-title: Food
-meta_title: Food
-description:  recipe.
+title: Bruchetta
+meta_title: Bruchetta
+description: Bruchetta recipe.
 draft: true
 
-cover: "@assets/food/.jpg"
+cover: "@assets/food/placeholder.jpg"
 author: Reed Nelson
-prep_time: 0
-servings: 0
+prep_time: 30
+servings: 3
 
 ingredients:
   list:

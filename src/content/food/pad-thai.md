@@ -1,11 +1,11 @@
 ---
 title: Pad Thai
 meta_title: Pad Thai
-author: Reed Nelson
 draft: false
 description: Pad Thai recipe.
-cover: "@assets/food/pad-thai.jpg"
 
+cover: "@assets/food/pad-thai.jpg"
+author: Reed Nelson
 prep_time: 45
 servings: 4
 
