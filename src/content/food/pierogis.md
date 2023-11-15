@@ -3,7 +3,7 @@ title: Pierogis
 meta_title: Pierogis
 author: Reed Nelson
 draft: false
-description: Pierogi recipe.
+description: A simple pierogi recipe leaning on flavors of lemon and thyme.
 cover: "@assets/food/placeholder.jpg"
 
 prep_time: 30
@@ -26,15 +26,16 @@ ingredients:
     - some
 
 instructions:
-  - Boil pierogis; remove wheh floating
-  - Chop onion (not too small)
-  - Sautee onion lightly, they should need more time than the pierogis
-  - Add pierogis to pan
-  - When close to done, turn down the heat and add lemon, thyme, salt, and pepper
-  - Cook until golden
+  - Boil pierogis; remove wheh floating.
+  - Chop onion (not too small).
+  - Sautee onion lightly, they should need more time than the pierogis.
+  - Add pierogis to pan.
+  - When close to done, turn down the heat and add lemon, thyme, salt, and pepper.
+  - Cook until golden.
+  - Serve into a bowl, top with parmesan and any additional salt, pepper, or lemon juice to taste.
 
 notes:
   - I recommend the pierogis from Fresh Thyme, given their quality and price.
-  - A good nonstick pan is important for avoiding a ripped-noodle potatoey mess
-  - Covering the pan for a period as soon as lemon is added will make it absorb better
+  - A good nonstick pan is important for avoiding a ripped-noodle potatoey mess.
+  - Covering the pan for a period as soon as lemon is added will make it absorb better.
 ---
