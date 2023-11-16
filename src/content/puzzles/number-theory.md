@@ -5,7 +5,7 @@ description: Number Theory contains a rich set of interesting problems, some sui
 draft: false
 ---
 
-This is a collection of problems from Number Theory. What they all have in common is that the results involve concepts and operations we're all familiar with, so anyone can go "huh, that's a neat fact about numbers!". Regarding difficulty, the "easy" problems should be solvable for anyone, though they may not be that easy. The "meduium" problems actually all come from homeworks from early in my undergraduate Number Theory course. They're quite solvable, but may require insights and ideas that are not reasonable to expect from the leyperson. The "hard" problems are quite hard.
+This is a collection of problems from Number Theory. What they all have in common is that the results involve concepts and operations we're all familiar with, so anyone can go "huh, that's a neat fact about numbers!". Regarding difficulty, the "easy" problems should be solvable for anyone, though they may not be that easy. The "medium" problems actually all come from homeworks from early in my undergraduate Number Theory course. They're quite solvable, but may require insights and ideas that are not reasonable to expect from the leyperson. The "hard" problems are quite hard.
 
 <details>
 <summary>Jump To</summary>
