@@ -1,10 +1,13 @@
 ---
 title: Tofu Burritos
 meta_title: Tofu Burritos
-author: Reed Nelson
 draft: false
-description: Tofu Burrito recipe.
-cover: "@assets/food/placeholder.jpg"
+description: This (nearly) vegan recipe is great fresh or as meal prep.
+
+cover: "@assets/food/tofu-burritos.jpg"
+author: Reed Nelson
+prep_time: 30
+servings: 4
 
 ingredients:
   list:
@@ -13,10 +16,10 @@ ingredients:
     - Romaine
     - Tortillas
     - Mexican cheese blend
-    - Spanish style rice (Trader Joe's)
+    - Spanish style rice
     - Roma tomatoes
     - Sweet onion
-    - cilantro
+    - Cilantro
     - Lime juice
   qty:
     - 1 slab (pressed)
@@ -32,13 +35,15 @@ ingredients:
     - some
 
 instructions:
-  - Dice the tofu into ~ 1&frasl;2 cm cubes; fry dry until crispy
-  - "Prepare pico: chop tomatoes, onion, and cilantro, add lime juice and salt"
-  - Cook rice according to its instructions
-  - Chop lettuce
-  - Wrap everything together
+  - Dice the tofu into ~ 1&frasl;2 cm cubes; fry dry until crispy, adding taco seasoning at the end.
+  - "Prepare pico: chop tomatoes, onion, and cilantro, add lime juice and salt."
+  - Cook rice according to its instructions.
+  - Chop lettuce.
+  - Wrap everything together.
 
 notes:
-  - I recommend storing leftover tofu and rice together, pico in another container, then cheese, lettuce, and tortillas separately.
-  - All ingredients can be acquired at Trader Joe's, the rice must be, and the rice does a lot here.
+  - I specify romaine in the ingredients list for measurement purposes, but pick your favorite leafy green.
+  - I recommend storing leftover tofu and rice together, pico in another container, then cheese, leafy greens, and tortillas separately.
+  - All ingredients can be acquired at Trader Joe's. The rice in particular is a good Joe's purchase.
+  - I like to add a bit of spicy honey to the pico.
 ---

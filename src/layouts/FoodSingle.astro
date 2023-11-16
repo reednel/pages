@@ -2,6 +2,13 @@
 import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { Image } from "astro:assets";
+import { humanize, markdownify } from "@/lib/utils/textConverter";
+
+import {
+  FaRegClock,
+  FaRegUserCircle,
+  FaUtensils,
+} from "react-icons/fa/index.js";
 
 interface Recipe {
   ingredients: {
@@ -14,7 +21,7 @@ interface Recipe {
 
 const { food_folder } = config.settings;
 const { post } = Astro.props;
-const { title, description, cover } = post.data;
+const { title, author, description, cover, prep_time, servings } = post.data;
 const { ingredients, instructions, notes }: Recipe = post.data;
 ---
 
@@ -25,6 +32,7 @@ const { ingredients, instructions, notes }: Recipe = post.data;
         <h1 set:html={title} class="mb-4" />
 
         <div class="row">
+          <!-- Cover Photo -->
           <div class="lg:col-8 mb-8">
             {
               cover && (
@@ -39,6 +47,33 @@ const { ingredients, instructions, notes }: Recipe = post.data;
               )
             }
           </div>
+          <!-- About -->
+          <div class="lg:col-4 mb-8">
+            <section class={`section-sm h-full bg-theme-light dark:bg-darkmode-theme-light rounded-lg`}>
+              <div class="container -my-14">
+                <!-- Author -->
+                <div class="m-4">
+                  <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
+                  {humanize(author)}
+                </div>
+                <!-- Prep Time -->
+                <div class="m-4">
+                  <FaRegClock className={"mr-2 -mt-1 inline-block"} />
+                  {prep_time + " minutes"}
+                </div>
+                <!-- Servings -->
+                <div class="m-4">
+                  <FaUtensils className={"mr-2 -mt-1 inline-block"} />
+                  {servings + " servings"}
+                </div>
+                <!-- Description -->
+                <hr class="my-2" />
+                <div class="m-4">
+                  <div set:html={markdownify(description)} />
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
         
         <!-- Ingredients -->
@@ -48,13 +83,15 @@ const { ingredients, instructions, notes }: Recipe = post.data;
               <div class="md:col-6 lg:col-6 md:order-1">
                 <h2 set:html="Ingredients" class="mb-4" />
                 <div class="row mx-4">
-                  {ingredients.list.map((it: string, index: number) => (
-                    <div class="row my-1">
-                        <div class="col-7" set:html={ingredients.list[index]} />
-                        <div class="col-5 text-right" set:html={ingredients.qty[index]} />
-                      <hr class="my-1">
-                    </div>
-                  ))}
+                  {
+                    ingredients.list.map((it: string, index: number) => (
+                      <div class="row my-1">
+                          <div class="col-7" set:html={ingredients.list[index]} />
+                          <div class="col-5 text-right" set:html={ingredients.qty[index]} />
+                        <hr class="my-1">
+                      </div>
+                    ))
+                  }
                 </div>
               </div>
             </div>
@@ -83,25 +120,27 @@ const { ingredients, instructions, notes }: Recipe = post.data;
         </section>
 
         <!-- Notes -->
-        <section class="section-sm bg-theme-light dark:bg-darkmode-theme-light rounded-lg mb-4">
-          <div class="container -my-10">
-            <div class="row items-center justify-between">
-              <div class="md:order-1">
-                <h2 set:html="Notes" class="mb-4" />
-                <div class="row mx-4">
-                  {notes.map((it: string, index: number) => (
-                    <div class="row my-1">
-                      <div class="col">
-                        {it}
+        { notes && notes.length > 0 && (
+          <section class="section-sm bg-theme-light dark:bg-darkmode-theme-light rounded-lg mb-4">
+            <div class="container -my-10">
+              <div class="row items-center justify-between">
+                <div class="md:order-1">
+                  <h2 set:html="Notes" class="mb-4" />
+                  <div class="row mx-4">
+                    {notes.map((it: string, index: number) => (
+                      <div class="row my-1">
+                        <div class="col">
+                          {it}
+                        </div>
+                        <hr class="my-1">
                       </div>
-                      <hr class="my-1">
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         <!-- Share -->
         <div class="flex items-center justify-center lg:justify-end">

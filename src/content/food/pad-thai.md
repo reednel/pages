@@ -1,10 +1,13 @@
 ---
 title: Pad Thai
 meta_title: Pad Thai
-author: Reed Nelson
 draft: false
-description: Pad Thai recipe.
+description: This vegan pad thai recipe may not be the most culturtally authentic one out there, but it is my own.
+
 cover: "@assets/food/pad-thai.jpg"
+author: Reed Nelson
+prep_time: 45
+servings: 4
 
 ingredients:
   list:
@@ -33,15 +36,15 @@ ingredients:
     - 1&frasl;4 cup
 
 instructions:
-  - "Stir fry prep: chop and combine garlic, ginger, cilantro, green onion, and any other desired ingredients*"
-  - "Noodle prep: cook noodles al dente; rinse and drain well"
-  - "Sauce prep: combine brown sugar, peanut butter, soy sauce, lime juice, and sriracha in a bowl"
-  - "Garnish prep: optionally chop peanuts/limes/cilantro and set aside for serving"
-  - Saute stir fry ingredients in a large pan; account for differences in cook time among ingredients
-  - Add noodles to the pan, combine thoroughly
-  - Add sauce, combine thoroughly
-  - Remove from heat when sauce is cooked in to your liking
-  - Serve
+  - "Stir fry prep: chop and combine garlic, ginger, cilantro, green onion, and any other desired ingredients*."
+  - "Noodle prep: cook noodles al dente; rinse and drain well."
+  - "Sauce prep: combine brown sugar, peanut butter, soy sauce, lime juice, and sriracha in a bowl."
+  - "Garnish prep: optionally chop peanuts/limes/cilantro and set aside for serving."
+  - Saute stir fry ingredients in a large pan; account for differences in cook time among ingredients.
+  - Add noodles to the pan, combine thoroughly.
+  - Add sauce, combine thoroughly.
+  - Remove from heat when sauce is cooked in to your liking.
+  - Serve.
 
 notes:
   - "*Other desired ingredients may include spinach, broccoli, bell pepper, baby corn, etc."

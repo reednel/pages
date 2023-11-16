@@ -1,10 +1,13 @@
 ---
 title: Food
 meta_title: Food
-author: Reed Nelson
-draft: true
 description:  recipe.
+draft: true
+
 cover: "@assets/food/.jpg"
+author: Reed Nelson
+prep_time: 0
+servings: 0
 
 ingredients:
   list:
