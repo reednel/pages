@@ -1,20 +1,16 @@
 ---
 import Base from "@/layouts/Base.astro";
 import Background from "@/components/Background.astro";
-import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 import getQuote from "@/lib/utils/getQuote";
+
 interface Homepage {
   title: string;
   meta_title: string;
-  banner: {
-    title: string;
-    qotd: string;
-  };
 }
 
 const homepage = await getEntryBySlug("homepage", "-index");
-const { title, meta_title, banner }: Homepage = homepage.data;
+const { title, meta_title }: Homepage = homepage.data;
 ---
 
 <Base
@@ -26,11 +22,9 @@ const { title, meta_title, banner }: Homepage = homepage.data;
     <div class="container">
       <div class="row justify-center">
         <div class="my-16 text-center col-10 md:col-6">
-          <h1 set:html={markdownify(banner.title)} class="mb-4" />
-          <div class="mt-20">
-            <h3>QotW:</h3>
-            <p set:html={ getQuote() } class="mt-4 mb-8" />
-            <!-- <p set:html={markdownify(banner.qotd)} class="mt-4 mb-8" /> -->
+          <h1 class="mb-4"> Reed Nelson </h1>
+          <div class="mt-12">
+            <p set:html={ getQuote() } class="mt-4"/>
           </div>
         </div>
       </div>
