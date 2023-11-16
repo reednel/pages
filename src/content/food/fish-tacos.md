@@ -4,7 +4,7 @@ meta_title: Fish Tacos
 description: This is a recipe for mango salsa fish tacos. This recipe is missing the essential component of how to prepare the fish. I don't know.
 draft: false
 
-cover: "@assets/food/placeholder.jpg"
+cover: "@assets/food/fish-tacos.jpg"
 author: Ben
 prep_time: 60
 servings: 3

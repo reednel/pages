@@ -1,10 +1,10 @@
 ---
-title: Bruchetta
-meta_title: Bruchetta
-description: This is just some tame bruchetta. Truly the poor-man's mini pizza, while simultaneously a classy appetizer.
+title: Bruschetta
+meta_title: Bruschetta
+description: This is just some tame bruschetta. Truly the poor-man's mini pizza, while simultaneously a classy appetizer.
 draft: false
 
-cover: "@assets/food/placeholder.jpg"
+cover: "@assets/food/bruschetta.jpg"
 author: Reed Nelson
 prep_time: 30
 servings: 3
@@ -41,7 +41,7 @@ instructions:
   - Serve, topping with balsamic glaze and spicy honey to taste.
 
 notes:
-  - Watch out for the pieces sticking to the baking sheet. This can be ameliorated by nudging the pieces of bruchetta as they bake.
+  - Watch out for the pieces sticking to the baking sheet. This can be ameliorated by nudging the pieces of bruschetta as they bake.
   - You may be tempted to add salt to the tomato stuff, but the balsamic will do plenty.
   - It's nice to get a little balsamic vinegar in each spoonful for the baguette, but it's easy to get the bread soggy with it.
 ---
