@@ -1,7 +1,7 @@
 ---
 title: Bruschetta
 meta_title: Bruschetta
-description: This is just some tame bruschetta. Truly the poor-man's mini pizza, while simultaneously a classy appetizer.
+description: This is just some tame bruschetta. Truly the poor-man's mini pizza, though simultaneously a classy appetizer.
 draft: false
 
 cover: "@assets/food/bruschetta.jpg"

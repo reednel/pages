@@ -2,7 +2,7 @@
 title: Pad Thai
 meta_title: Pad Thai
 draft: false
-description: This vegan pad thai recipe may not be the most culturtally authentic one out there, but it is my own.
+description: This vegan pad thai recipe may not be the most culturally authentic one out there, but it is my own.
 
 cover: "@assets/food/pad-thai.jpg"
 author: Reed Nelson
