@@ -1,0 +1,37 @@
+---
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import PageHeader from "@/components/PageHeader.astro";
+import { getEntryBySlug } from "astro:content";
+
+const conversation_page = await getEntryBySlug("conversation", "-index");
+const { title, meta_title, cards } = conversation_page.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+>
+  <PageHeader title={title} />
+  <div class="container my-16"> 
+    <div class="row justify-center">
+      <div class="col-10">
+        <div class="content">
+          <div class="row">
+            {
+              cards.map((card: string) => (
+                <div class="mb-8 sm:col-6 md:col-4">
+                  <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light flex items-center justify-center hover:scale-110 transition-transform duration-500">
+                    <div class="m-4 bg-body dark:bg-darkmode-body text-center">
+                      <p class="align-middle">{card}</p>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>
