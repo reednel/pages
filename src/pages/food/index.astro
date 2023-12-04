@@ -27,7 +27,7 @@ const currentPosts = posts.slice(0, config.settings.food_pagination);
       <div class="row">
         {
           currentPosts.map((post) => (
-            <div class="mb-8 md:col-6 lg:col-4">
+            <div class="mb-4 md:mb-8 md:col-6 lg:col-4">
               <FoodCard data={post} />
             </div>
           ))

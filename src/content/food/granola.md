@@ -1,14 +1,14 @@
 ---
-title: Food
-meta_title: Food
-description:  recipe.
+title: Granola
+meta_title: Granola
+description: Granola recipe.
 draft: true
 
-cover: "@assets/food/.jpg"
-author: Reed Nelson
+# cover: "@assets/food/granola.jpg"
+author: Rachel Croft
 prep_time: 0
 servings: 0
-diet: ""
+diet: Vegan, GF
 
 ingredients:
   list:

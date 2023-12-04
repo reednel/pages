@@ -16,14 +16,17 @@ const { title, meta_title, cards } = conversation_page.data;
   <div class="container my-16"> 
     <div class="row justify-center">
       <div class="col-10">
+        <!-- <div class="text-center mt-8">
+          <button class="shuffle">Shuffle Cards</button>
+        </div> -->
         <div class="content">
           <div class="row">
             {
               cards.map((card: string) => (
-                <div class="mb-8 sm:col-6 md:col-4">
+                <div class="mb-4 md:mb-8 sm:col-6 md:col-4">
                   <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light flex items-center justify-center hover:scale-110 transition-transform duration-500">
                     <div class="m-4 bg-body dark:bg-darkmode-body text-center">
-                      <p class="align-middle">{card}</p>
+                      <p class="align-middle">{ card }</p>
                     </div>
                   </div>
                 </div>
@@ -34,4 +37,31 @@ const { title, meta_title, cards } = conversation_page.data;
       </div>
     </div>
   </div>
+
+  <script>
+    function shuffleCards(cards) {
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+      }
+    }
+
+    // Find all buttons with the `alert` class on the page.
+    const buttons = document.querySelectorAll('button.shuffle');
+  
+    // Handle clicks on each button.
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        console.log('shuffle');
+        const cards = document.querySelectorAll('.content .row .col-6');
+        shuffleCards(cards);
+        // update the DOM with the new order
+        cards.forEach((card) => {
+          document?.querySelector('.content .row')?.appendChild(card);
+        });
+      
+      });
+    });
+  </script>
+
 </Base>
