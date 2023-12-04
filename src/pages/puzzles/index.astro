@@ -24,7 +24,7 @@ const posts = await getSinglePage(puzzle_folder);
           {
             posts.map((post) => (
               // Puzzle Card
-              <div class="mb-8 md:col-6 lg:col-4">
+              <div class="mb-4 md:mb-8 md:col-6 lg:col-4">
                 <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light">
                   <PuzzleCard data={post} />
                 </div>

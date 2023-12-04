@@ -31,3 +31,9 @@ export const sortByWeight = (array: any[]) => {
   const sortedArray = [...new Set([...sortedWeightedArray, ...withoutWeight])];
   return sortedArray;
 };
+
+// sort by random
+export const sortByRandom = (array: any[]) => {
+  const sortedArray = array.sort(() => Math.random() - 0.5);
+  return sortedArray;
+};

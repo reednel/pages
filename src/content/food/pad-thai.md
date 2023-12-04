@@ -8,6 +8,7 @@ cover: "@assets/food/pad-thai.jpg"
 author: Reed Nelson
 prep_time: 45
 servings: 4
+diet: Vegan, GF
 
 ingredients:
   list:
@@ -27,10 +28,10 @@ ingredients:
     - 1 bunch
     - 6 stalks
     - 4 cloves
-    - 4 tbsp
+    - 1&frasl;4 cup
     - 1&frasl;3 cup
     - 1&frasl;2 cup
-    - 3 tbsp
+    - 1&frasl;4 cup
     - 1&frasl;4 cup
     - 1 tbsp
     - 1&frasl;4 cup

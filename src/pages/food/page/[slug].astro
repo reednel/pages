@@ -44,25 +44,21 @@ export async function getStaticPaths() {
   <PageHeader title={postIndex.data.title} />
   <section class="section">
     <div class="container">
-      <div class="row gx-5">
-        <!-- food posts -->
-        <div class="lg:col-8">
-          <div class="row">
-            {
-              currentPosts.map((post) => (
-                <div class="mb-8 md:col-6">
-                  <FoodCard data={post} />
-                </div>
-              ))
-            }
-          </div>
-          <Pagination
-            section={food_folder}
-            currentPage={currentPage}
-            totalPages={totalPages}
-          />
-        </div>
+      <!-- food posts -->
+      <div class="row">
+        {
+          currentPosts.map((post) => (
+            <div class="mb-4 md:mb-8 md:col-6 lg:col-4">
+              <FoodCard data={post} />
+            </div>
+          ))
+        }
       </div>
+      <Pagination
+        section={food_folder}
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
     </div>
   </section>
 </Base>

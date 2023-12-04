@@ -8,6 +8,7 @@ import {
   FaRegClock,
   FaRegUserCircle,
   FaUtensils,
+  FaSeedling
 } from "react-icons/fa/index.js";
 
 interface Recipe {
@@ -21,7 +22,7 @@ interface Recipe {
 
 const { food_folder } = config.settings;
 const { post } = Astro.props;
-const { title, author, description, cover, prep_time, servings } = post.data;
+const { title, author, description, cover, prep_time, servings, diet } = post.data;
 const { ingredients, instructions, notes }: Recipe = post.data;
 ---
 
@@ -57,15 +58,26 @@ const { ingredients, instructions, notes }: Recipe = post.data;
                   {humanize(author)}
                 </div>
                 <!-- Prep Time -->
-                <div class="m-4">
-                  <FaRegClock className={"mr-2 -mt-1 inline-block"} />
-                  {prep_time + " minutes"}
-                </div>
+                {prep_time && (
+                  <div class="m-4">
+                    <FaRegClock className={"mr-2 -mt-1 inline-block"} />
+                    {prep_time + " minutes"}
+                  </div>
+                )}
                 <!-- Servings -->
-                <div class="m-4">
-                  <FaUtensils className={"mr-2 -mt-1 inline-block"} />
-                  {servings + " servings"}
-                </div>
+                {servings && (
+                  <div class="m-4">
+                    <FaUtensils className={"mr-2 -mt-1 inline-block"} />
+                    {servings + " servings"}
+                  </div>
+                )}
+                <!-- Diet -->
+                {diet && (
+                  <div class="m-4">
+                    <FaSeedling className={"mr-2 -mt-1 inline-block"} />
+                    {diet}
+                  </div>
+                )}
                 <!-- Description -->
                 <hr class="my-2" />
                 <div class="m-4">

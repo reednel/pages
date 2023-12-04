@@ -8,6 +8,7 @@ cover: "@assets/food/bruschetta.jpg"
 author: Reed Nelson
 prep_time: 30
 servings: 3
+diet: Vegetarian
 
 ingredients:
   list:
@@ -30,7 +31,7 @@ ingredients:
     - some
 
 instructions:
-  - Preheat the oven to 400.
+  - Preheat the oven to 400 F.
   - Dice tomatoes to the desired size, add them to a bowl.
   - Cut the basil to shreds, mix it in with the tomatoes.
   - Add balsamic vinegar to the bowl and let it soak 5-60 minutes.

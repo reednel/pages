@@ -8,6 +8,7 @@ cover: "@assets/food/tofu-burritos.jpg"
 author: Reed Nelson
 prep_time: 30
 servings: 4
+diet: Vegan
 
 ingredients:
   list:
