@@ -67,9 +67,12 @@ const similerItems = (currentItem: any, allItems: any, slug: string) => {
   // sort items by number of instances
   const sortedItems = filterBySlug.sort((a: any, b: any) => itemCount[b.slug] - itemCount[a.slug]);
 
+  // remove items with fewer than 2 instances
+  const filteredItems = sortedItems.filter((item: any) => itemCount[item.slug] > 1);
+  
   // remove duplicates
-  const uniqueItems = [...new Set(sortedItems.map((item: any) => item.slug))].map((slug: string) => {
-    return sortedItems.find((item: any) => item.slug === slug);
+  const uniqueItems = [...new Set(filteredItems.map((item: any) => item.slug))].map((slug: string) => {
+    return filteredItems.find((item: any) => item.slug === slug);
   });
 
   return uniqueItems;

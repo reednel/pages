@@ -3,7 +3,6 @@ title: Pike Bay Special
 meta_title: Pike Bay Special
 author: Reed Nelson
 draft: false
-description: Pike Bay Special recipe.
 cover: "@assets/drinks/pike-bay-special.jpg"
 
 spirits: [vodka]

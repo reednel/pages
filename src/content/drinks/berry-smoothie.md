@@ -3,7 +3,6 @@ title: Berry Smoothie
 meta_title: Berry Smoothie
 author: Reed Nelson
 draft: false
-description: Berry Smoothie recipe.
 cover: "@assets/drinks/berry-smoothie.jpg"
 
 spirits: []

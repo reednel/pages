@@ -3,7 +3,6 @@ title: Cucumber Martini
 meta_title: Cucumber Martini
 author: Reed Nelson
 draft: false
-description: Cucumber Martini recipe.
 cover: "@assets/drinks/cucumber-martini.jpg"
 
 spirits: [vodka]

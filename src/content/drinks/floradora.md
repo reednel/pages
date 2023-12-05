@@ -3,7 +3,6 @@ title: Floradora
 meta_title: Floradora
 author: Reed Nelson
 draft: false
-description: Floradora recipe.
 cover: "@assets/drinks/floradora.jpg"
 
 spirits: [gin]

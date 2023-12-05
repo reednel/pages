@@ -3,7 +3,6 @@ title: Appler? I hardly know her!
 meta_title: Appler? I hardly know her!
 author: Reed Nelson
 draft: false
-description: Appler? I hardly know her! recipe.
 cover: "@assets/drinks/appler.jpg"
 
 spirits: [whiskey]

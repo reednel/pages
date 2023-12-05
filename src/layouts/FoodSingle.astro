@@ -53,36 +53,42 @@ const { ingredients, instructions, notes }: Recipe = post.data;
             <section class={`section-sm h-full bg-theme-light dark:bg-darkmode-theme-light rounded-lg`}>
               <div class="container -my-14">
                 <!-- Author -->
-                <div class="m-4">
-                  <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-                  {humanize(author)}
-                </div>
+                { author && (
+                  <div class="m-4">
+                    <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
+                    {humanize(author)}
+                  </div>
+                )}
                 <!-- Prep Time -->
-                {prep_time && (
+                { prep_time && (
                   <div class="m-4">
                     <FaRegClock className={"mr-2 -mt-1 inline-block"} />
                     {prep_time + " minutes"}
                   </div>
                 )}
                 <!-- Servings -->
-                {servings && (
+                { servings && (
                   <div class="m-4">
                     <FaUtensils className={"mr-2 -mt-1 inline-block"} />
                     {servings === 1 ? "1 serving" : servings + " servings"}
                   </div>
                 )}
                 <!-- Diet -->
-                {diet && (
+                { diet && (
                   <div class="m-4">
                     <FaSeedling className={"mr-2 -mt-1 inline-block"} />
                     {diet}
                   </div>
                 )}
                 <!-- Description -->
-                <hr class="my-2" />
-                <div class="m-4">
-                  <div set:html={markdownify(description)} />
-                </div>
+                { description && (
+                  <div>
+                    {author || prep_time || servings || diet ? <hr class="my-2" /> : null}
+                    <div class="m-4">
+                      <div set:html={markdownify(description)} />
+                    </div>
+                  </div>
+                )}
               </div>
             </section>
           </div>
@@ -95,15 +101,13 @@ const { ingredients, instructions, notes }: Recipe = post.data;
               <div class="md:col-6 lg:col-6 md:order-1">
                 <h2 set:html="Ingredients" class="mb-4" />
                 <div class="row mx-2 md:mx-4">
-                  {
-                    ingredients.list.map((it: string, index: number) => (
-                      <div class="row my-1">
-                          <div class="col-7" set:html={ingredients.list[index]} />
-                          <div class="col-5 text-right" set:html={ingredients.qty[index]} />
-                        <hr class="my-1">
-                      </div>
-                    ))
-                  }
+                  { ingredients.list.map((it: string, index: number) => (
+                    <div class="row my-1">
+                        <div class="col-7" set:html={ingredients.list[index]} />
+                        <div class="col-5 text-right" set:html={ingredients.qty[index]} />
+                      <hr class="my-1">
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

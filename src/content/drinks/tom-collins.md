@@ -3,7 +3,6 @@ title: Tom Collins
 meta_title: Tom Collins
 author: Reed Nelson
 draft: false
-description: Tom Collins recipe.
 cover: "@assets/drinks/tom-collins.jpg"
 
 spirits: [gin]

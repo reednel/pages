@@ -3,7 +3,6 @@ title: Raspberryy Cocktail
 meta_title: Raspberryy Cocktail
 author: Reed Nelson
 draft: false
-description: Raspberryy Cocktail recipe.
 cover: "@assets/drinks/raspberryy-cocktail.jpg"
 
 spirits: [whiskey]

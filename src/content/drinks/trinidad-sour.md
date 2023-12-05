@@ -3,7 +3,6 @@ title: Trinidad Sour
 meta_title: Trinidad Sour
 author: Reed Nelson
 draft: false
-description: Trinidad Sour recipe.
 cover: "@assets/drinks/trinidad-sour.jpg"
 
 spirits: [whiskey]

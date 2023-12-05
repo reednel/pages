@@ -3,7 +3,6 @@ title: Amaretto Sour
 meta_title: Amaretto Sour
 author: Reed Nelson
 draft: false
-description: Amaretto Sour recipe.
 cover: "@assets/drinks/amaretto-sour.jpg"
 
 spirits: [whiskey]

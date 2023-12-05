@@ -3,7 +3,6 @@ title: Martinez
 meta_title: Martinez
 author: Reed Nelson
 draft: false
-description: Martinez recipe.
 cover: "@assets/drinks/martinez.jpg"
 
 spirits: [gin]

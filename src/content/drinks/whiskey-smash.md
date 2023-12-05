@@ -3,7 +3,6 @@ title: Whiskey Smash
 meta_title: Whiskey Smash
 author: Reed Nelson
 draft: false
-description: Whiskey Smash recipe.
 cover: "@assets/drinks/whiskey-smash.jpg"
 
 spirits: [whiskey]

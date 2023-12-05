@@ -3,7 +3,6 @@ title: Lucien Gaudin
 meta_title: Lucien Gaudin
 author: Reed Nelson
 draft: false
-description: Lucien Gaudin recipe.
 cover: "@assets/drinks/lucien-gaudin.jpg"
 
 spirits: [gin]

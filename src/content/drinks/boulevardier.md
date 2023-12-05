@@ -3,7 +3,6 @@ title: Boulevardier
 meta_title: Boulevardier
 author: Reed Nelson
 draft: false
-description: Boulevardier recipe.
 cover: "@assets/drinks/boulevardier.jpg"
 
 spirits: [whiskey]

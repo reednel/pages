@@ -3,7 +3,6 @@ title: Elderflower Martini
 meta_title: Elderflower Martini
 author: Reed Nelson
 draft: false
-description: Elderflower Martini recipe.
 cover: "@assets/drinks/elderflower-martini.jpg"
 
 spirits: [vodka]

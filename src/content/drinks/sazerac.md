@@ -3,7 +3,6 @@ title: Sazerac
 meta_title: Sazerac
 author: Reed Nelson
 draft: false
-description: Sazerac recipe.
 cover: "@assets/drinks/sazerac.jpg"
 
 spirits: [whiskey, cognac]

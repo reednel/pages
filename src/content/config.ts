@@ -33,6 +33,7 @@ const drinkCollection = defineCollection({
       qty: z.array(z.string()).optional(),
     }).optional(),
     instructions: z.array(z.string()).optional(),
+    notes: z.array(z.string()).optional(),
   }),
 });
 

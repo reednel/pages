@@ -3,7 +3,6 @@ title: Aviation
 meta_title: Aviation
 author: Reed Nelson
 draft: false
-description: Aviation recipe.
 cover: "@assets/drinks/aviation.jpg"
 
 spirits: [gin]

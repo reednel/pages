@@ -3,7 +3,6 @@ title: Wisconsin Old Fashioned
 meta_title: Wisconsin Old Fashioned
 author: Reed Nelson
 draft: false
-description: Wisconsin Old Fashioned recipe.
 cover: "@assets/drinks/wisconsin-old-fashioned.jpg"
 
 spirits: [brandy]

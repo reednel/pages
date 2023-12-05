@@ -3,7 +3,6 @@ title: Whiskey Daisy
 meta_title: Whiskey Daisy
 author: Reed Nelson
 draft: false
-description: Whiskey Daisy recipe.
 cover: "@assets/drinks/whiskey-daisy.jpg"
 
 spirits: [whiskey]

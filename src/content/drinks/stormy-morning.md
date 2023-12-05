@@ -3,7 +3,6 @@ title: Stormy Morning
 meta_title: Stormy Morning
 author: Reed Nelson
 draft: false
-description: Stormy Morning recipe.
 cover: "@assets/drinks/stormy-morning.jpg"
 
 spirits: []
