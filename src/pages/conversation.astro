@@ -1,6 +1,5 @@
 ---
 import Base from "@/layouts/Base.astro";
-import { markdownify } from "@/lib/utils/textConverter";
 import PageHeader from "@/components/PageHeader.astro";
 import { getEntryBySlug } from "astro:content";
 
@@ -15,7 +14,7 @@ const { title, meta_title, cards } = conversation_page.data;
   <PageHeader title={title} />
   <div class="container my-16"> 
     <div class="row justify-center">
-      <div class="col-10">
+      <div class="col md:col-10">
         <!-- <div class="text-center mt-8">
           <button class="shuffle">Shuffle Cards</button>
         </div> -->
@@ -24,7 +23,7 @@ const { title, meta_title, cards } = conversation_page.data;
             {
               cards.map((card: string) => (
                 <div class="mb-4 md:mb-8 sm:col-6 md:col-4">
-                  <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light flex items-center justify-center hover:scale-110 transition-transform duration-500">
+                  <div class="min-h-full border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light flex items-center justify-center hover:scale-105 lg:hover:scale-110 transition-transform duration-500">
                     <div class="m-4 bg-body dark:bg-darkmode-body text-center">
                       <p class="align-middle">{ card }</p>
                     </div>
@@ -38,7 +37,7 @@ const { title, meta_title, cards } = conversation_page.data;
     </div>
   </div>
 
-  <script>
+  <!-- <script>
     function shuffleCards(cards) {
       for (let i = cards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -62,6 +61,6 @@ const { title, meta_title, cards } = conversation_page.data;
       
       });
     });
-  </script>
+  </script> -->
 
 </Base>
