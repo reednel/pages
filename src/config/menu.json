@@ -23,6 +23,10 @@
     {
       "name": "Drinks",
       "url": "/drinks"
+    },
+    {
+      "name": "Food",
+      "url": "/food"
     }
   ]
 }
