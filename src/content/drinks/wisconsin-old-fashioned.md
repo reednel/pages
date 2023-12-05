@@ -1,10 +1,6 @@
 ---
 title: Wisconsin Old Fashioned
-meta_title: Wisconsin Old Fashioned
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/wisconsin-old-fashioned.jpg"
-
 spirits: [brandy]
 bottles: [ango]
 tags: [classic, sweet]

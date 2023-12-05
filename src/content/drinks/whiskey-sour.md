@@ -1,10 +1,6 @@
 ---
 title: Whiskey Sour
-meta_title: Whiskey Sour
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/whiskey-sour.jpg"
-
 spirits: [Whiskey]
 bottles: []
 tags: [classic, creamy, citrusy]

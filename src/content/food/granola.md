@@ -1,9 +1,7 @@
 ---
 title: Granola
-meta_title: Granola
 description: Granola recipe.
 draft: true
-
 # cover: "@assets/food/granola.jpg"
 author: Rachel Croft
 prep_time: 0

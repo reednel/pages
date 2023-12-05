@@ -1,8 +1,6 @@
 ---
 title: Action Riddles
-meta_title: Action Riddles
 description: These riddles are given by example. The solver has succeeded when discover the trick and can give examples as well as the riddler.
-draft: false
 ---
 
 These riddles are given by example. The solver has succeeded when discover the trick and can give examples as well as the riddler.

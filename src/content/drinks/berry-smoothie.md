@@ -1,10 +1,6 @@
 ---
 title: Berry Smoothie
-meta_title: Berry Smoothie
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/berry-smoothie.jpg"
-
 spirits: []
 bottles: [almande]
 tags: [light, creamy]

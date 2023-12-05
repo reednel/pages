@@ -1,8 +1,6 @@
 ---
 title: Conventional Riddles
-meta_title: Conventional Riddles
 description: This is a collection of riddles that don't have a special theme or mode.
-draft: false
 ---
 
 <details>

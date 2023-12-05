@@ -1,10 +1,6 @@
 ---
 title: La Louisiane
-meta_title: La Louisiane
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/la-louisiane.jpg"
-
 spirits: [whiskey]
 bottles: [peychauds, sweet-vermouth, benedictine, absinthe]
 tags: [bold]

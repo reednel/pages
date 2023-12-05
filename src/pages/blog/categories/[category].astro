@@ -25,7 +25,7 @@ const posts = await getSinglePage(config.settings.blog_folder);
 const filterByCategories = taxonomyFilter(posts, "categories", category!);
 ---
 
-<Base title={category}>
+<Base meta_title={category}>
   <PageHeader title={category} />
   <div class="section-sm pb-0">
     <div class="container">

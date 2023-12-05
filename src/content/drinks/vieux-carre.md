@@ -1,10 +1,6 @@
 ---
 title: Vieux Carré
-meta_title: Vieux Carré
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/vieux-carre.jpg"
-
 spirits: [whiskey, cognac]
 bottles: [ango, peychauds, sweet-vermouth, benedictine]
 tags: [classic, bold]

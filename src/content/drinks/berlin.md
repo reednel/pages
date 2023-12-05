@@ -1,10 +1,6 @@
 ---
 title: Berlin
-meta_title: Berlin
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/berlin.jpg"
-
 spirits: [whiskey]
 bottles: [sweet-vermouth, benedictine]
 tags: [spirit-forward, bold]

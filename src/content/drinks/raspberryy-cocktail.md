@@ -1,10 +1,6 @@
 ---
 title: Raspberryy Cocktail
-meta_title: Raspberryy Cocktail
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/raspberryy-cocktail.jpg"
-
 spirits: [whiskey]
 bottles: [peychauds]
 tags: [fruity, sweet]

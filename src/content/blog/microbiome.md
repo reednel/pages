@@ -1,6 +1,5 @@
 ---
 title: Microbiome Network Alignment
-meta_title: Microbiome Network Alignment
 description: none
 date: 2022-08-15T05:00:00Z
 categories: [Mathematics]

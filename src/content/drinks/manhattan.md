@@ -1,10 +1,6 @@
 ---
 title: Manhattan
-meta_title: Manhattan
 cover: "@assets/drinks/manhattan.jpg"
-author: Reed Nelson
-draft: false
-
 spirits: [whiskey]
 bottles: [sweet-vermouth, ango]
 tags: [classic, bold]

@@ -1,10 +1,6 @@
 ---
 title: Whiskey Smash
-meta_title: Whiskey Smash
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/whiskey-smash.jpg"
-
 spirits: [whiskey]
 bottles: []
 tags: [classic, citrusy]

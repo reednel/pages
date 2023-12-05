@@ -1,10 +1,6 @@
 ---
 title: Irish Maid
-meta_title: Irish Maid
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/irish-maid.jpg"
-
 spirits: [whiskey]
 bottles: []
 tags: [mellow, sweet]

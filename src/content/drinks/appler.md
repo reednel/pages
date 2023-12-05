@@ -1,10 +1,6 @@
 ---
 title: Appler? I hardly know her!
-meta_title: Appler? I hardly know her!
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/appler.jpg"
-
 spirits: [whiskey]
 bottles: []
 tags: [crisp, fruity]

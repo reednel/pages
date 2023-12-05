@@ -1,6 +1,5 @@
 ---
 title: De Bruijn Sequences
-meta_title: De Bruijn Sequences
 description: De Bruijn sequences make up a niche topic at an intersection of graph theory and combinatorics. We will discuss some of the properties of these sequences, and their surprising applications.
 date: 2021-05-05T06:00:00Z
 categories: [Mathematics]

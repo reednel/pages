@@ -1,10 +1,6 @@
 ---
 title: Boulevardier
-meta_title: Boulevardier
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/boulevardier.jpg"
-
 spirits: [whiskey]
 bottles: [sweet-vermouth, campari]
 tags: [classic, bold, bitter]

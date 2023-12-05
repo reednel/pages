@@ -1,10 +1,6 @@
 ---
 title: Elderflower Martini
-meta_title: Elderflower Martini
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/elderflower-martini.jpg"
-
 spirits: [vodka]
 bottles: [st-germain]
 tags: [floral]

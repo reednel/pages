@@ -1,9 +1,6 @@
 ---
 title: Pierogis
-meta_title: Pierogis
-draft: false
 description: A simple pierogi recipe leaning on flavors of lemon and thyme.
-
 cover: "@assets/food/pierogis.jpg"
 author: Reed Nelson
 prep_time: 30

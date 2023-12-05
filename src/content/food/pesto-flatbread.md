@@ -1,9 +1,6 @@
 ---
 title: Pesto Flatbread
-meta_title: Pesto Flatbread
 description: This is a pesto recipe thinly disguised as a meal.
-draft: false
-
 cover: "@assets/food/pesto-flatbread.jpg"
 author: Rachel Croft
 prep_time: 25

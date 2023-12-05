@@ -1,10 +1,6 @@
 ---
 title: Whiskey Daisy
-meta_title: Whiskey Daisy
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/whiskey-daisy.jpg"
-
 spirits: [whiskey]
 bottles: []
 tags: []

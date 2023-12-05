@@ -1,10 +1,6 @@
 ---
 title: Amaretto Sour
-meta_title: Amaretto Sour
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/amaretto-sour.jpg"
-
 spirits: [whiskey]
 bottles: [amaretto]
 tags: [creamy]

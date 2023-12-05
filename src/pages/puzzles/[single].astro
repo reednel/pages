@@ -17,12 +17,11 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { title, meta_title, description } = post.data;
+const { title, description } = post.data;
 ---
 
 <Base
-  title={title}
-  meta_title={meta_title}
+  meta_title={title}
   description={description}
 >
   <PuzzleSingle post={post} />

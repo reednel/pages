@@ -1,10 +1,6 @@
 ---
 title: London Gypsy
-meta_title: London Gypsy
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/london-gypsy.jpg"
-
 spirits: [gin]
 bottles: [ango, benedictine]
 tags: [bold, herbacious]

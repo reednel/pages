@@ -1,6 +1,5 @@
 ---
 title: Diffie Hellman
-meta_title: Diffie Hellman
 description: none
 date: 2022-07-10T05:00:00Z
 categories: [Cryptography]

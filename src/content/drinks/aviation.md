@@ -1,10 +1,6 @@
 ---
 title: Aviation
-meta_title: Aviation
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/aviation.jpg"
-
 spirits: [gin]
 bottles: [creme-de-violette, maraschino]
 tags: [citrusy]

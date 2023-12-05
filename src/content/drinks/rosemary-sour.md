@@ -1,10 +1,6 @@
 ---
 title: Rosemary Sour
-meta_title: Rosemary Sour
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/rosemary-sour.jpg"
-
 spirits: [whiskey]
 bottles: []
 tags: [creamy, herbacious]

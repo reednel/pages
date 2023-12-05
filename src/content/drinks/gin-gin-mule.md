@@ -1,10 +1,6 @@
 ---
 title: Gin Gin Mule
-meta_title: Gin Gin Mule
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/gin-gin-mule.jpg"
-
 spirits: [Gin]
 bottles: []
 tags: [bubbly, crisp, citrusy]

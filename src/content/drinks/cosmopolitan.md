@@ -1,10 +1,6 @@
 ---
 title: Cosmopolitan
-meta_title: Cosmopolitan
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/cosmopolitan.jpg"
-
 spirits: [vodka]
 bottles: [cointreau]
 tags: [classic, sweet, citrusy]

@@ -1,10 +1,6 @@
 ---
 title: Orange Bite
-meta_title: Orange Bite
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/orange-bite.jpg"
-
 spirits: [gin]
 bottles: [cointreau, orange-bitters]
 tags: [creamy, bitter, citrusy]

@@ -1,10 +1,6 @@
 ---
 title: Floradora
-meta_title: Floradora
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/floradora.jpg"
-
 spirits: [gin]
 bottles: []
 tags: [bubbly]

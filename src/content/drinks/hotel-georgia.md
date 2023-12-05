@@ -1,10 +1,6 @@
 ---
 title: Hotel Georgia
-meta_title: Hotel Georgia
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/hotel-georgia.jpg"
-
 spirits: [gin]
 bottles: []
 tags: [citrusy]

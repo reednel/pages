@@ -22,7 +22,7 @@ const posts = await getSinglePage(config.settings.drink_folder);
 const filterByCategories = taxonomyFilter(posts, "tags", tag!);
 ---
 
-<Base title={tag}>
+<Base meta_title={tag}>
   <PageHeader title={tag} />
   <div class="section-sm pb-0">
     <div class="container">

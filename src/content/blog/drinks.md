@@ -1,6 +1,5 @@
 ---
 title: On Drinks
-meta_title: On Drinks
 description: yeah
 date: 2023-08-21T05:00:00Z
 author: Reed Nelson

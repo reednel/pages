@@ -1,10 +1,6 @@
 ---
 title: Raspberry Martini
-meta_title: Raspberry Martini
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/raspberry-martini.jpg"
-
 spirits: [vodka]
 bottles: []
 tags: [fruity]

@@ -1,10 +1,6 @@
 ---
 title: Gin Buck
-meta_title: Gin Buck
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/gin-buck.jpg"
-
 spirits: [Gin]
 bottles: []
 tags: [bubbly, crisp, citrusy]

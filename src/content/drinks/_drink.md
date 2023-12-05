@@ -1,11 +1,9 @@
 ---
 title: Drink
-meta_title: Drink
-author: Reed Nelson
+author: ""
 draft: true
 cover: "@assets/drinks/.jpg"
-
-description:  recipe.
+description: ""
 spirits: [spirit]
 bottles: [bottle]
 tags: [tag]
@@ -18,4 +16,7 @@ ingredients:
 
 instructions:
   - Step
+
+notes:
+  - Note
 ---

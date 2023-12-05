@@ -1,10 +1,6 @@
 ---
 title: Sazerac
-meta_title: Sazerac
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/sazerac.jpg"
-
 spirits: [whiskey, cognac]
 bottles: [peychauds, absinthe]
 tags: [classic, bold, spirit-forward]

@@ -1,8 +1,6 @@
 ---
 title: What-Am-I Riddles
-meta_title: What-Am-I Riddles
 description: These riddles list a set of properties, and the solver has to identify the (hopefully unique) thing that posesses them.
-draft: false
 ---
 
 <details>

@@ -1,10 +1,6 @@
 ---
 title: Trinidad Sour
-meta_title: Trinidad Sour
-author: Reed Nelson
-draft: false
 cover: "@assets/drinks/trinidad-sour.jpg"
-
 spirits: [whiskey]
 bottles: [ango]
 tags: [classic, bold, bitter]

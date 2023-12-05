@@ -1,8 +1,6 @@
 ---
 title: Conversation Cards
-meta_title: Conversation Cards
 description: I made a set of conversation cards so you don't have to buy one.
-draft: false
 
 cards:
  - What was your first impression of me? What surprised you after getting to know me?

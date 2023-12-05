@@ -25,7 +25,7 @@ const posts = await getSinglePage(config.settings.drink_folder);
 const filterBySpirits = taxonomyFilter(posts, "spirits", spirit!);
 ---
 
-<Base title={spirit}>
+<Base meta_title={spirit}>
   <PageHeader title={spirit} />
   <div class="section-sm pb-0">
     <div class="container">

@@ -4,14 +4,13 @@ import { defineCollection, z } from "astro:content";
 const blogCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    meta_title: z.string().optional(),
     description: z.string().optional(),
     date: z.date().optional(),
     author: z.string().default("Reed Nelson"),
     categories: z.array(z.string()).default(["none"]),
     tags: z.array(z.string()).default(["none"]),
     complexity: z.number().default(1),
-    draft: z.boolean().optional(),
+    draft: z.boolean().default(false),
   }),
 });
 
@@ -19,7 +18,6 @@ const blogCollection = defineCollection({
 const drinkCollection = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
-    meta_title: z.string().optional(),
     description: z.string().optional(),
     date: z.date().optional(),
     cover: image().optional(),
@@ -27,7 +25,7 @@ const drinkCollection = defineCollection({
     spirits: z.array(z.string()).optional(),
     bottles: z.array(z.string()).optional(),
     tags: z.array(z.string()).optional(),
-    draft: z.boolean().optional(),
+    draft: z.boolean().default(false),
     ingredients: z.object({
       list: z.array(z.string()).optional(),
       qty: z.array(z.string()).optional(),
@@ -41,12 +39,11 @@ const drinkCollection = defineCollection({
 const foodCollection = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
-    meta_title: z.string().optional(),
     description: z.string().optional(),
     date: z.date().optional(),
     cover: image().optional(),
     author: z.string().optional(),
-    draft: z.boolean().optional(),
+    draft: z.boolean().default(false),
     prep_time: z.number().optional(),
     servings: z.number().optional(),
     diet: z.string().optional(),
@@ -63,9 +60,8 @@ const foodCollection = defineCollection({
 const puzzleCollection = defineCollection({
   schema: z.object({
     title: z.string(),
-    meta_title: z.string().optional(),
     description: z.string().optional(),
-    draft: z.boolean().optional(),
+    draft: z.boolean().default(false),
   }),
 });
 

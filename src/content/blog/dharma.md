@@ -1,6 +1,5 @@
 ---
 title: A Theory on Dharma
-meta_title: A Theory on Dharma
 description: Who are you meant to be? Is that who you are? How can you become that person? We discuss an actionable guide to answering these questions, which is based on the teachings of the Bhagavad Gita.
 date: 2020-10-10T05:00:00Z
 categories: [Philosophy]
