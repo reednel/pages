@@ -2,7 +2,7 @@
 title: Artificial Consciousness and Phenomenology
 description: I believe that with a phenomenological examination of human consciousness and experience, we stand to better express what is necessary for a true, human-level artificial consciousness.
 date: 2022-04-07T05:00:00Z
-categories: [Philosophy]
+categories: [philosophy]
 author: Reed Nelson
 tags: [ai]
 complexity: 1.2

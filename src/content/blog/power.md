@@ -2,7 +2,7 @@
 title: The Will to Power
 description: Friedrich Nietzsche is one of the most significant philosophers of all time. Here we discuss Nietzsche's invigorating and liberating philosophy for living.
 date: 2021-09-25T05:00:00Z
-categories: [Philosophy]
+categories: [philosophy]
 author: Reed Nelson
 tags: [purpose, power, nietzsche]
 complexity: 1.1

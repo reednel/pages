@@ -2,7 +2,7 @@
 title: RSA Encryption
 description: You use the RSA encryption scheme every day. It's simple enough to understand, but quite powerful. In this post, we discuss the basics of ciphersystems, public key encryption, and why RSA works so well.
 date: 2022-06-10T05:00:00Z
-categories: [Cryptography]
+categories: [computer-science]
 author: Reed Nelson
 tags: [math, cryptography]
 complexity: 1.5

@@ -2,7 +2,7 @@
 title: Microbiome Network Alignment
 description: none
 date: 2022-08-15T05:00:00Z
-categories: [Mathematics]
+categories: [mathematics]
 author: Reed Nelson
 tags: [math, biology, graph]
 complexity: 1

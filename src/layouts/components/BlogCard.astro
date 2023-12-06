@@ -1,6 +1,6 @@
 ---
 import config from "@/config/config.json";
-import { humanize, slugify } from "@/lib/utils/textConverter";
+import { upperHumanize, slugify } from "@/lib/utils/textConverter";
 import { FaRegFolder, FaRegClock } from "react-icons/fa/index.js";
 import readingTime from "@/lib/utils/readingTime";
 
@@ -24,7 +24,7 @@ const { title, description, categories, complexity } = data.data;
         {
           categories.map((category: string, index: number) => (
             <a href={`/blog/categories/${slugify(category)}`}>
-              {humanize(category)}
+              {upperHumanize(category)}
               {index !== categories.length - 1 && ","}
             </a>
           ))

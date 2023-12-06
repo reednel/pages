@@ -4,7 +4,7 @@ import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import similerItems from "@/lib/utils/similarItems";
-import { markdownify } from "@/lib/utils/textConverter";
+import { lowerHumanize, markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
 
 interface Recipe {
@@ -65,7 +65,7 @@ const { ingredients, instructions, notes }: Recipe = post.data;
                             class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
                             href={`/drinks/spirits/${spirit}`}
                           >
-                            {spirit}
+                            {lowerHumanize(spirit)}
                           </a>
                         ))}
                       </li>
@@ -82,7 +82,7 @@ const { ingredients, instructions, notes }: Recipe = post.data;
                             class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
                             href={`/drinks/bottles/${bottle}`}
                           >
-                            {bottle}
+                            {lowerHumanize(bottle)}
                           </a>
                         ))}
                       </li>
@@ -98,7 +98,7 @@ const { ingredients, instructions, notes }: Recipe = post.data;
                           class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
                           href={`/drinks/tags/${tag}`}
                         >
-                          {tag}
+                          {lowerHumanize(tag)}
                         </a>
                       ))}
                     </li>

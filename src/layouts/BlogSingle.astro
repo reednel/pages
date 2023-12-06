@@ -5,7 +5,7 @@ import config from "@/config/config.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import similerItems from "@/lib/utils/similarItems";
-import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
+import { lowerHumanize, upperHumanize, markdownify, slugify } from "@/lib/utils/textConverter";
 
 import {
   FaRegCalendarAlt,
@@ -32,7 +32,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
         <ul class="mb-4">
           <li class="mr-4 inline-block">
             <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-            {humanize(author)}
+            {upperHumanize(author)}
           </li>
           <li class="mr-4 inline-block">
             <FaRegCalendarAlt className={"mr-2 -mt-1 inline-block"} />
@@ -43,7 +43,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
             {
               categories.map((category: string, index: number) => (
                 <a href={`/blog/categories/${slugify(category)}`}>
-                  {humanize(category)}
+                  {upperHumanize(category)}
                   {index !== categories.length - 1 && ","}
                 </a>
               ))
@@ -65,7 +65,7 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
                       class="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
                       href={`/blog/tags/${slugify(tag)}`}
                     >
-                      {tag}
+                      {lowerHumanize(tag)}
                     </a>
                   </li>
                 ))

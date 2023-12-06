@@ -2,7 +2,7 @@
 title: Cryptography
 description: none
 date: 2022-08-30T05:00:00Z
-categories: [Cryptography]
+categories: [computer-science]
 author: Reed Nelson
 tags: [cryptography]
 complexity: 1
