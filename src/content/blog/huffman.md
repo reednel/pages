@@ -4,7 +4,7 @@ description: Data compression is a process of modifying the representation of so
 date: 2022-06-30T05:00:00Z
 categories: [Cryptography]
 author: Reed Nelson
-tags: [math, crypto, information-theory]
+tags: [math, cryptography, information-theory]
 complexity: 1.7
 draft: false
 ---

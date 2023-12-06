@@ -4,7 +4,7 @@ description: You use the RSA encryption scheme every day. It's simple enough to 
 date: 2022-06-10T05:00:00Z
 categories: [Cryptography]
 author: Reed Nelson
-tags: [math, crypto]
+tags: [math, cryptography]
 complexity: 1.5
 draft: false
 ---

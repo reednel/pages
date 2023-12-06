@@ -4,7 +4,7 @@ description: none
 date: 2022-07-10T05:00:00Z
 categories: [Cryptography]
 author: Reed Nelson
-tags: [math, crypto]
+tags: [math, cryptography]
 complexity: 1
 draft: true
 ---

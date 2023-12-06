@@ -55,8 +55,8 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
         </div>
         <hr>
         <div class="row items-start justify-between mt-4">
-          <div class="mb-4 flex justify-center items-center lg:justify-start lg:col-5 lg:mb-0">
-            <h5 class="mr-3">Tags:</h5>
+          <div class="mb-4 flex justify-center items-center lg:justify-start lg:col-8 lg:mb-0">
+            <h4 class="mr-3">Tags:</h4>
             <ul>
               {
                 tags.map((tag: string) => (
@@ -85,21 +85,25 @@ tags.sort((a: string, b: string) => a.localeCompare(b));
       </article>
     </div>
 
+    <!-- Related posts -->
     {
       similarPosts.length > 0 && (
-        <!-- Related posts -->
-        <div class="section pb-0">
-          <h2 class="h3 mb-12 text-center">Related Posts</h2>
-          <div class="row justify-center">
-            {
-              similarPosts.slice(0, 3).map((post) => (
-                <div class="lg:col-4 mb-12">
-                  <BlogCard data={post} />
-                </div>
-              ))
-            }
+        <div class="row justify-center pt-12 pb-0">
+          <h2 class="h3 mb-4 text-center">Related Posts</h2>
+          <div class="lg:col-10">
+            <div class="row justify-center">
+              {
+                similarPosts.slice(0, 2).map((post) => (
+                  <div class="md:col-6 px-4 py-2">
+                    <BlogCard data={post} />
+                  </div>
+                ))
+              }
+            </div>
+            
           </div>
         </div>
       )
     }
+  </div>
 </section>
