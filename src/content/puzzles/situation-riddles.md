@@ -1,8 +1,6 @@
 ---
 title: Situation Riddles
-meta_title: Situation Riddles
 description: With these riddles, the riddler gives an initial prompt, and the solver(s) ask yes-or-no questions to decuce the full circumstances of the situation.
-draft: false
 ---
 
 With these riddles, the riddler gives an initial prompt, and the solver(s) ask yes-or-no questions to decuce the full circumstances of the situation.

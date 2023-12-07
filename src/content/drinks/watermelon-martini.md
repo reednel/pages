@@ -1,11 +1,6 @@
 ---
 title: Watermelon Martini
-meta_title: Watermelon Martini
-author: Reed Nelson
-draft: false
-description: Watermelon Martini recipe.
 cover: "@assets/drinks/watermelon-martini.jpg"
-
 spirits: [vodka]
 bottles: [cointreau]
 tags: [sweet, fruity]

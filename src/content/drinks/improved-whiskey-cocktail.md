@@ -1,11 +1,6 @@
 ---
 title: Improved Whiskey Cocktail
-meta_title: Improved Whiskey Cocktail
-author: Reed Nelson
-draft: false
-description: Improved Whiskey Cocktail recipe.
 cover: "@assets/drinks/improved-whiskey-cocktail.jpg"
-
 spirits: [whiskey]
 bottles: [maraschino, absinthe]
 tags: [classic, spirit-forward, bold]

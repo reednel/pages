@@ -1,5 +1,5 @@
 import config from "@/config/config.json";
-import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
+import { upperHumanize, plainify, slugify } from "@/lib/utils/textConverter";
 import Fuse from "fuse.js";
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -125,7 +125,7 @@ const Search = ({ searchList }: Props) => {
                       <FaRegUserCircle
                         className={"-mt-1 mr-2 inline-block"}
                       />
-                      {humanize(item.data.author)}
+                      {upperHumanize(item.data.author)}
                     </li>
                     <li className="mr-4 inline-block">
                       <FaRegFolder className={"-mt-1 mr-2 inline-block"} />
@@ -135,7 +135,7 @@ const Search = ({ searchList }: Props) => {
                             href={`/blog/categories/${slugify(category)}`}
                             key={category}
                           >
-                            {humanize(category)}
+                            {upperHumanize(category)}
                             {index !== item.data.categories.length - 1 && ", "}
                           </a>
                         ),

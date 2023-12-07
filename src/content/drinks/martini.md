@@ -1,11 +1,6 @@
 ---
 title: Martini
-meta_title: Martini
-author: Reed Nelson
-draft: false
-description: Martini recipe.
 cover: "@assets/drinks/martini.jpg"
-
 spirits: [gin]
 bottles: [dry-vermouth, orange-bitters]
 tags: [classic, spirit-forward]

@@ -1,9 +1,6 @@
 ---
 title: Tofu Burritos
-meta_title: Tofu Burritos
-draft: false
 description: This (nearly) vegan recipe is great fresh or as meal prep.
-
 cover: "@assets/food/tofu-burritos.jpg"
 author: Reed Nelson
 prep_time: 30

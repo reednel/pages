@@ -1,4 +1,5 @@
 ---
+import { lowerHumanize } from "@/lib/utils/textConverter";
 const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
 ---
 
@@ -18,7 +19,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
                   class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
                   href={`/drinks/spirits/${spirit}`}
                 >
-                  {spirit}
+                  {lowerHumanize(spirit)}
                 </a>
               </li>
             );
@@ -39,7 +40,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
                   class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
                   href={`/drinks/bottles/${bottle}`}
                 >
-                  {bottle}
+                  {lowerHumanize(bottle)}
                 </a>
               </li>
             );
@@ -60,7 +61,7 @@ const { tags, spirits, bottles, allSpirits, allBottles } = Astro.props;
                   class="m-1 block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
                   href={`/drinks/tags/${tag}`}
                 >
-                  {tag}
+                  {lowerHumanize(tag)}
                 </a>
               </li>
             );

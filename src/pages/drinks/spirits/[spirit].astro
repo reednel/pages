@@ -4,6 +4,7 @@ import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { getTaxonomy } from "@/lib/taxonomyParser.astro";
+import { lowerHumanize } from "@/lib/utils/textConverter";
 import taxonomyFilter from "@/lib/utils/taxonomyFilter";
 import PageHeader from "@/components/PageHeader.astro";
 
@@ -25,8 +26,8 @@ const posts = await getSinglePage(config.settings.drink_folder);
 const filterBySpirits = taxonomyFilter(posts, "spirits", spirit!);
 ---
 
-<Base title={spirit}>
-  <PageHeader title={spirit} />
+<Base meta_title={lowerHumanize(spirit)}>
+  <PageHeader title={lowerHumanize(spirit)} />
   <div class="section-sm pb-0">
     <div class="container">
       <div class="row">

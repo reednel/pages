@@ -1,11 +1,6 @@
 ---
 title: Perfect Manhattan
-meta_title: Perfect Manhattan
-description: Perfect Manhattan recipe.
 cover: "@assets/drinks/perfect-manhattan.jpg"
-author: Reed Nelson
-draft: false
-
 spirits: [whiskey]
 bottles: [sweet-vermouth, dry-vermouth, ango]
 tags: [classic, bold]

@@ -1,14 +1,11 @@
 ---
 title: Punch Salad
-meta_title: Punch Salad
 description: This is an attempt to recreate the incredible salad of the same name served by Punch Pizza.
-draft: false
-
 cover: "@assets/food/punch-salad.jpg"
 author: Reed Nelson
 prep_time: 15
 servings: 2
-diet: Vegetarian
+diet: Vegetarian, GF
 
 ingredients:
   list:

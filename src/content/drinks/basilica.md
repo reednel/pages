@@ -1,11 +1,6 @@
 ---
 title: Basilica
-meta_title: Basilica
-author: Reed Nelson
-draft: false
-description: Basilica recipe.
 cover: "@assets/drinks/basilica.jpg"
-
 spirits: [gin]
 bottles: [ango, st-germain]
 tags: [herbacious, floral]

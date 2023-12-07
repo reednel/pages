@@ -12,8 +12,7 @@ const posts = await getSinglePage(puzzle_folder);
 ---
 
 <Base
-  title={postIndex.data.title}
-  meta_title={postIndex.data.meta_title}
+  meta_title={postIndex.data.title}
   image={postIndex.data.image}
   description={postIndex.data.description}
 >
@@ -25,9 +24,7 @@ const posts = await getSinglePage(puzzle_folder);
             posts.map((post) => (
               // Puzzle Card
               <div class="mb-4 md:mb-8 md:col-6 lg:col-4">
-                <div class="min-h-full block border border-light bg-transparent text-light rounded-sm dark:text-darkmode-light dark:border-darkmode-light">
                   <PuzzleCard data={post} />
-                </div>
               </div>
             ))
           }

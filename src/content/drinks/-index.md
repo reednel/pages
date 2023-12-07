@@ -1,6 +1,5 @@
 ---
 title: Drinks
-meta_title: Drinks
 description: A selection of good cocktails.
 
 # SPIRITS: whiskey, gin, vodka, brandy, cognac, rum, tequila

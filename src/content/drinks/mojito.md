@@ -1,11 +1,6 @@
 ---
 title: Mojito
-meta_title: Mojito
-author: Reed Nelson
-draft: false
-description: Mojito recipe.
 cover: "@assets/drinks/mojito.jpg"
-
 spirits: [rum]
 bottles: []
 tags: [crisp, citrusy, mellow]

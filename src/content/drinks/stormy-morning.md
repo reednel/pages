@@ -1,11 +1,6 @@
 ---
 title: Stormy Morning
-meta_title: Stormy Morning
-author: Reed Nelson
-draft: false
-description: Stormy Morning recipe.
 cover: "@assets/drinks/stormy-morning.jpg"
-
 spirits: []
 bottles: [creme-de-violette, st-germain, white-wine]
 tags: [citrusy, floral]

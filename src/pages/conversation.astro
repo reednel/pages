@@ -4,12 +4,11 @@ import PageHeader from "@/components/PageHeader.astro";
 import { getEntryBySlug } from "astro:content";
 
 const conversation_page = await getEntryBySlug("conversation", "-index");
-const { title, meta_title, cards } = conversation_page.data;
+const { title, cards } = conversation_page.data;
 ---
 
 <Base
-  title={title}
-  meta_title={meta_title}
+  meta_title={title}
 >
   <PageHeader title={title} />
   <div class="container my-16"> 

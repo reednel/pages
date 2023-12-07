@@ -1,9 +1,6 @@
 ---
 title: BLT
-meta_title: BLT
 description: "What sets this BLT apart is the usage of the superior sandwich bread: croissant."
-draft: false
-
 cover: "@assets/food/blt.jpg"
 author: Reed Nelson
 prep_time: 25

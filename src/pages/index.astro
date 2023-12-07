@@ -10,12 +10,11 @@ interface Homepage {
 }
 
 const homepage = await getEntryBySlug("homepage", "-index");
-const { title, meta_title }: Homepage = homepage.data;
+const { title }: Homepage = homepage.data;
 ---
 
 <Base
-  title={title}
-  meta_title={meta_title}
+  meta_title={title}
 >
   <Background />
   <section class="section pt-14 background-area glob">

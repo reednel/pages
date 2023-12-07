@@ -14,17 +14,15 @@ interface Project {
 
 interface Projects {
   title: string;
-  meta_title: string;
   projects: Project[];
 }
 
 const projects_page = await getEntryBySlug("projects", "-index");
-const { title, meta_title, projects }: Projects = projects_page.data;
+const { title, projects }: Projects = projects_page.data;
 ---
 
 <Base
-  title={title}
-  meta_title={meta_title}
+  meta_title={title}
 >
   <PageHeader title={title} />
   <div class="container my-16"> 

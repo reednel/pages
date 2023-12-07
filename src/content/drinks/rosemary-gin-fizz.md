@@ -1,11 +1,6 @@
 ---
 title: Rosemary Gin Fizz
-meta_title: Rosemary Gin Fizz
-author: Reed Nelson
-draft: false
-description: Rosemary Gin Fizz recipe.
 cover: "@assets/drinks/rosemary-gin-fizz.jpg"
-
 spirits: [gin]
 bottles: []
 tags: [bubbly, citrusy, crisp]

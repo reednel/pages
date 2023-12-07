@@ -1,6 +1,5 @@
 ---
 title: Banana Bread
-meta_title: Banana Bread
 description: Banana bread recipe.
 draft: true
 

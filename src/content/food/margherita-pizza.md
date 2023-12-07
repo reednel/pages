@@ -1,9 +1,6 @@
 ---
 title: Margherita Pizza
-meta_title: Margherita Pizza
 description: The base recipe is a margherita, but using a little creativity and free will, you can make it better.
-draft: false
-
 cover: "@assets/food/margherita-pizza.jpg"
 author: Reed Nelson
 prep_time: 30

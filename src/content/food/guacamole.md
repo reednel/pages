@@ -1,9 +1,6 @@
 ---
 title: Guacamole
-meta_title: Guacamole
 description: A basic guac recipe, in case you're into that.
-draft: false
-
 cover: "@assets/food/guacamole.jpg"
 author: Reed Nelson
 prep_time: 15

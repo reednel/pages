@@ -1,11 +1,6 @@
 ---
 title: Bourbon Bash
-meta_title: Bourbon Bash
-author: Reed Nelson
-draft: false
-description: Bourbon Bash recipe.
 cover: "@assets/drinks/bourbon-bash.jpg"
-
 spirits: [whiskey]
 bottles: []
 tags: [citrusy]
