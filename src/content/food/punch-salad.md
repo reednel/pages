@@ -1,6 +1,6 @@
 ---
 title: Punch Salad
-description: This is an attempt to recreate the incredible salad of the same name served by Punch Pizza.
+description: This recipe is an approximation of the Punch Salad from Punch Pizza.
 cover: "@assets/food/punch-salad.jpg"
 author: Reed Nelson
 prep_time: 15
@@ -19,14 +19,14 @@ ingredients:
     - Honey
     - Dijon mustard
   qty:
-    - 10 oz
+    - 5 oz
     - 1&frasl;4 cup
-    - 1&frasl;2 cup
-    - 2 slices
-    - 1 small
-    - 1&frasl;2 cup
+    - 1&frasl;4 cup
+    - 1 slice
+    - 1&frasl;2
     - 3 tbsp
-    - 1 1&frasl;2 tbsp
+    - 2 tbsp
+    - 1 tbsp
     - 1&frasl;2 tsp
 
 instructions:
@@ -36,5 +36,4 @@ instructions:
 
 notes:
   - It is recommended to use freshly and finely grated parmesan.
-  - Refrain from adding all dressing immediately, it may be more than desired.
 ---
