@@ -16,6 +16,7 @@ With these riddles, the riddler gives an initial prompt, and the solver(s) ask y
 - [Cactus](#cactus)
 - [Abel and Cain](#abel-and-cain)
 - [A rope breaks. A bell rings. A man dies.](#a-rope-breaks-a-bell-rings-a-man-dies)
+- [The Bar](#the-bar)
 
 </details>
 
@@ -89,4 +90,13 @@ A rope breaks. A bell rings. A man dies.
 <details>
     <summary>Solution</summary>
     A blind man enjoys walking near a cliff, and uses the sound of a buoy to gauge his distance from the edge. One day the buoy's anchor rope breaks, allowing the buoy to drift away from the shore, and the man walks over the edge of the cliff.
+</details>
+
+## The Bar
+
+A man enters a bar, and asks for a drink. The bartender points a gun at his head. The man says 'thank you' and walks out.
+
+<details>
+    <summary>Solution</summary>
+    The man asked for water, so as to cure himself of the hiccups. The bartender noticed this, and cured his hiccups another way.
 </details>

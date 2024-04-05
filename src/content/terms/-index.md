@@ -4,7 +4,7 @@ title: Terms & Conditions
 
 ## Copyright
 
-&copy; 2023 Reed Nelson. All rights reserved.
+&copy; 2024 Reed Nelson. All rights reserved.
 
 ## Reuse
 
@@ -15,7 +15,7 @@ The source code for reednel.com is protected under the MIT License. In short, yo
 ```md
 The MIT License (MIT)
 
-Copyright (c) 2023 Reed Nelson
+Copyright (c) 2024 Reed Nelson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

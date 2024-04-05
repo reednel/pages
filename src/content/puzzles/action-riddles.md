@@ -1,6 +1,6 @@
 ---
 title: Action Riddles
-description: These riddles are given by example. The solver has succeeded when discover the trick and can give examples as well as the riddler.
+description: These riddles are given by example. The solver has succeeded when they discover the trick and can give examples as well as the riddler.
 ---
 
 These riddles are given by example. The solver has succeeded when discover the trick and can give examples as well as the riddler.
@@ -29,7 +29,7 @@ The riddle is to correctly identify what is and what is not behind the green gla
 
 ## Good Line/Bad Line
 
-Ex. "Okay, from ____ to ____ is a good line." and "From ____ to ____ is a bad line."
+Ex. "Okay, from \_**\_ to \_\_** is a good line." and "From \_**\_ to \_\_** is a bad line."
 
 The riddle is to be able to correctly identify good and bad lines.
 
