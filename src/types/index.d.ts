@@ -4,49 +4,28 @@ import type { MarkdownHeading } from "astro";
 export type GenericEntry = CollectionEntry<CollectionKey>;
 
 export type AboutEntry = CollectionEntry<"about">;
-export type AuthorsEntry = CollectionEntry<"authors">;
+// export type AuthorsEntry = CollectionEntry<"authors">;
 export type BlogEntry = CollectionEntry<"blog">;
-export type DocsEntry = CollectionEntry<"docs">;
+// export type DocsEntry = CollectionEntry<"docs">;
+export type DrinksEntry = CollectionEntry<"drinks">;
 export type HomeEntry = CollectionEntry<"home">;
-export type PoetryEntry = CollectionEntry<"poetry">;
-export type RecipesEntry = CollectionEntry<"recipes">;
+// export type PoetryEntry = CollectionEntry<"poetry">;
+export type FoodEntry = CollectionEntry<"food">;
 export type TermsEntry = CollectionEntry<"terms">;
 
 export type SearchableEntry =
   | AboutEntry
-  | AuthorsEntry
+  // | AuthorsEntry
   | BlogEntry
-  | DocsEntry
-  | PoetryEntry
-  | RecipesEntry
+  // | DocsEntry
+  | DrinksEntry
+  // | PoetryEntry
+  | FoodEntry
   | TermsEntry;
 
 export type EntryReference = {
   id: string;
   collection: string;
-};
-
-export type AuthorsIndex = {
-  title: string;
-  description: string | null;
-};
-
-export type BlogIndex = {
-  title: string;
-  description?: string;
-};
-
-export type DocsIndex = {
-  title: string;
-  description?: string;
-  image: string | null;
-  imageAlt: string | null;
-  draft: boolean | null;
-};
-
-export type RecipesIndex = {
-  title: string;
-  description: string | null;
 };
 
 // Define heading hierarchy so that we can generate ToC
