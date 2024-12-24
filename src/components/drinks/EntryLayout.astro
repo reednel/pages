@@ -3,7 +3,7 @@ import type { DrinksEntry } from "@/types";
 import Share from "@components/common/Share.astro";
 import { Image } from "astro:assets";
 import BaseLayout from "@components/base/BaseLayout.astro";
-import { upperHumanize, markdownify, slugify, lowerHumanize } from "@lib/textConverter";
+import { upperHumanize, markdownify, lowerHumanize } from "@lib/textConverter";
 import DrinksCard from "@components/drinks/Card.astro";
 
 import { FaRegUserCircle } from "react-icons/fa";
@@ -67,61 +67,53 @@ const {
               {
                 author && (
                   <div class="m-4">
-                    <a href={`/authors/${slugify(author.id)}`}>
-                      <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-                      {upperHumanize(author.id)}
-                    </a>
+                    <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
+                    {upperHumanize(author)}
                   </div>
                 )
               }
               <!-- Spirits -->
-              <ul>
-                { spirits && (
-                  <div>
-                    <li class="mr-4">
-                      { spirits.map((spirit) => (
-                        <a
-                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/drinks/spirits/${spirit}`}
-                        >
-                          {lowerHumanize(spirit)}
-                        </a>
-                      ))}
+              { spirits && (
+                <ul>
+                  { spirits.map((spirit) => (
+                    <li class="m-1 inline-block">
+                      <Button
+                        label={spirit}
+                        link={`/drinks/spirits/${lowerHumanize(spirit)}`}
+                        type="secondary"
+                      />
                     </li>
-                  </div>
-                )}
-              </ul>
+                  ))}
+                </ul>
+              )}
               <!-- Bottles -->
-              <ul>
-                { bottles && (
-                  <div>
-                    <li class="mr-4">
-                      { bottles.map((bottle: string) => (
-                        <a
-                          class="m-1 inline-block rounded bg-white px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark"
-                          href={`/drinks/bottles/${bottle}`}
-                        >
-                          {lowerHumanize(bottle)}
-                        </a>
-                      ))}
+              { bottles && (
+                <ul>
+                  { bottles.map((bottle) => (
+                    <li class="m-1 inline-block">
+                      <Button
+                        label={bottle}
+                        link={`/drinks/bottles/${lowerHumanize(bottle)}`}
+                        type="secondary"
+                      />
                     </li>
-                  </div>
-                )}
-              </ul>
+                  ))}
+                </ul>
+              )}
               <!-- Tags -->
-              <ul>
-                { tags && (
-                  <li class="p-1">
-                    { tags.map((tag: string) => (
+              { tags && (
+                <ul>
+                  { tags.map((tag) => (
+                    <li class="m-1 inline-block">
                       <Button
                         label={tag}
                         link={`/drinks/tags/${lowerHumanize(tag)}`}
                         type="secondary"
                       />
-                    ))}
-                  </li>
-                )}
-              </ul>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <!-- Description -->
               {
                 description && (

@@ -29,8 +29,8 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "serif",
-      "primary_type": "serif",
+      "primary": "cormorant",
+      "primary_type": "cormorant",
       "secondary": "Open Sans",
       "secondary_type": "sans-serif"
     },

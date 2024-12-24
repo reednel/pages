@@ -3,7 +3,7 @@ import type { FoodEntry } from "@/types";
 import Share from "@components/common/Share.astro";
 import { Image } from "astro:assets";
 import BaseLayout from "@components/base/BaseLayout.astro";
-import { upperHumanize, markdownify, slugify } from "@lib/textConverter";
+import { upperHumanize, markdownify } from "@lib/textConverter";
 
 import {
   FaRegClock,
@@ -57,15 +57,15 @@ const {
           }
           <!-- About -->
           <section class="col basis-1/3 p-2 min-w-72">
-            <div class="glass rounded-lg p-2 h-full intersect:animate-fadeUp opacity-0">
+            <div
+              class="glass rounded-lg p-2 h-full intersect:animate-fadeUp opacity-0"
+            >
               <!-- Author -->
               {
                 author && (
                   <div class="m-4">
-                    <a href={`/authors/${slugify(author.id)}`}>
-                      <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-                      {upperHumanize(author.id)}
-                    </a>
+                    <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
+                    {upperHumanize(author)}
                   </div>
                 )
               }
