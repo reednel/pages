@@ -20,6 +20,7 @@
     "search_description_length": 200,
     "food_pagination": 6,
     "drinks_pagination": 10,
-    "hide_blog_toc": false
+    "hide_blog_toc": false,
+    "hide_puzzle_toc": false
   }
 }

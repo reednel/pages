@@ -16,7 +16,7 @@ We will begin by exploring some of the interesting combinatorial and graph theor
 ## Properties
 
 Let $A$ be an alphabet of $k$ distinct characters[^2]. A **de Bruijn sequence** is a cyclic string of characters from $A$ where each permutation of $n$ characters appears exactly once. $B(k, n)$ will be used to denote the set of de Bruijn sequences of window length $n$ and alphabet length $k$.
-<!-- 
+
 **Property 1:** The length of a $B(k, n)$ sequence is $k^n$.
 
 **Proof:** The number of n-permutations of k characters is $k^n$, and given by the definition, each of those permutations must appear exactly once. Take $s$ to be a minimum-length sequence of length $l$ consisting of all unique permutations in question. In each window length n sits one permutation. If the window is shifted over one character, this must give another unique permutation. Thus the smallest possible value of $l$ would be $k^n$. Suppose $l > k^n$. Then the number of windows in $s$ would be greater than $k^n$, and thus $s$ would contain non-unique permutations, and would not be a de Bruijn sequence. Therefore, the length of a $B(k, n)$ sequence is $k^n$.
@@ -131,4 +131,4 @@ I wrote a Java implementation of the generating algorithm and shuffles described
 [^5]: Concerning playing cards, a perfect shuffle (in or out) corresponds to a perfect [Faro shuffle](https://en.wikipedia.org/wiki/Faro_shuffle). In practice, it would take much skill to reliably execute the Faro shuffle perfectly.
 [^6]: It would be interesting to prove that for all n, there exists a $B(2, n)$ sequence that shuffles.
 [^7]: See *A novel codon-based de Bruijn graph algorithm for gene construction from unassembled transcriptomes* (2016). Available [here](https://www.researchgate.net/publication/310461341_A_novel_codon-based_de_Bruijn_graph_algorithm_for_gene_construction_from_unassembled_transcriptomes).
-[^8]: A **self working** trick refers to one which follows a fixed procedure that does not depend on circumstance or skill. -->
+[^8]: A **self working** trick refers to one which follows a fixed procedure that does not depend on circumstance or skill.

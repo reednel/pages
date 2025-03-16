@@ -43,6 +43,7 @@ interface Props {
   showReadingTime?: boolean;
   showCategories?: boolean;
   showTags?: boolean;
+  showDescription?: boolean;
 }
 
 const {
@@ -56,6 +57,7 @@ const {
   showReadingTime = false,
   showCategories = false,
   showTags = false,
+  showDescription = false,
 }: Props = Astro.props;
 
 const {
@@ -69,6 +71,7 @@ const {
   pubDate,
   modDate,
   complexity,
+  description,
 } = entry.data as EntryData;
 
 categories?.sort((a: string, b: string) => a.localeCompare(b));
@@ -145,6 +148,11 @@ tags?.sort((a: string, b: string) => a.localeCompare(b));
                   {lowerHumanize(tag)}
                 </a>
               ))}
+            </li>
+          )}
+          {description && showDescription && (
+            <li class="mr-1 inline-block">
+              {description}
             </li>
           )}
         </ul>

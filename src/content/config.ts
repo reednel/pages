@@ -64,16 +64,6 @@ const home = defineCollection({
   }),
 });
 
-// const poetry = defineCollection({
-//   loader: glob({ pattern: '**\/[^_]*.{md,mdx}', base: "./src/content/poetry" }),
-//   schema: ({ image }) => searchable.extend({
-//     date: z.date().optional(),
-//     image: image().optional(),
-//     imageAlt: z.string().default("image"),
-//     author: z.string().optional(),
-//   }),
-// });
-
 const food = defineCollection({
   loader: glob({ pattern: '**\/[^_]*.{md,mdx}', base: "./src/content/food" }),
   schema: ({ image }) => searchable.extend({
@@ -93,6 +83,21 @@ const food = defineCollection({
   }),
 });
 
+// const poetry = defineCollection({
+//   loader: glob({ pattern: '**\/[^_]*.{md,mdx}', base: "./src/content/poetry" }),
+//   schema: ({ image }) => searchable.extend({
+//     date: z.date().optional(),
+//     image: image().optional(),
+//     imageAlt: z.string().default("image"),
+//     author: z.string().optional(),
+//   }),
+// });
+
+const puzzles = defineCollection({
+  loader: glob({ pattern: '**\/[^_]*.{md,mdx}', base: "./src/content/puzzles" }),
+  schema: searchable,
+});
+
 const terms = defineCollection({
   loader: glob({ pattern: '-index.{md,mdx}', base: "./src/content/terms" }),
   schema: searchable,
@@ -104,7 +109,8 @@ export const collections = {
   blog,
   drinks,
   home,
-  // poetry,
   food,
+  // poetry,
+  puzzles,
   terms,
 };
