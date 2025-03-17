@@ -1,0 +1,9 @@
+---
+import { getIndex } from "@lib/contentParser";
+import PageLayout from "@components/conversation/PageLayout.astro";
+import type { ConversationEntry } from "@/types";
+
+const entry = (await getIndex("conversation")) as ConversationEntry;
+---
+
+<PageLayout entry={entry}/>

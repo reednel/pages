@@ -5,6 +5,7 @@ export type GenericEntry = CollectionEntry<CollectionKey>;
 
 export type AboutEntry = CollectionEntry<"about">;
 export type BlogEntry = CollectionEntry<"blog">;
+export type ConversationEntry = CollectionEntry<"conversation">;
 export type DrinksEntry = CollectionEntry<"drinks">;
 export type HomeEntry = CollectionEntry<"home">;
 export type FoodEntry = CollectionEntry<"food">;
