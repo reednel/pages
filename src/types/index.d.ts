@@ -5,9 +5,11 @@ export type GenericEntry = CollectionEntry<CollectionKey>;
 
 export type AboutEntry = CollectionEntry<"about">;
 export type BlogEntry = CollectionEntry<"blog">;
+export type ConversationEntry = CollectionEntry<"conversation">;
 export type DrinksEntry = CollectionEntry<"drinks">;
 export type HomeEntry = CollectionEntry<"home">;
 export type FoodEntry = CollectionEntry<"food">;
+export type PuzzlesEntry = CollectionEntry<"puzzles">
 export type TermsEntry = CollectionEntry<"terms">;
 
 export type SearchableEntry =
@@ -15,6 +17,7 @@ export type SearchableEntry =
   | BlogEntry
   | DrinksEntry
   | FoodEntry
+  | PuzzlesEntry
   | TermsEntry;
 
 export type EntryReference = {

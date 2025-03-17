@@ -1,8 +1,73 @@
 ---
-title: Conversation Cards
+title: Conversation Topics
 description: I made a set of conversation cards so you don't have to buy one.
 
 cards:
+ - What drew you to me when we first met?
+ - What's the first thing you noticed that we had in common?
+ - What's one of your favorite early memories of me?
+ - What side of ourselves do we bring out in each other?
+ - What can you always depend on me for?
+ - What's the most important thing you've learned from a past heartbreak?
+ - What about my presence isn't captured in photos?
+ - What little thing always comforts you?
+ - What do you wish I asked you about more?
+ - When did you realize you were in love with me?
+ - If we could time travel to any day in your life before we met, what day would you choose?
+ - What is something I do that always turns you on?
+ - What trait of mine do you wish you had?
+ - When was the last time you cried?
+ - What was the first thing you liked about me?
+ - What photo do you show of me when they ask?
+ - What do you see in me that you wish more people saw?
+ - Trace a message on your partner's back. Can they guess what it says?
+ - Pick an errand and do it together. Make it fun :)
+ - Have you ever felt lonely in our relationship? Why or why not?
+ - What is a boundary you have for yourself?
+ - What was your first move on me?
+ - What would you put in my emergency tool kit?
+ - What do you think I was like as a kid?
+ - Make time to go on a walk together this week.
+ - How has work been affecting you lately?
+ - What do you really need from me today?
+ - The one who navigated to this card gets a kiss wherever they want.
+ - What's one thing I'm consistent with that you appreciate?
+ - What could I have done better during our last argument?
+ - When did you think I was really brave?
+ - How would you decribe my energy?
+ - What's one thing I did for you that made you really happy?
+ - Describe our sex life in one word.
+ - What ritual of ours do you enjoy the most?
+ - Play what you think is your partner's favorite song right now. Did you get it right?
+ - Write a list of your partner's top 3 green flags. 1 minute. Share.
+ - What's one thing you see me working on that you appreciate?
+ - What's one of your favorite conversations we've had?
+ - What am I most guarded about?
+ - You knew exactly what I needed when ________.
+ - What was the most loving thing I've done for you recently?
+ - What do you like about my sense of style?
+ - Set a timer for 5 minutes. Vent about anything bothering you. Take turns.
+ - What are you trying to let go of?
+ - What's a little thing I have a very strong opinion about?
+ - At what age do you wish you could have known me?
+ - When do you feel your sexiest?
+ - How do I help you recharge?
+ - What defense mechanism do you think you use the most?
+ - Lay in the dark with your partner, close your eyes, and have a conversation.
+ - What about me inspires you?
+ - What's something you wanted from a relationship that you no longer want?
+ - Describe the first time we boned in one word.
+ - What about me have you never seen in anyone else?
+ - What makes you feel most alive?
+ - What do you have a hard time asking for but really like when I do?
+ - What's one thing I see as a flaw in myself that you see as a strength?
+ - What title would you give my biography?
+ - In what ways have I grown since we first met?
+ - What is your definition of cheating?
+ - What guilty pleasure of mine do you find cute?
+ - What's your favorite way to spend time with me?
+ - When was the last time I made you feel special?
+ - End of relationship listings - Look ahead for other conversation topics.
  - What was your first impression of me? What surprised you after getting to know me?
  - What do you think comes easily to me that's hard for others?
  - What do you think I'm sensitive to?
@@ -19,25 +84,19 @@ cards:
  - On a scale of 1-10, how sexually adventurous do I seem?
  - What do you think I strongly dislike that most people obsess over?
  - When do you think I wake up on an average day? Explain.
- - How many people do you think I've slept with?
  - Who do you think I'm closest to (besides you)?
  - What am I most likely to walk out on a date because of?
  - What's something I'll never say no to?
  - What's the first thing you noticed about me?
  - What's something I could do for hours on end without getting bored?
  - What's something I could give an hour-long presentation on right now?
- - From your perspective, what would this chapter of my life be called?
  - What assumption did you make about me that was way off?
- - Who's the more hydrated friend?
- - Who do you think was the last person I stalked on social media? What was I looking for?
  - What about me would people least expect?
- - What outfit am I most likely to wear on a first date? Get specific?
  - When do you think I'm most 'in my element'? What do you think I'm doing? Who am I with?
  - If I had a movie poster on my wall, which would it be?
  - What do you think my circle of friends has in common?
  - What about my style is undenyably me?
  - Who in my life do you think brings out the best in me?
- - Describe my ideal first date from start to finish.
  - What have you been extra hard on yourself for lately?
  - What are you tired of complaining about?
  - What are you trying not to think about?
@@ -56,7 +115,7 @@ cards:
  - What made you smile today?
  - Is there a pattern you've noticed in my love life?
  - Who in your life leaves you feeling drained? What boundary could you set with them?
- - What (or who) have you been overthinking?
+ - What have you been overthinking?
  - What conversation are you avoiding?
  - What could you benefit from letting go of? Why are you still holding on?
  - What do you want to make more time for? What's getting in the way of that?
@@ -98,5 +157,4 @@ cards:
  - How have I helped you without realizing it?
  - When you're upset, what do you need most?
  - In what ways do our differences compliment each other?
- - What's something I should stop apologizing for?
 ---

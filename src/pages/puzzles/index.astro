@@ -1,0 +1,14 @@
+---
+import CollectionLayout from "@components/puzzles/CollectionLayout.astro";
+import { getIndex, getEntries } from "@lib/contentParser";
+import { sortByTitle } from "@lib/sortFunctions";
+import type { PuzzlesEntry } from "@/types";
+
+const entryIndex = (await getIndex("puzzles")) as PuzzlesEntry;
+const entries = (await getEntries("puzzles", sortByTitle)) as PuzzlesEntry[];
+---
+
+<CollectionLayout
+  entryIndex={entryIndex}
+  entries={entries}
+/>

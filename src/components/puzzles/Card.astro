@@ -1,0 +1,28 @@
+---
+import type { PuzzlesEntry } from "@/types";
+
+interface Props {
+  entry: PuzzlesEntry;
+}
+
+const { entry } = Astro.props;
+const { title } = entry.data;
+---
+
+<div
+  class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0"
+>
+  <div class="glass h-full rounded-lg">
+    <a class="group hover:opacity-100" href={`/puzzles/${entry.id}`}>
+      <div class="relative rounded-lg pb-9/16 overflow-hidden">
+        <div
+          class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+        >
+          <h4 class="">
+            {title}
+          </h4>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

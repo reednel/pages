@@ -12,7 +12,7 @@ draft: false
 **Data compression** is a process of modifying the representation of some information so that it can be stored using less data. Storing and transmitting data is expensive in large quantities, making an optimal compression (one which minimizes storage size) extremely valuable. In this post we will learn how to quantify data information-theoretically[^1], and how to get an optimal compression with optimal speed.
 
 The ratio of concepts and definitions to prose is pretty high in this post, but I try to ameliorate that with examples and alternate descriptions. Assuming a bit of familiarity with binary and ASCII, nothing here should be too dificult to understand. It's okay to skim over some of the equations, there won't be a test at the end.
-<!-- 
+
 ## Entropy: Quantifying Information
 
 Let $\Omega$ be some set, and $P = \{p_i,\, i\in \Omega\}$ be the probability distribution over $\Omega$, i.e. the frequency with which each element of $\Omega$ occurs. The entropy of $\Omega$ is a measure of how structured (non-uniform) $P$ is. So for example, the uniform distribution (where $\forall p_i \in \Omega,\, p_i = \frac{1}{|\Omega|}$) is the least structured, and the lowest entropy. Conversely, the distribution where $p_{i_0} = 1,\, p_i = 0 \, \forall i \neq i_0$, is the most structured, and has the most entropy.
@@ -59,7 +59,7 @@ In the 50's, MIT PhD student David Huffman had to write a paper proving some cod
 
 ![Visualization of the Huffman Coding algorithm](@assets/blog/huffman/huffman.png)
 
-Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol coding. There are alternate methods of coding which perform better under certain circumstances, but even where suboptimal, Huffman is quite good. 
+Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol coding. There are alternate methods of coding which perform better under certain circumstances, but even where suboptimal, Huffman is quite good.
 
 ---
 
@@ -68,4 +68,3 @@ Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol codin
 [^3]: David Huffman, *[A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)* (1952).
 [^4]: Fano and Shannon didn't actually collaborate, rather they independently developed similar algorithms at almost the exact same time. Today these are clumped together as the [Shannon-Fano Coding](https://en.wikipedia.org/wiki/Shannon%E2%80%93Fano_coding).
 [^5]: I've only heard this part from one source.
--->

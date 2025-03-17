@@ -1,0 +1,49 @@
+---
+import type { PuzzlesEntry } from "@/types";
+import config from "@/config/config.json";
+import Share from "@components/common/Share.astro";
+import BaseLayout from "@components/base/BaseLayout.astro";
+import TableOfContents from "@components/common/TableOfContents.astro";
+import EntryHeader from "@components/common/EntryHeader.astro";
+import { render } from "astro:content";
+
+interface Props {
+  entry: PuzzlesEntry;
+}
+
+const { entry } = Astro.props;
+const { title, description } = entry.data;
+
+const { Content, headings } = await render(entry);
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="flex container">
+    <div class=`w-full ${config.settings.hide_blog_toc ? "" : "md:col-9"}`>
+      <article class="">
+        <section>
+          <EntryHeader entry={entry} showDescription />
+        </section>
+        <section class="content mb-4 glass px-4 rounded-lg">
+          <Content />
+        </section>
+      </article>
+    </div>
+    <div
+      class=`hidden md:flex max-h-static_sidemenu sticky top-[5rem] ${config.settings.hide_blog_toc ? "" : "mx-4 md:col-3"}`
+    >
+      {!config.settings.hide_puzzle_toc && <TableOfContents {headings} />}
+    </div>
+  </section>
+  <section class=`container items-start justify-between mt-4`>
+    <hr />
+    <div class="flex items-center justify-center lg:justify-end mt-4">
+      <Share
+        title={title}
+        description={description}
+        folder={"blog"}
+        id={entry.id}
+      />
+    </div>
+  </section>
+</BaseLayout>
