@@ -66,12 +66,13 @@ const ConversationSwiper = ({ cards }: Props) => {
         <div className="flex-col glass justify-center rounded-md p-2 m-2 w-48">
           <div className="row items-center">
             <div
-              className="cursor-pointer col text-txt-p w-0 p-0 dark:text-darkmode-txt-p text-center align-middle"
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center align-middle"
               onClick={() => swiper?.slidePrev()}
+              aria-label="Previous card"
             >
-              <FaArrowLeft className={"m-4 inline-block"} />
+              <FaArrowLeft className={"m-2 inline-block"} />
             </div>
-            <div className="col text-txt-p dark:text-darkmode-txt-p text-center p-0 m-4">
+            <div className="col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center">
               <input
                 type="number"
                 className="w-16 text-center bg-transparent border-none"
@@ -89,43 +90,38 @@ const ConversationSwiper = ({ cards }: Props) => {
                     setCurrentIndex(newIndex);
                   }
                 }}
+                aria-label="Jump to card number"
               />
             </div>
             <div
-              className="cursor-pointer col text-txt-p dark:text-darkmode-txt-p text-center w-0 p-0"
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
               onClick={() => swiper?.slideNext()}
+              aria-label="Next card"
             >
-              <FaArrowRight className="m-4 inline-block" />
+              <FaArrowRight className="m-2 inline-block" />
             </div>
           </div>
           <div className="row content-center justify-center">
             <div
-              className="cursor-pointer col text-txt-p w-0 p-0 dark:text-darkmode-txt-p text-center align-middle"
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
               onClick={() => swiper?.slideTo(todayIndex)}
+              title="Jump to today's card"
+              aria-label="Jump to today's card"
             >
-              <FaCalendarDay className={"-mt-1 inline-block"} />
+              <FaCalendarDay  className={"m-2 inline-block"} />
             </div>
-            {/* <button onClick={() => swiper?.slideTo(todayIndex)}>
-              Jump to Today
-            </button> */}
             <div
-              className="cursor-pointer col text-txt-p w-0 p-0 dark:text-darkmode-txt-p text-center align-middle"
+              
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
               onClick={() =>
                 swiper?.slideTo(Math.floor(Math.random() * cards.length))
               }
+              title="Jump to random card"
+              aria-label="Jump to random card"
             >
-              <FaQuestion className={"-mt-1 inline-block"} />
+              <FaQuestion className={"m-2 inline-block"} />
             </div>
           </div>
-          {/* <div className="row content-center justify-center">
-            <button
-              onClick={() =>
-                swiper?.slideTo(Math.floor(Math.random() * cards.length))
-              }
-            >
-              Jump to Random
-            </button>
-          </div> */}
         </div>
       </nav>
     </div>
