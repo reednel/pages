@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaCalendarDay,
+  FaQuestion,
+} from "react-icons/fa";
 
 type Props = {
   cards: string[];
@@ -34,9 +39,8 @@ const ConversationSwiper = ({ cards }: Props) => {
 
   useEffect(() => {
     if (swiper) {
-      swiper.slideTo(todayIndex, 0);
-      setCurrentIndex(todayIndex);
-      // Listen for slide changes and update state
+      swiper.slideTo(0, 0);
+      setCurrentIndex(0);
       swiper.on("slideChange", () => setCurrentIndex(swiper.realIndex));
     }
   }, [swiper]);
@@ -52,22 +56,23 @@ const ConversationSwiper = ({ cards }: Props) => {
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
             <div className="col-10 sm:col-8 md:col-6 mx-auto p-4 my-12 min-h-64 text-center content-center glass rounded-lg">
-              <h4>{card}</h4>
+              <h3>{card}</h3>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <nav className="flex items-center justify-center pb-8">
-        <div className="row glass items-center justify-center rounded-md p-2 m-2">
+      <nav className="flex justify-center pb-8">
+        <div className="flex-col glass justify-center rounded-md p-2 m-2 w-48">
           <div className="row items-center">
             <div
-              className="cursor-pointer col text-txt-p w-0 p-0 dark:text-darkmode-txt-p text-center align-middle"
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center align-middle"
               onClick={() => swiper?.slidePrev()}
+              aria-label="Previous card"
             >
-              <FaArrowLeft className={"-mt-1 inline-block"} />
+              <FaArrowLeft className={"m-2 inline-block"} />
             </div>
-            <div className="col text-txt-p dark:text-darkmode-txt-p text-center p-0">
+            <div className="col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center">
               <input
                 type="number"
                 className="w-16 text-center bg-transparent border-none"
@@ -85,19 +90,37 @@ const ConversationSwiper = ({ cards }: Props) => {
                     setCurrentIndex(newIndex);
                   }
                 }}
+                aria-label="Jump to card number"
               />
             </div>
             <div
-              className="cursor-pointer col text-txt-p dark:text-darkmode-txt-p text-center w-0 p-0"
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
               onClick={() => swiper?.slideNext()}
+              aria-label="Next card"
             >
-              <FaArrowRight className="-mt-1 inline-block" />
+              <FaArrowRight className="m-2 inline-block" />
             </div>
           </div>
           <div className="row content-center justify-center">
-            <button onClick={() => swiper?.slideTo(todayIndex)}>
-              Jump to Today
-            </button>
+            <div
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
+              onClick={() => swiper?.slideTo(todayIndex)}
+              title="Jump to today's card"
+              aria-label="Jump to today's card"
+            >
+              <FaCalendarDay  className={"m-2 inline-block"} />
+            </div>
+            <div
+              
+              className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
+              onClick={() =>
+                swiper?.slideTo(Math.floor(Math.random() * cards.length))
+              }
+              title="Jump to random card"
+              aria-label="Jump to random card"
+            >
+              <FaQuestion className={"m-2 inline-block"} />
+            </div>
           </div>
         </div>
       </nav>

@@ -4,7 +4,7 @@
   "description": "Reed Nelson's personal website",
   "author": "Reed Nelson",
   "license": "MIT",
-  "packageManager": "npm@10.2.4",
+  "packageManager": "npm@10.8.2",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -20,6 +20,7 @@
     "@radix-ui/react-scroll-area": "^1.1.0",
     "astro": "^5.5.2",
     "astro-auto-import": "^0.4.2",
+    "astro-tooltips": "^0.6.2",
     "clsx": "^2.1.1",
     "date-fns": "^2.30.0",
     "date-fns-tz": "^2.0.0",

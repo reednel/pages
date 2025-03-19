@@ -1,4 +1,4 @@
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 // Also update /src/types/index.d.ts when updating these signatures
@@ -105,15 +105,24 @@ const food = defineCollection({
     }),
 });
 
-// const poetry = defineCollection({
-//   loader: glob({ pattern: '**\/[^_]*.{md,mdx}', base: "./src/content/poetry" }),
-//   schema: ({ image }) => searchable.extend({
-//     date: z.date().optional(),
-//     image: image().optional(),
-//     imageAlt: z.string().default("image"),
-//     author: z.string().optional(),
-//   }),
-// });
+const projects = defineCollection({
+  loader: glob({
+    pattern: "**\/[^_]*.{md,mdx}",
+    base: "./src/content/projects",
+  }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    projects: z.array(
+      z.object({
+        title: z.string(),
+        github: z.string().optional(),
+        technologies: z.array(z.string()).optional(),
+        content: z.array(z.string()).optional(),
+      }),
+    ),
+  }),
+});
 
 const puzzles = defineCollection({
   loader: glob({
@@ -136,7 +145,7 @@ export const collections = {
   drinks,
   home,
   food,
-  // poetry,
+  projects,
   puzzles,
   terms,
 };
