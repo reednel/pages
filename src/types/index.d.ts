@@ -9,6 +9,7 @@ export type ConversationEntry = CollectionEntry<"conversation">;
 export type DrinksEntry = CollectionEntry<"drinks">;
 export type HomeEntry = CollectionEntry<"home">;
 export type FoodEntry = CollectionEntry<"food">;
+export type ProjectsEntry = CollectionEntry<"projects">;
 export type PuzzlesEntry = CollectionEntry<"puzzles">
 export type TermsEntry = CollectionEntry<"terms">;
 
