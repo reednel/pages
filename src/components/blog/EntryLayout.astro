@@ -5,7 +5,6 @@ import Share from "@components/common/Share.astro";
 import { plainify } from "@lib/textConverter";
 import type { BlogEntry } from "@/types";
 import TableOfContents from "@components/common/TableOfContents.astro";
-import config from "@/config/config.json";
 import { render } from "astro:content";
 import EntryHeader from "@components/common/EntryHeader.astro";
 interface Props {
@@ -17,20 +16,23 @@ const { entry, relatedEntries }: Props = Astro.props;
 const { title, description, autodescription, image, hideToc } = entry.data;
 const { Content, headings } = await render(entry);
 
+const descriptionLenth = 200;
+const globalHideToc = false;
+const tocDepth = 3;
+
+const actuallyHideToc =
+  hideToc ||
+  globalHideToc ||
+  headings.filter((heading) => heading.depth <= tocDepth).length === 0;
+
 const entryDescription =
   description ||
-  (autodescription
-    ? plainify(
-        entry.body!.slice(0, Number(config.settings.blog_description_length))
-      )
-    : null);
+  (autodescription ? plainify(entry.body!.slice(0, descriptionLenth)) : null);
 ---
 
 <BaseLayout title={title} description={entryDescription} image={image?.src}>
-  <section class="flex container">
-    <div
-      class=`w-full ${config.settings.hide_blog_toc || hideToc ? "" : "md:col-9"}`
-    >
+  <section class="flex container p-4">
+    <div class=`w-full ${actuallyHideToc ? "" : "md:col-9"}`>
       <article class="">
         <section>
           <EntryHeader
@@ -48,15 +50,14 @@ const entryDescription =
         </section>
       </article>
     </div>
-    <div
-      class=`hidden md:flex max-h-static_sidemenu sticky top-[5rem] ${config.settings.hide_blog_toc || hideToc ? "" : "mx-4 md:col-3"}`
-    >
-      {
-        !(config.settings.hide_blog_toc || hideToc) && (
+    <!-- Table of contents -->
+    {
+      !actuallyHideToc && (
+        <div class="hidden md:flex md:col-3 max-h-static_sidemenu sticky top-[5rem] pl-4">
           <TableOfContents {headings} />
-        )
-      }
-    </div>
+        </div>
+      )
+    }
   </section>
   <section class=`container items-start justify-between mt-4`>
     <hr />

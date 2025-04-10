@@ -1,4 +1,9 @@
-# Pages
+
+<div align="center">
+  <img src="src/assets/astrogon-logo.svg" style="width:80%;" alt="Astrogon Logo" align="center" />
+</div>
+
+---
 
 [![GitHub License](https://img.shields.io/github/license/reednel/pages?color=red)](https://github.com/reednel/pages/blob/main/LICENSE) [![Repo Size](https://img.shields.io/github/repo-size/reednel/pages)](https://github.com/reednel/pages) ![GitHub branch check runs](https://img.shields.io/github/check-runs/reednel/pages/main) [![Website](https://img.shields.io/website?up_message=online&up_color=limegreen&down_message=offline&down_color=yellow&url=https%3A%2F%2Freednel.com%2F)](https://reednel.com/)
 

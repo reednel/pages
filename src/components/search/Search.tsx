@@ -1,8 +1,9 @@
 import type { SearchableEntry } from "@/types"
 import Fuse from "fuse.js";
 import React, { useEffect, useRef, useState } from "react";
-import config from "@/config/config.json";
 import { plainify } from "@lib/textConverter";
+
+const descriptionLength = 200;
 
 interface Props {
   searchList: SearchableEntry[];
@@ -17,7 +18,7 @@ const getPath = (entry: SearchableEntry) => {
   return `${entry.collection}/${entry.id.replace("-index", "")}`;
 };
 
-const Search = ({ searchList }: Props) => {
+const SearchPage = ({ searchList }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
@@ -101,7 +102,7 @@ const Search = ({ searchList }: Props) => {
                     <p className="">{item.data.description}</p>
                   )}
                   {  !item.data.description && item.data.autodescription && item.body && (
-                    <p className="">{plainify(item.body.slice(0, Number(config.settings.search_description_length)))}</p>
+                    <p className="">{plainify(item.body.slice(0, descriptionLength))}</p>
                   )}
                 </div>
               </div>
@@ -113,4 +114,4 @@ const Search = ({ searchList }: Props) => {
   );
 };
 
-export default Search;
+export default SearchPage;

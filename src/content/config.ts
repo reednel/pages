@@ -1,12 +1,27 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
-// Also update /src/types/index.d.ts when updating these signatures
+// May also need to update /src/types/index.d.ts when updating this file
+// When updating the set of searchable collections, update collectionList in /src/pages/search.astro
+
 const searchable = z.object({
   title: z.string(),
   description: z.string().optional(),
   autodescription: z.boolean().default(true),
   draft: z.boolean().default(false),
+});
+
+const social = z.object({
+  discord: z.string().optional(),
+  email: z.string().optional(),
+  facebook: z.string().optional(),
+  github: z.string().optional(),
+  instagram: z.string().optional(),
+  linkedIn: z.string().optional(),
+  pinterest: z.string().optional(),
+  tiktok: z.string().optional(),
+  website: z.string().optional(),
+  youtube: z.string().optional(),
 });
 
 const about = defineCollection({
@@ -69,10 +84,12 @@ const drinks = defineCollection({
 
 const home = defineCollection({
   loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/home" }),
-  schema: z.object({
-    banner: z.object({
-      title: z.string(),
-      content: z.string().optional(),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string().optional(),
+      subtitle: z.string().optional(),
+      image: image().optional(),
+      imageAlt: z.string().default("image"),
       button: z
         .object({
           label: z.string(),
@@ -80,7 +97,6 @@ const home = defineCollection({
         })
         .optional(),
     }),
-  }),
 });
 
 const food = defineCollection({
@@ -129,7 +145,9 @@ const puzzles = defineCollection({
     pattern: "**\/[^_]*.{md,mdx}",
     base: "./src/content/puzzles",
   }),
-  schema: searchable,
+  schema: searchable.extend({
+    hideToc: z.boolean().default(false),
+  }),
 });
 
 const terms = defineCollection({

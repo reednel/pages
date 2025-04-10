@@ -21,6 +21,19 @@ export type SearchableEntry =
   | PuzzlesEntry
   | TermsEntry;
 
+export type SocialLinks = {
+  discord?: string;
+  email?: string;
+  facebook?: string;
+  github?: string;
+  instagram?: string;
+  linkedIn?: string;
+  pinterest?: string;
+  tiktok?: string;
+  website?: string;
+  youtube?: string;
+}
+
 export type EntryReference = {
   id: string;
   collection: string;

@@ -6,10 +6,10 @@ import taxonomyFilter from "@lib/taxonomyFilter";
 import TaxonLayout from "@components/drinks/TaxonLayout.astro";
 
 export async function getStaticPaths() {
-  const taxa = await getTaxa("drinks", "tags");
+  const taxa = await getTaxa("drinks", "bottles");
   const paths = taxa.map((taxon) => ({
     params: {
-      id: taxon,
+      bottle: taxon,
     },
     props: { taxon },
   }));
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
 const { taxon } = Astro.props;
 const entries = await getEntries("drinks") as DrinksEntry[];
-const filteredEntries: DrinksEntry[] = taxonomyFilter(entries, "tags", taxon!);
+const filteredEntries: DrinksEntry[] = taxonomyFilter(entries, "bottles", taxon!);
 ---
 
 <TaxonLayout taxon={taxon} entries={filteredEntries} />

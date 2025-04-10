@@ -1,9 +1,9 @@
 ---
 import type { ProjectsEntry } from "@/types";
-import PageLayout from "@components/projects/PageLayout.astro";
+import EntryLayout from "@components/projects/EntryLayout.astro";
 import { getIndex } from "@lib/contentParser";
 
 const entry = (await getIndex("projects")) as ProjectsEntry;
 ---
 
-<PageLayout entry={entry} />
+<EntryLayout entry={entry} />
