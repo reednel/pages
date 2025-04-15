@@ -29,7 +29,7 @@ const about = defineCollection({
   schema: ({ image }) =>
     searchable.extend({
       image: image().optional(),
-      imageAlt: z.string().default("image"),
+      imageAlt: z.string().default(""),
     }),
 });
 
@@ -39,7 +39,7 @@ const blog = defineCollection({
     searchable.extend({
       date: z.date().optional(),
       image: image().optional(),
-      imageAlt: z.string().default("image"),
+      imageAlt: z.string().default(""),
       author: z.string().optional(),
       categories: z.array(z.string()).optional(),
       tags: z.array(z.string()).optional(),
@@ -66,7 +66,7 @@ const drinks = defineCollection({
     searchable.extend({
       date: z.date().optional(),
       image: image().optional(),
-      imageAlt: z.string().default("image"),
+      imageAlt: z.string().default(""),
       author: z.string().optional(),
       bottles: z.array(z.string()).optional(),
       spirits: z.array(z.string()).optional(),
@@ -89,7 +89,7 @@ const home = defineCollection({
       title: z.string().optional(),
       subtitle: z.string().optional(),
       image: image().optional(),
-      imageAlt: z.string().default("image"),
+      imageAlt: z.string().default(""),
       button: z
         .object({
           label: z.string(),
@@ -105,7 +105,7 @@ const food = defineCollection({
     searchable.extend({
       date: z.date().optional(),
       image: image().optional(),
-      imageAlt: z.string().default("image"),
+      imageAlt: z.string().default(""),
       author: z.string().optional(),
       prepTime: z.number().optional(),
       servings: z.number().optional(),
