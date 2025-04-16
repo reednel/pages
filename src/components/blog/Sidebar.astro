@@ -13,62 +13,67 @@ interface Props {
 const { tags, categories, allCategories }: Props = Astro.props;
 ---
 
-<ScrollArea className="h-full" client:only="react">
-  <!-- categories -->
-  <div class="glass rounded-lg p-4 m-2 mb-4 intersect:animate-fadeLeft opacity-0">
-    <div>
-      <h4 class="mb-2">
-        <a href="/blog/categories">
-          <FaRegFolder className={"mr-1 -mt-1.5 inline-block"} />
-           Categories
-        </a>
-      </h4>
-      <hr class="mb-2 -mt-1" />
-      <ul class="space-y-2">
-        {
-          categories.map((category) => {
-            const count = allCategories.filter((c) => c === category).length;
-            return (
-              <li>
-                <a
-                  class=""
-                  href={`/blog/categories/${category}`}
-                >
-                  {upperHumanize(category)}{" "}
-                  <div class="inline-block pl-1">({count})</div>
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
+<div class="h-full m-2 pl-0.5 pt-0.5 bg-gradient-to-br gradient rounded-tl-lg">
+  <div class="h-full bg-bg-p dark:bg-darkmode-bg-p rounded-tl-lg intersect:animate-fadeUpLeft opacity-0">
+    <ScrollArea className="h-full" client:only="react">
+      <!-- categories -->
+      <div
+        class="glass rounded-lg m-4 mb-2"
+      >
+        <div>
+          <h4 class="mb-2">
+            <a href="/blog/categories">
+              <FaRegFolder className={"mr-1 -mt-1.5 inline-block"} />
+               Categories
+            </a>
+          </h4>
+          <hr class="mb-2 -mt-1" />
+          <ul class="space-y-2">
+            {
+              categories.map((category) => {
+                const count = allCategories.filter(
+                  (c) => c === category
+                ).length;
+                return (
+                  <li>
+                    <a class="" href={`/blog/categories/${category}`}>
+                      {upperHumanize(category)}{" "}
+                      <div class="inline-block pl-1">({count})</div>
+                    </a>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+      <!-- tags -->
+      <div class="glass rounded-lg m-4 mb-2">
+        <div>
+          <h4 class="mb-2">
+            <a href="/blog/tags">
+              <FaHashtag className={"mr-1 -mt-1.5 inline-block"} />
+               Tags
+            </a>
+          </h4>
+          <hr class="mb-2 -mt-1" />
+          <ul>
+            {
+              tags.map((tag) => {
+                return (
+                  <li class="inline-block m-1">
+                    <Button
+                      label={tag}
+                      link={`/blog/tags/${lowerHumanize(tag)}`}
+                    />
+                  </li>
+                );
+              })
+            }
+          </ul>
+          <!--                     color="bg-txt-s dark:bg-darkmode-txt-s" -->
+        </div>
+      </div>
+    </ScrollArea>
   </div>
-  <!-- tags -->
-  <div class="glass rounded-lg p-4 m-2 intersect:animate-fadeLeft opacity-0">
-    <div>
-      <h4 class="mb-2">
-        <a href="/blog/tags">
-          <FaHashtag className={"mr-1 -mt-1.5 inline-block"} />
-           Tags
-        </a>
-      </h4>
-      <hr class="mb-2 -mt-1" />
-      <ul>
-        {
-          tags.map((tag) => {
-            return (
-              <li class="inline-block m-1">
-                <Button
-                  label={tag}
-                  link={`/blog/tags/${lowerHumanize(tag)}`}
-                  type="secondary"
-                />
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
-  </div>
-</ScrollArea>
+</div>

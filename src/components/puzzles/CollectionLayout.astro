@@ -22,7 +22,7 @@ const { entryIndex, entries }: Props = Astro.props;
       <div class="row">
         {
           entries.map((entry) => (
-            <div class="md:col-6 lg:col-4 h-min p-2">
+            <div class="md:col-6 lg:col-4 p-2 mb-4">
               <PuzzlesCard entry={entry} />
             </div>
           ))

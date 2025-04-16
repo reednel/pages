@@ -1,6 +1,6 @@
 ---
-# Banner
-banner:
-  title: Reed Nelson
-  content: Stuff and things. A work in progress.
+# title: Reed Nelson
+subtitle: Browse some of the things Reed has thought about.
+image: "@assets/home/rn.svg"
+imageAlt: rn
 ---

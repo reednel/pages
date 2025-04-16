@@ -6,22 +6,21 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { title } = entry.data;
+const { title, description } = entry.data;
 ---
 
 <div
-  class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0"
+  class="h-full m-2 p-0.5 bg-gradient-to-br gradient rounded-tl-lg"
 >
-  <div class="glass h-full rounded-lg">
+  <div class="glass h-full rounded-tl-lg intersect:animate-fadeUpLeft opacity-0">
     <a class="group hover:opacity-100" href={`/puzzles/${entry.id}`}>
-      <div class="relative rounded-lg pb-9/16 overflow-hidden">
-        <div
-          class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
-        >
-          <h4 class="">
-            {title}
-          </h4>
-        </div>
+      <div class="rounded-lg px-4 py-4">
+        <h4 class="pb-2">
+          {title}
+        </h4>
+        <p class="">
+          {description}
+        </p>
       </div>
     </a>
   </div>

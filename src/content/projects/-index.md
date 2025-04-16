@@ -5,12 +5,20 @@ description: Reed Nelson's projects.
 projects:
   - title: "MiNAA: Microbiome Network Alignment Algorithm"
     technologies:
-      - "C"
       - "C++"
       - "R"
     github: "https://github.com/solislemuslab/minaa"
     content:
-      - "Microbes in the soil interact in complex ways, and these microbiomes can be represented by large, sparse graphs. Currently this kind of data is available, but tools for interpreting it are very limited. The project is to develop an algorithm to efficiently and accurately align microbial networks based on topological and biological input data. This is an ongoing research project with Dr. Claudia Solís-Lemus. For more details, see our software note on [arXiv](https://arxiv.org/abs/2212.05880)."
+      - "Microbiomes are richly-biodiverse communities of interdependent microbes found in soil, lakes, your own mouth, etc. The makeup of these communities often impact the environment they live in, affecting crop yeild, for example. Biologists can model these communities, but tools for interpreting and comparing them are very limited."
+      - "MiNAA is an algorithm for efficiently and accurately aligning microbial networks based on topological and biological input data. This was a research project under Dr. Claudia Solís-Lemus at the [Wisconsin Institute for Discovery](https://wid.wisc.edu/). For more details, see [our publication](https://joss.theoj.org/papers/10.21105/joss.05448) in the Journal of Open Source Software."
+  - title: "Astrogon"
+    technologies:
+      - "Astro"
+      - "React"
+      - "Tailwind"
+    github: "https://github.com/astrogon/astrogon"
+    content:
+      - "This project sprung out of a need for a static website that is more feature-rich, stable, and customizable than any open source template in the Astro community. [Astrogon](https://astrogon.reednel.com) is a more fully-featured and documented version of the site you're looking at right now. This template is now on display on [Astro's official website](https://portal.astro.build/themes/astrogon/)."
   - title: "AAG Key Exchange Implementation"
     technologies:
       - "Python"

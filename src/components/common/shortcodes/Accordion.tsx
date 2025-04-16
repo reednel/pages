@@ -13,7 +13,7 @@ const Accordion = ({
   return (
     <div className="mb-6 overflow-hidden rounded-lg border border-border dark:border-darkmode-border">
       <button
-        className="glass-t-borderless flex w-full cursor-pointer items-center justify-between px-4 py-2 text-lg text-txt-p dark:text-darkmode-txt-p"
+        className="flex w-full bg-bg-s dark:bg-darkmode-bg-s cursor-pointer items-center justify-between px-4 py-2 text-lg text-txt-p dark:text-darkmode-txt-p"
         onClick={() => setShow(!show)}
       >
         {title}
@@ -31,7 +31,7 @@ const Accordion = ({
         </svg>
       </button>
       <div
-        className={`max-h-0 overflow-hidden px-4 py-0 ${show && "max-h-screen py-0"}`}
+        className={`max-h-0 overflow-hidden px-4 py-0 ${show && "max-h-full py-0"}`}
       >
         {children}
       </div>

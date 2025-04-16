@@ -1,27 +1,24 @@
-# Pages
 
-[![GitHub License](https://img.shields.io/github/license/reednel/pages?color=red)](https://github.com/reednel/pages/blob/main/LICENSE) [![Repo Size](https://img.shields.io/github/repo-size/reednel/pages)](https://github.com/reednel/pages) [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/reednel/pages/deploy.yml?color=limegreen)](https://github.com/reednel/pages/deployments) [![Website](https://img.shields.io/website?up_message=online&up_color=limegreen&down_message=offline&down_color=yellow&url=https%3A%2F%2Freednel.com%2F)](https://reednel.com/)
+<div align="center">
+  <img src="src/assets/astrogon-logo.svg" style="width:80%;" alt="Astrogon Logo" align="center" />
+</div>
 
-A personal website template.
+---
 
-## Requirements
+[![GitHub License](https://img.shields.io/github/license/reednel/pages?color=red)](https://github.com/reednel/pages/blob/main/LICENSE) [![Repo Size](https://img.shields.io/github/repo-size/reednel/pages)](https://github.com/reednel/pages) ![GitHub branch check runs](https://img.shields.io/github/check-runs/reednel/pages/main) [![Website](https://img.shields.io/website?up_message=online&up_color=limegreen&down_message=offline&down_color=yellow&url=https%3A%2F%2Freednel.com%2F)](https://reednel.com/)
+
+Reed Nelson's personal website - [reednel.com](https://reednel.com).
+
+Interested in this repo? [Astrogon](https://github.com/astrogon/astrogon) is the more developer-friendly and fully-featured template of this site.
 
 ## Development Instructions
 
-Clone: `git clone https://github.com/reednel/pages.git`
-
-Checkout the template: `git checkout template`
-
-Use Node 20: `nvm install 20`
-
-Install Node Modules: `npm install`
-
-Build: `npm run dev`
+1. Clone: `git clone https://github.com/reednel/pages.git`
+2. Checkout the dev branch: `git checkout develop`
+3. Use Node 22: `nvm use 22`
+4. Install Node Modules: `npm i`
+5. Build: `npm run dev`
 
 ## License
 
-Pages is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-This template is derived from zeon-studio's [astroplate](https://github.com/zeon-studio/astroplate), with structure borrowed from jordienr's [astro-design-system](https://github.com/jordienr/astro-design-system) and TheOtterlord's [manual](https://github.com/TheOtterlord/manual).
+Pages is licensed under the [MIT License](LICENSE). Again, unless your name is Reed Nelson, get out of here and fork [Astrogon](https://github.com/astrogon/astrogon) instead.

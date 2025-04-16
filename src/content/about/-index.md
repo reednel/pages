@@ -1,6 +1,7 @@
 ---
 title: About
 description: About Reed Nelson.
+image: "@assets/about/reed.jpg"
 ---
 
 I am a software engineer at Infinite Campus, and a graduate of UW-Madison with a BS in Computer Science, Mathematics, and Philosophy. Previously, I worked in the [Solís-Lemus Lab](https://solislemuslab.github.io/) at the Wisconsin Institute for Discovery, developing [MiNAA: Microbial Network Alignment Algorithm](https://doi.org/10.21105/joss.05448).

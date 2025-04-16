@@ -1,13 +1,13 @@
 ---
-import CollectionLayout from "@components/drinks/CollectionLayout.astro";
+import { getIndex, getEntries } from "@lib/contentParser";
 import { getTaxa } from "@lib/taxonomyParser";
-import { getEntries, getIndex } from "@lib/contentParser";
 import { sortByTitle } from "@lib/sortFunctions";
+import CollectionLayout from "@components/drinks/CollectionLayout.astro";
 import type { DrinksEntry } from "@/types";
 
-const { id } = Astro.params;
+const { page } = Astro.params;
 
-const entryIndex = await getIndex("drinks") as DrinksEntry;
+const entryIndex = (await getIndex("drinks")) as DrinksEntry;
 const entries = (await getEntries("drinks", sortByTitle)) as DrinksEntry[];
 
 const bottles = await getTaxa("drinks", "bottles");
@@ -15,11 +15,27 @@ const spirits = await getTaxa("drinks", "spirits");
 const tags = await getTaxa("drinks", "tags");
 
 const entriesPerPage = 10;
-const currentPageIndex = id && !isNaN(Number(id)) ? Number(id) : 1;
+const currentPageIndex = page && !isNaN(Number(page)) ? Number(page) : 1;
 const pageCount = Math.ceil(entries.length / entriesPerPage);
 const indexOfLastEntry = currentPageIndex * entriesPerPage;
 const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
 const currentEntries = entries.slice(indexOfFirstEntry, indexOfLastEntry);
+
+export async function getStaticPaths() {
+  const entries = (await getEntries("drinks", sortByTitle)) as DrinksEntry[];
+  // divisor below must equal entriesPerPage
+  const pageCount = Math.ceil(entries.length / 10);
+  const paths = [];
+
+  for (let i = 1; i < pageCount; i++) {
+    paths.push({
+      params: {
+        page: (i + 1).toString(),
+      },
+    });
+  }
+  return paths;
+}
 ---
 
 <CollectionLayout

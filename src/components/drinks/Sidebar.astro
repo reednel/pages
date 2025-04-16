@@ -12,77 +12,84 @@ interface Props {
 const { bottles, spirits, tags }: Props = Astro.props;
 ---
 
-<ScrollArea className="h-full" client:only="react">
-  <!-- bottles -->
-  <div class="glass rounded-lg p-4 m-2 intersect:animate-fadeLeft opacity-0">
-    <div>
-      <h4 class="mb-2">
-        <a href="/drinks/bottles">Bottles</a>
-      </h4>
-      <hr class="mb-2 -mt-1" />
-      <ul>
-        {
-          bottles.map((bottle: any) => {
-            return (
-              <li class="inline-block m-1">
-                <Button
-                  label={lowerHumanize(bottle)}
-                  link={`/drinks/bottles/${bottle}`}
-                  type="secondary"
-                />
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
+<div class="h-full m-2 pl-0.5 pt-0.5 bg-gradient-to-br gradient rounded-tl-lg">
+  <div class="h-full bg-bg-p dark:bg-darkmode-bg-p rounded-tl-lg intersect:animate-fadeUpLeft opacity-0">
+    <ScrollArea className="h-full" client:only="react">
+      <!-- bottles -->
+      <div
+        class="glass rounded-lg m-4 mb-2"
+      >
+        <div>
+          <h4 class="mb-2">
+            <a href="/drinks/bottles">Bottles</a>
+          </h4>
+          <hr class="mb-2 -mt-1" />
+          <ul>
+            {
+              bottles.map((bottle: any) => {
+                return (
+                  <li class="inline-block m-1">
+                    <Button
+                      label={lowerHumanize(bottle)}
+                      link={`/drinks/bottles/${bottle}`}
+                    />
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+      <!-- spirits -->
+      <div
+        class="glass rounded-lg m-4 mb-2"
+      >
+        <div>
+          <h4 class="mb-2">
+            <a href="/drinks/spirits">Spirits</a>
+          </h4>
+          <hr class="mb-2 -mt-1" />
+          <ul>
+            {
+              spirits.map((spirit: any) => {
+                return (
+                  <li class="inline-block m-1">
+                    <Button
+                      label={lowerHumanize(spirit)}
+                      link={`/drinks/spirits/${spirit}`}
+                    />
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+      <!-- tags -->
+      <div
+        class="glass rounded-lg m-4 mb-2"
+      >
+        <div>
+          <h4 class="mb-2">
+            <a href="/drinks/tags">Tags</a>
+          </h4>
+          <hr class="mb-2 -mt-1" />
+          <ul>
+            {
+              tags.map((tag: any) => {
+                return (
+                  <li class="inline-block m-1">
+                    <Button
+                      label={lowerHumanize(tag)}
+                      link={`/drinks/tags/${tag}`}
+                    />
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+    </ScrollArea>
   </div>
-  <!-- spirits -->
-  <div class="glass rounded-lg p-4 m-2 intersect:animate-fadeLeft opacity-0">
-    <div>
-      <h4 class="mb-2">
-        <a href="/drinks/spirits">Spirits</a>
-      </h4>
-      <hr class="mb-2 -mt-1" />
-      <ul>
-        {
-          spirits.map((spirit: any) => {
-            return (
-              <li class="inline-block m-1">
-                <Button
-                  label={lowerHumanize(spirit)}
-                  link={`/drinks/spirits/${spirit}`}
-                  type="secondary"
-                />
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
-  </div>
-  <!-- tags -->
-  <div class="glass rounded-lg p-4 m-2 intersect:animate-fadeLeft opacity-0">
-    <div>
-      <h4 class="mb-2">
-        <a href="/drinks/tags">Tags</a>
-      </h4>
-      <hr class="mb-2 -mt-1" />
-      <ul>
-        {
-          tags.map((tag: any) => {
-            return (
-              <li class="inline-block m-1">
-                <Button
-                  label={lowerHumanize(tag)}
-                  link={`/drinks/tags/${tag}`}
-                  type="secondary"
-                />
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
-  </div>
-</ScrollArea>
+</div>

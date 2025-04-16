@@ -1,6 +1,5 @@
 ---
 import type { PuzzlesEntry } from "@/types";
-import config from "@/config/config.json";
 import Share from "@components/common/Share.astro";
 import BaseLayout from "@components/base/BaseLayout.astro";
 import TableOfContents from "@components/common/TableOfContents.astro";
@@ -12,14 +11,22 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { title, description } = entry.data;
+const { title, description, hideToc } = entry.data;
 
 const { Content, headings } = await render(entry);
+
+const globalHideToc = false;
+const tocDepth = 3;
+
+const actuallyHideToc =
+  hideToc ||
+  globalHideToc ||
+  headings.filter((heading) => heading.depth <= tocDepth).length === 0;
 ---
 
 <BaseLayout title={title} description={description}>
   <section class="flex container">
-    <div class=`w-full ${config.settings.hide_blog_toc ? "" : "md:col-9"}`>
+    <div class=`w-full ${actuallyHideToc ? "" : "md:col-9"}`>
       <article class="">
         <section>
           <EntryHeader entry={entry} showDescription />
@@ -29,11 +36,13 @@ const { Content, headings } = await render(entry);
         </section>
       </article>
     </div>
-    <div
-      class=`hidden md:flex max-h-static_sidemenu sticky top-[5rem] ${config.settings.hide_blog_toc ? "" : "mx-4 md:col-3"}`
-    >
-      {!config.settings.hide_puzzle_toc && <TableOfContents {headings} />}
-    </div>
+    {
+      !actuallyHideToc && (
+        <div class="hidden md:flex max-h-static_sidemenu sticky top-[5rem] mx-4 md:col-3">
+          <TableOfContents {headings} />
+        </div>
+      )
+    }
   </section>
   <section class=`container items-start justify-between mt-4`>
     <hr />

@@ -1,15 +1,23 @@
 const similerItems = (currentItem: any, allItems: any, id: string) => {
   let categories: string[] = [];
   let tags: string[] = [];
+  let bottles: string[] = [];
+  let spirits: string[] = [];
 
-  // set categories
   if (currentItem.data?.categories?.length > 0) {
     categories = currentItem.data.categories;
   }
 
-  // set tags
   if (currentItem.data?.tags?.length > 0) {
     tags = currentItem.data.tags;
+  }
+
+  if (currentItem.data?.bottles?.length > 0) {
+    bottles = currentItem.data.bottles;
+  }
+
+  if (currentItem.data?.spirits?.length > 0) {
+    spirits = currentItem.data.spirits;
   }
 
   // filter by categories
@@ -22,8 +30,18 @@ const similerItems = (currentItem: any, allItems: any, id: string) => {
     tags.find((tag) => item.data.tags.includes(tag)),
   );
 
+  // Filter by bottles
+  const filterByBottles = allItems.filter((item: any) =>
+    bottles.find((bottle) => item.data.bottles.includes(bottle)),
+  );
+
+  // Filter by spirits
+  const filterBySpirits = allItems.filter((item: any) =>
+    spirits.find((spirit) => item.data.spirits.includes(spirit)),
+  );
+
   // merged after filter
-  const mergedItems = [...filterByCategories, ...filterByTags];
+  const mergedItems = [...filterByCategories, ...filterByTags, ...filterByBottles, ...filterBySpirits];
 
   // Remove self from list
   const filterByID = mergedItems.filter((item) => item.id !== id);

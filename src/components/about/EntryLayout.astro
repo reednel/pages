@@ -1,0 +1,48 @@
+---
+import BaseLayout from "@components/base/BaseLayout.astro";
+import { Image } from "astro:assets";
+import type { AboutEntry } from "@/types";
+import { render } from "astro:content";
+
+interface Props {
+  entry: AboutEntry;
+}
+
+const { entry } = Astro.props;
+const { title, description, image, imageAlt } = entry.data;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={title} description={description} image={image?.src}>
+  <section class="section-sm">
+    <div class="container flex">
+      <div class="row justify-center">
+        <div class="col-10">
+          <div class="row items-center">
+            <div
+              class="my-8 lg:col-4 intersect:animate-fadeDown opacity-0 intersect-no-queue"
+            >
+              {
+                image && (
+                  <Image
+                    class="mx-auto rounded-lg w-64"
+                    src={image}
+                    width={1024}
+                    height={1024}
+                    alt={imageAlt}
+                    format="webp"
+                  />
+                )
+              }
+            </div>
+            <div class="text-center lg:col-8 lg:text-left">
+              <div class="content">
+                <Content />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

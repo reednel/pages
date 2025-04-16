@@ -20,6 +20,7 @@ const {
   author,
   description,
   image,
+  imageAlt,
   spirits,
   bottles,
   tags,
@@ -47,12 +48,12 @@ const {
               <div class="col basis-2/3 p-2 min-w-72">
                 <div class="glass rounded-lg intersect:animate-fadeDown opacity-0">
                   <Image
+                    class="w-full rounded-lg"
                     src={image}
+                    alt={imageAlt}
                     width={1920}
                     height={1080}
-                    alt={title}
-                    class="w-full rounded-lg"
-                    format="webp"
+                    loading="eager"
                   />
                 </div>
               </div>
@@ -80,7 +81,6 @@ const {
                       <Button
                         label={spirit}
                         link={`/drinks/spirits/${lowerHumanize(spirit)}`}
-                        type="secondary"
                       />
                     </li>
                   ))}
@@ -94,7 +94,6 @@ const {
                       <Button
                         label={bottle}
                         link={`/drinks/bottles/${lowerHumanize(bottle)}`}
-                        type="secondary"
                       />
                     </li>
                   ))}
@@ -108,7 +107,6 @@ const {
                       <Button
                         label={tag}
                         link={`/drinks/tags/${lowerHumanize(tag)}`}
-                        type="secondary"
                       />
                     </li>
                   ))}
@@ -203,24 +201,23 @@ const {
         </div>
       </div>
       <!-- Similar Drinks -->
-    {
-      relatedEntries.length > 0 && (
-        <!-- Related posts -->
-        <div class="section pb-0">
-          <h2 class="h3 mb-8 text-center">Similar Drinks</h2>
-          <div class="row justify-center">
-            {
-              relatedEntries.slice(0, 3).map((entry) => (
-                <div class="lg:col-4 mb-4">
-                  <DrinksCard entry={entry} />
-                </div>
-              ))
-            }
+      {
+        relatedEntries.length > 0 && (
+          <!-- Related posts -->
+          <div class="section pb-0">
+            <h2 class="h3 mb-8 text-center">Similar Drinks</h2>
+            <div class="row justify-center">
+              {
+                relatedEntries.slice(0, 3).map((entry) => (
+                  <div class="lg:col-4 mb-4 h-min">
+                    <DrinksCard entry={entry} />
+                  </div>
+                ))
+              }
+            </div>
           </div>
-        </div>
-      )
-    }
-
+        )
+      }
     </div>
   </section>
 </BaseLayout>

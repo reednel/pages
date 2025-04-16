@@ -67,6 +67,32 @@ cards:
  - What guilty pleasure of mine do you find cute?
  - What's your favorite way to spend time with me?
  - When was the last time I made you feel special?
+ - Choose your favorite outfit of each other and have each other wear it for the day.
+ - What do you think I intellectulize too often?
+ - Come up with a drink to name after your partner.
+ - When was the last time you were jealous?
+ - Try to turn each other on without touching for as long as possible.
+ - When was the last time you felt disconnected from me?
+ - Hug each other for 5 minutes straight. How did that feel?
+ - If we had a podcast, what would it be about?
+ - Teach your partner your favorite dance move.
+ - What does falling in love feel like to you?
+ - Describe in detail something you find sexy about me.
+ - When was the first time you truly felt vulnerable with me?
+ - What's my tell when I'm mad?
+ - What is your favorite game to playm literally or figuratively?
+ - If I were arrested what would it be for?
+ - What's importany to you that you wish was more important to me?
+ - What's something that only I know about you?
+ - What's one thing your partner would hate traveling without?
+ - What are you still trying to prove to yourself?
+ - What do you need me to give you more time for?
+ - What's easier for you since I've been with you?
+ - What's one thing that amuses you about me?
+ - Write your partner a pep talk for them to read the next time they need a confidence boost.
+ - What's the first thing you did after our first date?
+ - What surprised you most about me at the start of our relationship?
+ - What have you been struggling with that I may not know about or fully understand?
  - End of relationship listings - Look ahead for other conversation topics.
  - What was your first impression of me? What surprised you after getting to know me?
  - What do you think comes easily to me that's hard for others?

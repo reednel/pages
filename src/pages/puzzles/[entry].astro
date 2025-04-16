@@ -1,14 +1,14 @@
 ---
-import type { FoodEntry } from "@/types";
-import EntryLayout from "@components/food/EntryLayout.astro";
+import type { PuzzlesEntry } from "@/types";
+import EntryLayout from "@components/puzzles/EntryLayout.astro";
 import { getEntries } from "@lib/contentParser";
 import { sortByTitle } from "@lib/sortFunctions";
 
 export async function getStaticPaths() {
-  const entries = await getEntries("food", sortByTitle) as FoodEntry[];
+  const entries = await getEntries("puzzles", sortByTitle) as PuzzlesEntry[];
   const paths = entries.map((entry) => ({
     params: {
-      id: entry.id,
+      entry: entry.id,
     },
     props: { entry },
   }));
