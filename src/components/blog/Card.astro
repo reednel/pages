@@ -34,8 +34,8 @@ const entryDescription =
   (autodescription ? plainify(entry.body!.slice(0, descriptionLength)) : null);
 ---
 
-<div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg">
-  <div class="glass h-full rounded-lg p-4 intersect:animate-fadeUp opacity-0">
+<div class="h-full m-2 pl-0.5 pt-0.5 bg-gradient-to-br gradient rounded-tl-lg">
+  <div class="glass h-full rounded-tl-lg p-4 intersect:animate-fadeUpLeft opacity-0">
     <h4 class="mb-2">
       <a href={`/blog/${entry.id}`}>
         {title}

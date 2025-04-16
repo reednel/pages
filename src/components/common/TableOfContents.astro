@@ -16,19 +16,23 @@ const toc = heirarchy.filter((heading) => heading.depth <= tocDepth);
 
 {
   toc.length > 0 && (
-    <div class="relative glass rounded-lg p-4 my-2 w-full intersect:animate-fadeLeft opacity-0">
-      <ScrollArea className="h-full" client:only="react">
-        <h2 class="text-2xl border-none">Contents</h2>
-        <ul class="list-none m-0">
-          {toc.map((heading) => (
-            <li class=`${heading.depth === 2 ? "ml-0" : "ml-4"}`>
-              <a href={`#${heading.slug}`} class=" w-full leading-none no-underline">
-                {heading.text}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </ScrollArea>
+    <div class="mb-4 p-0.5 bg-gradient-to-br gradient rounded-tl-lg h-full">
+      <div class="bg-bg-p dark:bg-darkmode-bg-p rounded-tl-lg h-full">
+        <div class="relative glass rounded-lg p-4 mb-2 w-full intersect:animate-fadeLeft opacity-0 h-full">
+          <ScrollArea className="h-full" client:only="react">
+            <h2 class="text-2xl border-none">Contents</h2>
+            <ul class="list-none m-0">
+              {toc.map((heading) => (
+                <li class=`${heading.depth === 2 ? "ml-0" : "ml-4"}`>
+                  <a href={`#${heading.slug}`} class=" w-full leading-none no-underline">
+                    {heading.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </ScrollArea>
+        </div>
+      </div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import type { ProjectsEntry } from "@/types";
 import BaseLayout from "@components/base/BaseLayout.astro";
 import PageHeader from "@/components/common/PageHeader.astro";
 import { markdownify } from "@lib/textConverter";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 interface Props {
   entry: ProjectsEntry;
@@ -11,6 +11,16 @@ interface Props {
 
 const { entry } = Astro.props;
 const { title, description, projects } = entry.data;
+
+const iconClass = `
+  inline-block items-center justify-center text-center rounded-sm border text-center
+  border-txt-p dark:border-darkmode-txt-p text-txt-p dark:text-darkmode-txt-p
+  cursor-pointer duration-200 hover:opacity-100 hover:shadow-[inset_0px_0px_0px_2px_]
+  intersect:animate-fadeRight opacity-0`;
+const techClass = `
+  inline-block items-center justify-center text-center rounded-sm border text-center
+  border-txt-p dark:border-darkmode-txt-p text-txt-p dark:text-darkmode-txt-p px-2 mx-1
+  intersect:animate-fadeRight opacity-0`;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -27,14 +37,14 @@ const { title, description, projects } = entry.data;
                 </div>
                 <div class="-mt-4">
                   {project.github && (
-                    <a href={project.github} target="blank">
-                      <FaGithubSquare className="text-light -mt-1 mr-0.5 inline-block h-8 w-8" />
+                    <a href={project.github} target="blank" class={iconClass}>
+                      <FaGithub className="h-6 w-6 -mt-1 mx-0.5 inline-block " />
                     </a>
                   )}
                   {project.technologies?.map((element: string) => (
                     <li class="inline-block h-8">
                       <div
-                        class="m-1 block border border-light bg-transparent text-light rounded-sm px-2 dark:text-darkmode-light dark:border-darkmode-light"
+                        class={techClass}
                         set:html={markdownify(element)}
                       />
                     </li>

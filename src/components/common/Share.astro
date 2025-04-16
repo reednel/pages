@@ -17,8 +17,11 @@ const { title, description, folder, id }: Props = Astro.props;
 
 const baseURL = "https://reednel.com";
 
-const iconClass =
-  "glass-t rounded text-txt-p dark:text-darkmode-txt-p flex h-9 w-9 items-center justify-center text-center intersect:animate-fadeUp opacity-0 hover:bg-opacity-20";
+const iconClass = `
+  flex h-9 w-9 items-center justify-center text-center rounded-sm border text-center
+  border-txt-p dark:border-darkmode-txt-p text-txt-p dark:text-darkmode-txt-p
+  cursor-pointer duration-200 hover:opacity-100 hover:shadow-[inset_0px_0px_0px_2px_]
+  intersect:animate-fadeUp opacity-0`
 ---
 
 <ul class="">

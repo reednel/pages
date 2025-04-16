@@ -16,9 +16,38 @@ const { Content } = await render(entry);
 
 <BaseLayout title={title} description={description} image={image?.src}>
   <section class="section-sm">
-    <div class="container">
+    <div class="container flex">
       <div class="row justify-center">
-        <div class="glass rounded-lg text-center p-8 md:col-10 lg:col-7 intersect:animate-fadeUp opacity-0 intersect-no-queue">
+        <div class="col-10">
+          <div class="row items-center">
+            <div class="my-8 lg:col-4 intersect:animate-fadeDown opacity-0 intersect-no-queue">
+              {
+                image && (
+                  <Image
+                    class="mx-auto rounded-lg w-64"
+                    src={image}
+                    width={1024}
+                    height={1024}
+                    alt={imageAlt}
+                    format="webp"
+                  />
+                )
+              }  
+            </div>
+            <div class="text-center lg:col-8 lg:text-left ">
+              <div class="content">
+                <Content />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center h-full">
+        <div class="glass col-5 rounded-lg p-8 intersect:animate-fadeRight opacity-0 intersect-no-queue">
           {
             image && (
               <Image
@@ -31,10 +60,12 @@ const { Content } = await render(entry);
               />
             )
           }
+        </div>
+        <div class="glass col-7 rounded-lg p-8 intersect:animate-fadeLeft opacity-0 intersect-no-queue">
           <h2 set:html={markdownify(title)} class="h3 mb-6" />
             <Content />
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </BaseLayout>

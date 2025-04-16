@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "@components/base/BaseLayout.astro";
 import { markdownify } from "@lib/textConverter";
-import Button from "@components/common/Button.astro";
 import type { HomeEntry } from "@/types";
 import { Image } from "astro:assets";
 
@@ -10,7 +9,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { image, imageAlt, title, subtitle, button } = entry.data;
+const { image, imageAlt, title, subtitle } = entry.data;
 ---
 
 <BaseLayout>
@@ -21,7 +20,7 @@ const { image, imageAlt, title, subtitle, button } = entry.data;
         <div class="text-center lg:col-6">
           {
             image && (
-              <div class="blur-[0px]">
+              <div class="blur-[0px] intersect:animate-fadeDown opacity-0">
                 <Image
                   class="mb-4 w-64"
                   src={image}
@@ -33,19 +32,8 @@ const { image, imageAlt, title, subtitle, button } = entry.data;
               </div>
             )
           }
-          {title && <h1 set:html={markdownify(title)} class="mb-4" />}
-          {subtitle && <p class="mb-8" set:html={markdownify(subtitle)} />}
-          {
-            button && (
-              <Button
-                label={button.label}
-                link={button.link}
-                newtab
-                hoverInvert
-                color=""
-              />
-            )
-          }
+          {title && <h1 set:html={markdownify(title)} class="mb-4 intersect:animate-fadeUp opacity-0" />}
+          {subtitle && <p class="mb-8 intersect:animate-fadeUp opacity-0" set:html={markdownify(subtitle)} />}
         </div>
       </div>
     </div>

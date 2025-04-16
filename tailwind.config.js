@@ -49,7 +49,7 @@ module.exports = {
         },
         bg: {
           p: "#fff",
-          s: "#ddd",
+          s: "#eee",
           t: "#ddd",
         },
         border: "#ddd",
@@ -61,7 +61,7 @@ module.exports = {
           },
           bg: {
             p: "#222",
-            s: "#444",
+            s: "#333",
             t: "#444",
           },
           border: "#444",
@@ -121,6 +121,8 @@ module.exports = {
         fadeDown: "fadeInDown 1000ms both",
         fadeRight: "fadeInRight 1000ms both",
         fadeLeft: "fadeInLeft 1000ms both",
+        fadeUpLeft: "fadeInUpLeft 1000ms both",
+        fadeUpRight: "fadeInUpRight 1000ms both",
         scale: "scaleOut 1000ms both",
         // Star Background
         twinkle: "twinkle 5s infinite ease-in-out",
@@ -148,6 +150,14 @@ module.exports = {
         fadeInLeft: {
           "0%": { opacity: 0, transform: "translateX(2rem)" },
           "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        fadeInUpLeft: {
+          "0%": { opacity: 0, transform: "translate(2rem, 2rem)" },
+          "100%": { opacity: 1, transform: "translate(0)" },
+        },
+        fadeInUpRight: {
+          "0%": { opacity: 0, transform: "translate(-2rem, 2rem)" },
+          "100%": { opacity: 1, transform: "translate(0)" },
         },
         scaleOut: {
           "0%": { opacity: 0, transform: "scale(0.5)" },

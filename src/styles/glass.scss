@@ -1,10 +1,10 @@
 .glass {
-  @apply bg-bg-s dark:bg-darkmode-bg-s;
-  @apply backdrop-blur;
-  @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
-  @apply bg-opacity-20 dark:bg-opacity-20;
-  @apply border border-[rgba(255,255,255,0.6)] dark:border-[rgba(255,255,255,0.15)];
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  @apply bg-bg-p dark:bg-darkmode-bg-p;
+  // @apply backdrop-blur;
+  // @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
+  // @apply bg-opacity-20 dark:bg-opacity-20;
+  // @apply border border-[rgba(255,255,255,0.6)] dark:border-[rgba(255,255,255,0.15)];
+  // box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .glass-t {
@@ -13,27 +13,22 @@
   @apply backdrop-blur;
   @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
   @apply border border-[rgba(255,255,255,0.6)] dark:border-[rgba(255,255,255,0.15)];
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-  @apply bg-opacity-20 dark:bg-opacity-20;
-  @apply backdrop-blur;
-  @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
-  @apply border border-[rgba(255,255,255,0.6)] dark:border-[rgba(255,255,255,0.15)];
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  // box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .glass-t-borderless {
   @apply bg-bg-t dark:bg-darkmode-bg-t;
-  @apply bg-opacity-20 dark:bg-opacity-20;
-  @apply backdrop-blur;
-  @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
-  @apply bg-opacity-20 dark:bg-opacity-20;
-  @apply backdrop-blur;
-  @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
+//   @apply bg-opacity-20 dark:bg-opacity-20;
+//   @apply backdrop-blur;
+//   @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;;
 }
 
-// Gradient
 .gradient {
-  @apply from-transparent via-transparent to-transparent;
-  // @apply from-txt-s via-transparent to-transparent;
-  // @apply dark:from-darkmode-txt-s dark:via-transparent dark:to-transparent;
+  @apply from-txt-p via-transparent to-transparent;
+  @apply dark:from-darkmode-txt-s dark:via-transparent dark:to-transparent;
+}
+
+.gradient-s {
+  @apply from-transparent via-txt-p to-transparent;
+  @apply dark:from-darkmode-bg-t dark:via-darkmode-border dark:to-transparent;
 }
