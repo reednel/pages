@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "@components/base/BaseLayout.astro";
-import { markdownify } from "@lib/textConverter";
 import { Image } from "astro:assets";
 import type { AboutEntry } from "@/types";
 import { render } from "astro:content";
@@ -20,7 +19,9 @@ const { Content } = await render(entry);
       <div class="row justify-center">
         <div class="col-10">
           <div class="row items-center">
-            <div class="my-8 lg:col-4 intersect:animate-fadeDown opacity-0 intersect-no-queue">
+            <div
+              class="my-8 lg:col-4 intersect:animate-fadeDown opacity-0 intersect-no-queue"
+            >
               {
                 image && (
                   <Image
@@ -32,9 +33,9 @@ const { Content } = await render(entry);
                     format="webp"
                   />
                 )
-              }  
+              }
             </div>
-            <div class="text-center lg:col-8 lg:text-left ">
+            <div class="text-center lg:col-8 lg:text-left">
               <div class="content">
                 <Content />
               </div>
@@ -44,28 +45,4 @@ const { Content } = await render(entry);
       </div>
     </div>
   </section>
-  <!-- <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center h-full">
-        <div class="glass col-5 rounded-lg p-8 intersect:animate-fadeRight opacity-0 intersect-no-queue">
-          {
-            image && (
-              <Image
-                class="mx-auto mb-6 rounded-lg w-64"
-                src={image}
-                width={1024}
-                height={1024}
-                alt={imageAlt}
-                loading="eager"
-              />
-            )
-          }
-        </div>
-        <div class="glass col-7 rounded-lg p-8 intersect:animate-fadeLeft opacity-0 intersect-no-queue">
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
-            <Content />
-        </div>
-      </div>
-    </div>
-  </section> -->
 </BaseLayout>
