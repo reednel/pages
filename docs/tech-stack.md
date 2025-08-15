@@ -23,6 +23,10 @@ This is a template for a static, content-driven website. Currently supported con
        3. Let you host like 100 projects for free (Github lets you host 1).
        4. As a dominant force in the space, they have a lot of fancy tooling and infrastructure that supposedly result in faster page load and higher security than Github can (or has any reason to) offer.
        5. If you get to a point where you want to extend Astro beyond a fully static state, Cloudflare can support that, Github can't.
+4. Isolating the development environment (optional)
+   1. If you have a special interest in isolating the software used to build your website locally, consider [Devbox](https://www.jetify.com/docs/devbox/).
+   2. This would alter your workflow and the setup steps as described in this documentation, so ignore this if you're unsure what this means.
+   3. Mimic [this PR](https://github.com/astrogon/astrogon/pull/30/commits/0f85e0c21e71a2fb00210f4588ed51d6398da163) from @fkromer for Devbox setup.
 
 ## TODO
 
