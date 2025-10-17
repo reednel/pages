@@ -6,6 +6,7 @@ import AutoImport from "astro-auto-import";
 import { defineConfig } from "astro/config";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true,
   },
+  adapter: cloudflare(),
   integrations: [
     react(),
     sitemap(),
@@ -39,7 +41,10 @@ export default defineConfig({
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
-      theme: "dark-plus", // https://shiki.style/themes
+      themes: { // https://shiki.style/themes
+        light: "light-plus",
+        dark: "dark-plus",
+      } 
     },
     extendDefaultPlugins: true,
   },
