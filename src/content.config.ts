@@ -92,7 +92,6 @@ const home = defineCollection({
       subtitle: z.string().optional(),
       image: image().optional(),
       imageAlt: z.string().default(""),
-      content: z.string(),
       button: z
         .object({
           label: z.string(),
@@ -168,5 +167,6 @@ export const collections = {
   food,
   projects,
   puzzles,
+  social,
   terms,
 };
