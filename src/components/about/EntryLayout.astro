@@ -27,10 +27,10 @@ const { Content } = await render(entry);
                   <Image
                     class="mx-auto rounded-lg w-64"
                     src={image}
+                    alt={imageAlt}
                     width={1024}
                     height={1024}
-                    alt={imageAlt}
-                    format="webp"
+                    loading="eager"
                   />
                 )
               }

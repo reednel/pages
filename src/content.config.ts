@@ -79,6 +79,8 @@ const drinks = defineCollection({
         .optional(),
       instructions: z.array(z.string()).optional(),
       notes: z.array(z.string()).optional(),
+      hideToc: z.boolean().default(false),
+      hideNav: z.boolean().default(false),
     }),
 });
 
@@ -165,5 +167,6 @@ export const collections = {
   food,
   projects,
   puzzles,
+  social,
   terms,
 };
